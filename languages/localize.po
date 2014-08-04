@@ -1,0 +1,2465 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: localize\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-08 17:15+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Croma <aj@cro.ma>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:41
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr ""
+
+#: comments.php:51
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:52
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:53
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:84
+msgid "http://www.cro.ma"
+msgstr ""
+
+#: footer.php:86
+#, php-format
+msgid "Proudly Designed by %s"
+msgstr ""
+
+#: functions.php:95
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:96
+msgid "Primary sub menu"
+msgstr ""
+
+#: functions.php:141
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:141
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:156
+msgid "Post author"
+msgstr ""
+
+#: functions.php:162
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:168
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:173
+msgid "Edit"
+msgstr ""
+
+#: functions.php:177
+msgid "Reply"
+msgstr ""
+
+#: single.php:43
+msgid ", "
+msgstr ""
+
+#: inc/custom-functions.php:34
+msgid "facebook"
+msgstr ""
+
+#: inc/custom-functions.php:35
+msgid "twitter"
+msgstr ""
+
+#: inc/custom-functions.php:36
+msgid "rss"
+msgstr ""
+
+#: inc/custom-functions.php:37
+msgid "email"
+msgstr ""
+
+#: inc/custom-functions.php:38
+msgid "google+"
+msgstr ""
+
+#: inc/custom-functions.php:39
+msgid "pinterest"
+msgstr ""
+
+#: inc/custom-functions.php:40
+msgid "vimeo"
+msgstr ""
+
+#: inc/custom-functions.php:41
+msgid "youtube"
+msgstr ""
+
+#: inc/custom-functions.php:42
+msgid "linkedin"
+msgstr ""
+
+#: inc/custom-functions.php:43
+msgid "flickr"
+msgstr ""
+
+#: inc/custom-functions.php:44
+msgid "instagram"
+msgstr ""
+
+#: inc/custom-functions.php:45
+msgid "foursquare"
+msgstr ""
+
+#: inc/custom-functions.php:363
+msgid "&laquo;"
+msgstr ""
+
+#: inc/custom-functions.php:364
+msgid "&raquo;"
+msgstr ""
+
+#: inc/sidebar-controller.php:15
+msgid "Main Sidebar"
+msgstr ""
+
+#: inc/sidebar-controller.php:19
+msgid "Front Page left"
+msgstr ""
+
+#: inc/sidebar-controller.php:23
+msgid "Front Page center"
+msgstr ""
+
+#: inc/sidebar-controller.php:27
+msgid "Front Page right"
+msgstr ""
+
+#: inc/sidebar-controller.php:31
+msgid "Footer left"
+msgstr ""
+
+#: inc/sidebar-controller.php:35
+msgid "Footer center"
+msgstr ""
+
+#: inc/sidebar-controller.php:39
+msgid "Footer right"
+msgstr ""
+
+#: inc/admin/admin-functions.php:26 inc/admin/admin-functions.php:27
+msgid "Croma.Dash"
+msgstr ""
+
+#: inc/admin/admin-functions.php:126
+#: inc/framework/bookings/book-functions.php:141
+msgid "DASHBOARD"
+msgstr ""
+
+#: inc/admin/formbuilder.php:87
+msgid "You have no custom sidebars at present. Click to add a sidebar"
+msgstr ""
+
+#: inc/admin/formbuilder.php:109
+msgid "Remove Image"
+msgstr ""
+
+#: inc/admin/formbuilder.php:115
+msgid "Upload"
+msgstr ""
+
+#: inc/admin/formbuilder.php:129
+msgid "Getting to the helpfiles"
+msgstr ""
+
+#: inc/admin/formbuilder.php:131
+msgid "Below the steps for getting access to the helpfiles"
+msgstr ""
+
+#: inc/admin/formbuilder.php:133
+msgid "Unzip the files that you downloaded from Themeforest"
+msgstr ""
+
+#: inc/admin/formbuilder.php:134
+msgid "Search for a folder called \"helpfiles\""
+msgstr ""
+
+#: inc/admin/formbuilder.php:136
+msgid ""
+"Click on the index.html file in the helpfiles folder to open the help files "
+"in your browser"
+msgstr ""
+
+#: inc/admin/formbuilder.php:139
+msgid "Getting help"
+msgstr ""
+
+#: inc/admin/formbuilder.php:141
+msgid ""
+"Click the icons at the top right of this page to go to the faq and help "
+"section of the Croma website."
+msgstr ""
+
+#: inc/admin/formbuilder.php:286
+msgid "Nothing"
+msgstr ""
+
+#: inc/admin/page-controller.php:47
+msgid "SUPPORT"
+msgstr ""
+
+#: inc/admin/page-parts.php:52
+msgid "Version"
+msgstr ""
+
+#: inc/admin/page-parts.php:52
+msgid "available time to upgrade"
+msgstr ""
+
+#: inc/admin/page-parts.php:56
+msgid "Theme up to date"
+msgstr ""
+
+#: inc/admin/page-parts.php:57
+msgid "VER"
+msgstr ""
+
+#: inc/admin/page-parts.php:139 inc/admin/page-parts.php:222
+msgid "No items detected at present. Add your first."
+msgstr ""
+
+#: inc/admin/page-parts.php:142 inc/admin/page-parts.php:225
+msgid "Name your item and click to create."
+msgstr ""
+
+#: inc/admin/page-parts.php:147 inc/admin/page-parts.php:230
+msgid "Add the item"
+msgstr ""
+
+#: inc/admin/page-parts.php:158
+msgid "Add slide"
+msgstr ""
+
+#: inc/admin/page-parts.php:241
+msgid "Add content banner"
+msgstr ""
+
+#: inc/admin/page-parts.php:294 inc/framework/bookings/book-parts.php:231
+msgid "Save"
+msgstr ""
+
+#: inc/apps/cal-func.php:405 inc/apps/cal-func.php:481
+#: public/framework/images.php:73 public/framework/images.php:361
+#: public/framework/images.php:389 public/framework/images.php:408
+#: public/framework/images.php:429
+msgid "More Info"
+msgstr ""
+
+#: inc/apps/promo-func.php:54 inc/apps/promo-func.php:160
+msgid " to "
+msgstr ""
+
+#: inc/apps/promo-func.php:61 inc/apps/promo-func.php:169
+msgid "Every day from "
+msgstr ""
+
+#: inc/apps/promo-func.php:64 inc/apps/promo-func.php:67
+#: inc/apps/promo-func.php:86 inc/apps/promo-func.php:172
+#: inc/apps/promo-func.php:175 inc/apps/promo-func.php:194
+#: public/framework/calendar.php:101 public/framework/calendar.php:108
+#: public/framework/calendar.php:119 public/framework/calendar.php:126
+#: public/framework/calendar.php:157 public/framework/calendar.php:164
+msgid "Every"
+msgstr ""
+
+#: inc/apps/promo-func.php:64 inc/apps/promo-func.php:67
+#: inc/apps/promo-func.php:172 inc/apps/promo-func.php:175
+msgid " from "
+msgstr ""
+
+#: inc/apps/promo-func.php:71 inc/apps/promo-func.php:179
+#: public/framework/calendar.php:137
+msgid "First"
+msgstr ""
+
+#: inc/apps/promo-func.php:72 inc/apps/promo-func.php:180
+#: public/framework/calendar.php:138
+msgid "Second"
+msgstr ""
+
+#: inc/apps/promo-func.php:73 inc/apps/promo-func.php:181
+#: public/framework/calendar.php:139
+msgid "Third"
+msgstr ""
+
+#: inc/apps/promo-func.php:74 inc/apps/promo-func.php:182
+#: public/framework/calendar.php:140
+msgid "Fourth"
+msgstr ""
+
+#: inc/apps/promo-func.php:75 inc/apps/promo-func.php:183
+#: public/framework/calendar.php:141
+msgid "Last"
+msgstr ""
+
+#: inc/apps/promo-func.php:86 inc/apps/promo-func.php:194
+#: public/framework/calendar.php:101 public/framework/calendar.php:108
+#: public/framework/calendar.php:119 public/framework/calendar.php:126
+#: public/framework/calendar.php:157 public/framework/calendar.php:164
+msgid "from"
+msgstr ""
+
+#: inc/apps/promo-func.php:108
+msgid "more info"
+msgstr ""
+
+#: inc/apps/promo-func.php:125 inc/shortcodes/shortcode-team.php:66
+#: public/framework/banner.php:48
+msgid "More info"
+msgstr ""
+
+#: inc/framework/ajax.php:59 inc/framework/ajax.php:87
+#: inc/framework/bookings/book-controller.php:168
+#: inc/framework/bookings/book-controller.php:208
+#: public/app/bookingform.php:93
+msgid "Name"
+msgstr ""
+
+#: inc/framework/ajax.php:60 inc/framework/ajax.php:88
+#: inc/framework/bookings/book-controller.php:169
+#: inc/framework/bookings/book-controller.php:209
+#: public/app/bookingform.php:98 public/meta-boxes/content.php:418
+msgid "Email"
+msgstr ""
+
+#: inc/framework/ajax.php:89 inc/framework/bookings/book-controller.php:172
+#: inc/framework/bookings/book-controller.php:212
+#: public/app/bookingform.php:103 public/meta-boxes/content.php:427
+msgid "Telephone"
+msgstr ""
+
+#: inc/framework/ajax.php:90
+msgid "Comment"
+msgstr ""
+
+#: inc/framework/header.php:178
+msgid "Search results for"
+msgstr ""
+
+#: inc/framework/header.php:183
+msgid "Not Found"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:171
+#: inc/framework/bookings/book-controller.php:211
+msgid "Comments"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:174
+#: inc/framework/bookings/book-controller.php:214
+msgid "Date"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:362
+msgid "Enable date blocking"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:363
+msgid "Disable date blocking"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:469
+msgid "Prev"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:470
+msgid "Next"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:499
+#: inc/framework/bookings/book-functions.php:58 public/app/content.php:132
+#: public/app/content.php:281 public/meta-boxes/content.php:410
+msgid "Confirmed"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:503 public/app/content.php:132
+#: public/meta-boxes/content.php:410
+msgid "Unconfirmed"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:507
+#: inc/framework/bookings/book-functions.php:57 public/app/content.php:349
+#: public/meta-boxes/content.php:410
+msgid "Cancelled"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:524
+msgid "Special Requests"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:553
+msgid "No Bookings for today"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:587
+#: inc/framework/bookings/book-controller.php:616
+msgid "No schedules set. Click to add one"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:610
+#: inc/framework/bookings/book-functions.php:66
+msgid "every"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:612
+#: inc/framework/bookings/book-functions.php:67
+#: inc/widgets/widget-helper.php:66
+msgid "minutes"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:680
+msgid "Minimum guests"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:681
+msgid "Minimum guests per booking that can be selected"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:693
+msgid "Maximum guests"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:694
+msgid "Maximum guests per booking that can be selected"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:709
+msgid "Guest currently not enabled. Enable guest options in the settings"
+msgstr ""
+
+#: inc/framework/bookings/book-controller.php:723
+msgid "You have no custom guestlist at present. Click to add a guest item"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:30
+#: inc/framework/bookings/book-functions.php:31
+msgid "Croma.Res"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:53
+msgid ""
+"Date blocking is enabled. Any date in Yellow can now be blocked or "
+"unblocked. Click to disable when you are done"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:54
+msgid "Date blocking is disabled"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:55
+msgid "Blocking this day will make it unavailable to book. Ready to continue?"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:56
+msgid "Unblocking this day will make it available to book. Ready to continue?"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:59
+msgid "Sunday"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:60
+msgid "Monday"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:61
+msgid "Tuesday"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:62
+msgid "Wednesday"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:63
+msgid "Thursday"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:64
+msgid "Friday"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:65
+msgid "Saturday"
+msgstr ""
+
+#: inc/framework/bookings/book-functions.php:68
+msgid "Fetching Calendar"
+msgstr ""
+
+#: inc/framework/bookings/bookbuilder.php:76
+msgid "Loading Calendar Components"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:75 inc/meta-boxes/cpt-tax.php:44
+#: inc/meta-boxes/cpt-tax.php:112
+msgid "Standard Sidebar"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:111 inc/meta-boxes/cpt-builder.php:135
+#: public/framework/banner.php:41
+msgid "Hour"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:115 inc/meta-boxes/cpt-builder.php:139
+msgid "Minute"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:151
+msgid "Single day event"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:152
+msgid "Multiple day event"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:153
+msgid "Every week same day"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:154
+msgid "Every month same date."
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:155
+msgid "Advanced configuration."
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:158
+msgid "first"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:159
+msgid "second"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:160
+msgid "third"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:161
+msgid "fourth"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:162
+msgid "last"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:186
+msgid "Select Configuration"
+msgstr ""
+
+#: inc/meta-boxes/cpt-builder.php:212
+msgid "Last day of event"
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:16
+msgid "Add "
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:17 inc/meta-boxes/cpt-init.php:92
+msgid "Add new "
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:18 inc/meta-boxes/cpt-init.php:90
+msgid "Edit "
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:19 inc/meta-boxes/cpt-init.php:93
+msgid "New "
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:20
+msgid "View "
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:21 inc/meta-boxes/cpt-init.php:86
+msgid "Search "
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:22 inc/meta-boxes/cpt-init.php:23
+msgid "No "
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:22
+msgid " found"
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:23
+msgid " found in trash"
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:57 inc/meta-boxes/cpt-init.php:60
+msgid " updated."
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:58
+msgid "Custom field updated."
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:59
+msgid "Custom field deleted."
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:61
+msgid "Restored ot Revision."
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:62
+msgid " published"
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:63
+msgid " saved."
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:64
+msgid " submitted."
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:65
+msgid " scheduled"
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:66
+msgid " draft updated."
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:85
+msgid " category"
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:87
+msgid "All "
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:88 inc/meta-boxes/cpt-init.php:89
+msgid "Parent "
+msgstr ""
+
+#: inc/meta-boxes/cpt-init.php:91
+msgid "Update "
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:51 inc/widgets/contacts.php:41
+msgid "Operating hours:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:58 inc/widgets/contacts.php:48
+msgid "Address:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:65
+#: inc/shortcodes/shortcode-contact.php:247 inc/widgets/contacts.php:55
+msgid "Telephone:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:72 inc/widgets/contacts.php:62
+msgid "Fax:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:79
+#: inc/shortcodes/shortcode-contact.php:252 inc/widgets/contacts.php:69
+#: inc/widgets/newsletter.php:41
+msgid "Email:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:242 inc/widgets/newsletter.php:37
+msgid "Name:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:257
+msgid "Comments:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:266
+msgid "Recipient:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:279 inc/widgets/newsletter.php:44
+msgid "Location:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:292 inc/widgets/newsletter.php:81
+msgid "Submit"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:299 public/app/bookingform.php:137
+msgid "Submitting form"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:330
+msgid "To:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:332
+msgid "From:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:335
+msgid "Calculate:"
+msgstr ""
+
+#: inc/shortcodes/shortcode-contact.php:337
+msgid ""
+"The driving directions are interactive. Click on any bold text for further "
+"explanation of the route."
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:98
+#: inc/shortcodes/shortcode-functions.php:156
+msgid "Accordions"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:99
+#: inc/shortcodes/shortcode-functions.php:183
+msgid "Buttons"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:100
+#: inc/shortcodes/shortcode-functions.php:359
+#: public/meta-boxes/content.php:262 public/meta-boxes/content.php:326
+msgid "Calendar"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:101
+#: inc/shortcodes/shortcode-functions.php:117
+msgid "Call Outs"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:102
+#: inc/shortcodes/shortcode-functions.php:261 public/admin/content.php:252
+msgid "Contacts"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:103
+#: inc/shortcodes/shortcode-functions.php:342
+msgid "Gallery"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:104
+#: inc/shortcodes/shortcode-functions.php:298 public/meta-boxes/content.php:20
+#: public/meta-boxes/content.php:179 public/meta-boxes/content.php:243
+#: public/meta-boxes/content.php:308 public/meta-boxes/content.php:372
+msgid "Layout"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:105
+#: inc/shortcodes/shortcode-functions.php:219
+msgid "Menu"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:106
+#: inc/shortcodes/shortcode-functions.php:249 public/admin/content.php:477
+msgid "Specials"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:107
+#: inc/shortcodes/shortcode-functions.php:323
+msgid "Team"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:108
+#: inc/shortcodes/shortcode-functions.php:378
+msgid "Video"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:120
+#: inc/shortcodes/shortcode-functions.php:194
+msgid "Themecolor"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:121
+#: inc/shortcodes/shortcode-functions.php:195
+msgid "Grey"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:122
+#: inc/shortcodes/shortcode-functions.php:196
+msgid "Dark"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:123
+#: inc/shortcodes/shortcode-functions.php:197
+msgid "Light Blue"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:124
+#: inc/shortcodes/shortcode-functions.php:198
+msgid "Orange"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:125
+#: inc/shortcodes/shortcode-functions.php:199
+msgid "Brown"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:126
+#: inc/shortcodes/shortcode-functions.php:200
+msgid "Yellow"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:127
+#: inc/shortcodes/shortcode-functions.php:201
+msgid "Red"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:128
+#: inc/shortcodes/shortcode-functions.php:202
+msgid "Peach"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:129
+#: inc/shortcodes/shortcode-functions.php:203
+msgid "Lime"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:130
+#: inc/shortcodes/shortcode-functions.php:204
+msgid "Purple"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:131
+#: inc/shortcodes/shortcode-functions.php:205
+msgid "Rust"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:136 public/meta-boxes/content.php:21
+#: public/meta-boxes/content.php:180 public/meta-boxes/content.php:244
+#: public/meta-boxes/content.php:309 public/meta-boxes/content.php:373
+msgid "Fullwidth"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:137
+msgid "Half width aligned left"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:138
+msgid "Half width aligned right"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:139
+msgid "Half width aligned center;"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:146
+msgid "Insert Callout Shortcode"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:148
+msgid "Add an callout to a post or page. "
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:159
+msgid "2 Tabs"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:160
+msgid "3 Tabs"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:161
+msgid "4 Tabs"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:162
+msgid "5 Tabs"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:163
+msgid "6 Tabs"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:164
+msgid "7 Tabs"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:165
+msgid "8 Tabs"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:166
+msgid "9 Tabs"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:167
+msgid "10 Tabs"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:171
+msgid "Insert Accordion Shortcode"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:173
+msgid "Add an accordion to a post or page. "
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:185
+msgid "Button text"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:189
+msgid "Button link"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:209
+msgid "Insert Button Shortcode"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:211
+msgid "Add an button to a post or page. "
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:223
+msgid "All menu items"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:231
+msgid "The Mainstay"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:232
+msgid "The Masthead"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:233
+msgid "The Quickie"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:238
+#: inc/shortcodes/shortcode-functions.php:331
+msgid "Insert Team Shortcode"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:240
+msgid "Add food menu items to a post or page. "
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:251
+msgid "Insert Special Shortcode"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:253
+msgid "Add your specials to a post or a page"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:264
+msgid "Select a type..."
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:265
+msgid "Contact Details"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:266
+msgid "Map"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:267
+msgid "Map with Streetview"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:268
+msgid "Contact Form"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:269
+msgid "Get Directions"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:274
+msgid "Select a location..."
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:288
+msgid "Insert contacts Shortcode"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:290
+msgid "Add contacts, contact forms, maps and directions to a post or page. "
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:301
+msgid "Select a layout..."
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:302
+msgid "Halves"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:303
+msgid "Thirds"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:304
+msgid "2/3 and 1/3"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:305
+msgid "1/3 and 2/3"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:306
+msgid "quarters"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:307
+msgid "half & quarters"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:308
+msgid "quarters & half"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:312
+msgid "Insert layout Shortcode"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:314
+msgid "Divide your page into two equal halves."
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:326
+msgid "All members"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:333
+msgid "Add team members to a post or page. "
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:345
+msgid "All Galleries"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:350
+msgid "Insert Gallery Shortcode"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:352
+msgid "Add your galleries to a post or page."
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:362
+msgid "Full Calendar"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:363
+msgid "Agenda type Calendar"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:364
+msgid "Upcomming events"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:368
+msgid "Insert Calendar Shortcode"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:370
+msgid "Add your calendar to a post or page."
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:381
+msgid "Insert Video Shortcode"
+msgstr ""
+
+#: inc/shortcodes/shortcode-functions.php:383
+msgid ""
+"Add responsive video to a post or page. Paste a link to your youtube or "
+"vimeo video above"
+msgstr ""
+
+#: inc/widgets/carousel.php:16
+msgid "Link to a page with an image"
+msgstr ""
+
+#: inc/widgets/carousel.php:85 inc/widgets/contacts.php:99
+#: inc/widgets/latestnews.php:93 inc/widgets/newsletter.php:79
+#: inc/widgets/upcommingevents.php:62 inc/widgets/video.php:96
+msgid "New title"
+msgstr ""
+
+#: inc/widgets/carousel.php:95 inc/widgets/contacts.php:107
+#: inc/widgets/gallery.php:109 inc/widgets/latestnews.php:102
+#: inc/widgets/newsletter.php:88 inc/widgets/twitter.php:151
+#: inc/widgets/upcommingevents.php:70 inc/widgets/video.php:107
+#: public/admin/content.php:384 public/admin/content.php:505
+msgid "Title"
+msgstr ""
+
+#: inc/widgets/carousel.php:108
+msgid "Carousel Item"
+msgstr ""
+
+#: inc/widgets/carousel.php:120
+msgid "Label"
+msgstr ""
+
+#: inc/widgets/carousel.php:124
+msgid "Add a label (keep it short) or leave open not to have a label"
+msgstr ""
+
+#: inc/widgets/carousel.php:132
+msgid "Link hi-jack"
+msgstr ""
+
+#: inc/widgets/carousel.php:136
+msgid ""
+"Add an alternative address to redirect when the visitor click (leave open to "
+"direct to the post)"
+msgstr ""
+
+#: inc/widgets/contacts.php:16
+msgid "A widget for displaying contacts"
+msgstr ""
+
+#: inc/widgets/contacts.php:119
+msgid "Location to show"
+msgstr ""
+
+#: inc/widgets/gallery.php:16
+msgid "Croma gallery widget"
+msgstr ""
+
+#: inc/widgets/gallery.php:120
+msgid "Select Gallery"
+msgstr ""
+
+#: inc/widgets/gallery.php:131
+msgid "Gallery description:"
+msgstr ""
+
+#: inc/widgets/latestnews.php:16
+msgid "A widget for displaying latest news"
+msgstr ""
+
+#: inc/widgets/latestnews.php:115
+msgid "Number of posts"
+msgstr ""
+
+#: inc/widgets/latestnews.php:128
+msgid "Category to show"
+msgstr ""
+
+#: inc/widgets/newsletter.php:16
+msgid "A widget for capturing Newsletter subscriptions"
+msgstr ""
+
+#: inc/widgets/newsletter.php:47
+msgid "Thank you for submitting. Your first newsletter will follow shortly."
+msgstr ""
+
+#: inc/widgets/newsletter.php:48
+msgid ""
+"there is an error in your submission. Please review your details and resend"
+msgstr ""
+
+#: inc/widgets/newsletter.php:80
+msgid "Sign up for our newsletter and get the latest news."
+msgstr ""
+
+#: inc/widgets/newsletter.php:101
+msgid "Button Label"
+msgstr ""
+
+#: inc/widgets/newsletter.php:105
+msgid "label for submit button"
+msgstr ""
+
+#: inc/widgets/newsletter.php:114
+msgid "Message"
+msgstr ""
+
+#: inc/widgets/newsletter.php:118
+msgid "short lintro message to go with widget"
+msgstr ""
+
+#: inc/widgets/twitter.php:16
+msgid "Croma twitter widget"
+msgstr ""
+
+#: inc/widgets/twitter.php:80
+msgid "ago"
+msgstr ""
+
+#: inc/widgets/twitter.php:89
+msgid "retweet"
+msgstr ""
+
+#: inc/widgets/twitter.php:90
+msgid "reply"
+msgstr ""
+
+#: inc/widgets/twitter.php:91
+msgid "favorite"
+msgstr ""
+
+#: inc/widgets/twitter.php:144
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: inc/widgets/twitter.php:162
+msgid "Number of tweets:"
+msgstr ""
+
+#: inc/widgets/twitter.php:173
+msgid "Username:"
+msgstr ""
+
+#: inc/widgets/twitter.php:184
+msgid "Consumer key:"
+msgstr ""
+
+#: inc/widgets/twitter.php:195
+msgid "Consumer Secret:"
+msgstr ""
+
+#: inc/widgets/twitter.php:206
+msgid "Access token:"
+msgstr ""
+
+#: inc/widgets/twitter.php:217
+msgid "Access token secret:"
+msgstr ""
+
+#: inc/widgets/twitter.php:230
+msgid "Follow us label:"
+msgstr ""
+
+#: inc/widgets/upcommingevents.php:16
+msgid "A widget for displaying upcoming events"
+msgstr ""
+
+#: inc/widgets/upcommingevents.php:83
+msgid "Number of events"
+msgstr ""
+
+#: inc/widgets/video.php:16
+msgid "Croma video widget"
+msgstr ""
+
+#: inc/widgets/video.php:118
+msgid "Video link:"
+msgstr ""
+
+#: inc/widgets/video.php:130
+msgid "Video description:"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:40
+msgid "year"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:41
+msgid "years"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:45
+msgid "month"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:46
+msgid "months"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:50
+msgid "week"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:51
+msgid "weeks"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:55
+msgid "day"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:56
+msgid "days"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:60
+msgid "hour"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:61
+msgid "hours"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:65
+msgid "minute"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:137
+msgid "Error retrieving tweets"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:141
+msgid "Twitter data error:"
+msgstr ""
+
+#: inc/widgets/widget-helper.php:254 inc/widgets/widget-helper.php:256
+msgid "All catgories"
+msgstr ""
+
+#: public/admin/content.php:13 public/admin/content.php:14
+#: public/admin/content.php:73 public/admin/content.php:193
+#: public/admin/content.php:251 public/meta-boxes/content.php:11
+#: public/meta-boxes/content.php:39 public/meta-boxes/content.php:76
+#: public/meta-boxes/content.php:170 public/meta-boxes/content.php:216
+#: public/meta-boxes/content.php:281 public/meta-boxes/content.php:354
+#: public/meta-boxes/content.php:391 public/meta-boxes/content.php:455
+msgid "General"
+msgstr ""
+
+#: public/admin/content.php:16
+msgid "General options updated"
+msgstr ""
+
+#: public/admin/content.php:23
+msgid "Theme Logo"
+msgstr ""
+
+#: public/admin/content.php:26
+msgid ""
+"Upload your theme logo.<br/><br/> Click <span>insert into post</span> when "
+"you are done uploading to insert logo"
+msgstr ""
+
+#: public/admin/content.php:32
+msgid "Menu Label"
+msgstr ""
+
+#: public/admin/content.php:35
+msgid "Menu label for mobile devices."
+msgstr ""
+
+#: public/admin/content.php:41
+msgid "Welcome Message"
+msgstr ""
+
+#: public/admin/content.php:42
+msgid "Select your welcome message page."
+msgstr ""
+
+#: public/admin/content.php:50
+msgid "Theme color"
+msgstr ""
+
+#: public/admin/content.php:51
+msgid "Color for the menu."
+msgstr ""
+
+#: public/admin/content.php:60
+msgid "Font"
+msgstr ""
+
+#: public/admin/content.php:61
+msgid "Select the additional font to use with the theme"
+msgstr ""
+
+#: public/admin/content.php:74
+msgid "Social"
+msgstr ""
+
+#: public/admin/content.php:76
+msgid "Social options updated"
+msgstr ""
+
+#: public/admin/content.php:81
+msgid "Facebook link"
+msgstr ""
+
+#: public/admin/content.php:84
+msgid "Link to your Facebook profile."
+msgstr ""
+
+#: public/admin/content.php:90
+msgid "Twitter link"
+msgstr ""
+
+#: public/admin/content.php:93
+msgid "Link to your Twitter profile."
+msgstr ""
+
+#: public/admin/content.php:99
+msgid "RSS link"
+msgstr ""
+
+#: public/admin/content.php:102
+msgid "Link to your RSS profile."
+msgstr ""
+
+#: public/admin/content.php:108
+msgid "Mail link"
+msgstr ""
+
+#: public/admin/content.php:111
+msgid "Link to your e-Mail."
+msgstr ""
+
+#: public/admin/content.php:117
+msgid "Google plus link"
+msgstr ""
+
+#: public/admin/content.php:120
+msgid "Link to your Google plus profile."
+msgstr ""
+
+#: public/admin/content.php:126
+msgid "Instagram link"
+msgstr ""
+
+#: public/admin/content.php:129
+msgid "Link to your Instagram profile."
+msgstr ""
+
+#: public/admin/content.php:135
+msgid "Pinterest link"
+msgstr ""
+
+#: public/admin/content.php:138
+msgid "Link to your Pinterest profile."
+msgstr ""
+
+#: public/admin/content.php:144
+msgid "Vimeo Link"
+msgstr ""
+
+#: public/admin/content.php:147
+msgid "Link to your Vimeo profile."
+msgstr ""
+
+#: public/admin/content.php:153
+msgid "Youtube link"
+msgstr ""
+
+#: public/admin/content.php:156
+msgid "Link to your Youtube profile."
+msgstr ""
+
+#: public/admin/content.php:162
+msgid "Linkedin Label"
+msgstr ""
+
+#: public/admin/content.php:165
+msgid "Link to your Linkedin profile."
+msgstr ""
+
+#: public/admin/content.php:171
+msgid "Flickr link"
+msgstr ""
+
+#: public/admin/content.php:174
+msgid "Link to your Flickr profile."
+msgstr ""
+
+#: public/admin/content.php:180
+msgid "Foursquare link"
+msgstr ""
+
+#: public/admin/content.php:183
+msgid "Link to your Foursquare profile."
+msgstr ""
+
+#: public/admin/content.php:194
+msgid "Newsletter"
+msgstr ""
+
+#: public/admin/content.php:196
+msgid "Newsletter options updated"
+msgstr ""
+
+#: public/admin/content.php:201
+msgid "Admin subjectline"
+msgstr ""
+
+#: public/admin/content.php:204
+msgid "Subjectline of the email to admin with new subscriber details."
+msgstr ""
+
+#: public/admin/content.php:210
+msgid "Admin message"
+msgstr ""
+
+#: public/admin/content.php:213
+msgid "Message of the email to admin with new subscriber details."
+msgstr ""
+
+#: public/admin/content.php:219
+msgid "Subscriber subjectline"
+msgstr ""
+
+#: public/admin/content.php:222
+msgid "Subjectline of the thank you email to subscriber."
+msgstr ""
+
+#: public/admin/content.php:228
+msgid "Subscriber message"
+msgstr ""
+
+#: public/admin/content.php:231
+msgid "Message of the email to subscriber."
+msgstr ""
+
+#: public/admin/content.php:237 public/admin/content.php:332
+#: public/app/content.php:204 public/meta-boxes/content.php:136
+msgid "Email address"
+msgstr ""
+
+#: public/admin/content.php:240
+msgid "Email address that should receive notification."
+msgstr ""
+
+#: public/admin/content.php:254
+msgid "Contact options updated"
+msgstr ""
+
+#: public/admin/content.php:259
+msgid "Contact form header"
+msgstr ""
+
+#: public/admin/content.php:262
+msgid "Header message for the contact form"
+msgstr ""
+
+#: public/admin/content.php:268
+msgid "Contact Details Header"
+msgstr ""
+
+#: public/admin/content.php:271
+msgid "Contact Details header"
+msgstr ""
+
+#: public/admin/content.php:277
+msgid "Driving directions label"
+msgstr ""
+
+#: public/admin/content.php:280
+msgid "Label for the driving directions button."
+msgstr ""
+
+#: public/admin/content.php:286
+msgid "Message to admin(subject)"
+msgstr ""
+
+#: public/admin/content.php:289
+msgid ""
+"Subject line of the message sent to admin if a contact form is submitted."
+msgstr ""
+
+#: public/admin/content.php:295
+msgid "Message to customer(subject)"
+msgstr ""
+
+#: public/admin/content.php:298
+msgid ""
+"Subject line of the message sent to the customer if a contact form is "
+"submitted."
+msgstr ""
+
+#: public/admin/content.php:304
+msgid "Success message"
+msgstr ""
+
+#: public/admin/content.php:307
+msgid "Success message for the contact form"
+msgstr ""
+
+#: public/admin/content.php:313
+msgid "Error message"
+msgstr ""
+
+#: public/admin/content.php:316
+msgid "Error message for the contact form"
+msgstr ""
+
+#: public/admin/content.php:322
+msgid "Email multiple Locations"
+msgstr ""
+
+#: public/admin/content.php:323
+msgid ""
+"Multiple locations with seperate emails.<br/> If you activate this value, "
+"you need to have more than one location.<br/> The email addresses specified "
+"in the location post will be used as admin email"
+msgstr ""
+
+#: public/admin/content.php:326 public/admin/content.php:467
+#: public/app/content.php:142 public/meta-boxes/content.php:198
+msgid "No"
+msgstr ""
+
+#: public/admin/content.php:326 public/admin/content.php:467
+#: public/app/content.php:142 public/meta-boxes/content.php:198
+msgid "Yes"
+msgstr ""
+
+#: public/admin/content.php:335
+msgid "Email address that should receive contact form info."
+msgstr ""
+
+#: public/admin/content.php:341
+msgid "Message to admin(body)"
+msgstr ""
+
+#: public/admin/content.php:344
+msgid "Body of the message sent to admin if a contact form is submitted."
+msgstr ""
+
+#: public/admin/content.php:350
+msgid "Message to customer(body)"
+msgstr ""
+
+#: public/admin/content.php:353
+msgid ""
+"Body of the message sent to the customer if a contact form is submitted."
+msgstr ""
+
+#: public/admin/content.php:364 public/admin/content.php:433
+#: public/admin/content.php:455 public/admin/content.php:487
+msgid "Images"
+msgstr ""
+
+#: public/admin/content.php:365
+msgid "Slideshow"
+msgstr ""
+
+#: public/admin/content.php:367
+msgid "Theme settings updated"
+msgstr ""
+
+#: public/admin/content.php:374
+msgid "Slide Image"
+msgstr ""
+
+#: public/admin/content.php:376
+msgid "Upload your Slide image."
+msgstr ""
+
+#: public/admin/content.php:387 public/admin/content.php:508
+msgid "Title of the content. Will not work for video"
+msgstr ""
+
+#: public/admin/content.php:393
+msgid "Slider content"
+msgstr ""
+
+#: public/admin/content.php:396 public/admin/content.php:517
+msgid "Content for the content area"
+msgstr ""
+
+#: public/admin/content.php:402 public/admin/content.php:523
+msgid "Link to"
+msgstr ""
+
+#: public/admin/content.php:403 public/admin/content.php:524
+msgid "Select a page to link to."
+msgstr ""
+
+#: public/admin/content.php:411 public/admin/content.php:532
+msgid "Alternate link"
+msgstr ""
+
+#: public/admin/content.php:414 public/admin/content.php:535
+msgid "Specify a custom link to link to"
+msgstr ""
+
+#: public/admin/content.php:420
+msgid "Link Label"
+msgstr ""
+
+#: public/admin/content.php:423
+msgid "Label of the \"more info\" button"
+msgstr ""
+
+#: public/admin/content.php:434 public/app/content.php:62
+#: public/app/content.php:86 public/app/content.php:110
+#: public/app/content.php:111
+msgid "Settings"
+msgstr ""
+
+#: public/admin/content.php:436 public/admin/content.php:458
+msgid "Image Settings updated"
+msgstr ""
+
+#: public/admin/content.php:441
+msgid "Slideshow Speed"
+msgstr ""
+
+#: public/admin/content.php:442
+msgid "Speed of slideshow."
+msgstr ""
+
+#: public/admin/content.php:456
+msgid "Banners"
+msgstr ""
+
+#: public/admin/content.php:463
+msgid "Show Banners"
+msgstr ""
+
+#: public/admin/content.php:464
+msgid "Show Banners On pages?"
+msgstr ""
+
+#: public/admin/content.php:473
+msgid "Content Type"
+msgstr ""
+
+#: public/admin/content.php:474
+msgid "What Should The Banner Show"
+msgstr ""
+
+#: public/admin/content.php:477
+msgid "Countdown Timer"
+msgstr ""
+
+#: public/admin/content.php:477
+msgid "Both"
+msgstr ""
+
+#: public/admin/content.php:488
+msgid "Front content"
+msgstr ""
+
+#: public/admin/content.php:490
+msgid "Front content updated"
+msgstr ""
+
+#: public/admin/content.php:496
+msgid "Content Image"
+msgstr ""
+
+#: public/admin/content.php:498
+msgid "Upload your image image."
+msgstr ""
+
+#: public/admin/content.php:514
+msgid "Big image content"
+msgstr ""
+
+#: public/admin/content.php:545
+msgid "Utilities"
+msgstr ""
+
+#: public/admin/content.php:546
+msgid "Sidebars"
+msgstr ""
+
+#: public/admin/content.php:548
+msgid "Sidebar Settings updated"
+msgstr ""
+
+#: public/admin/content.php:554
+msgid "Custom Sidebar Manager"
+msgstr ""
+
+#: public/admin/content.php:556
+msgid "Name your custom sidebars."
+msgstr ""
+
+#: public/admin/content.php:567 public/admin/content.php:568
+msgid "Help"
+msgstr ""
+
+#: public/admin/content.php:576
+msgid "Theme Help"
+msgstr ""
+
+#: public/admin/content.php:578
+msgid "Theme Help."
+msgstr ""
+
+#: public/app/bookingform.php:25 public/app/content.php:215
+msgid "Select a date to start booking"
+msgstr ""
+
+#: public/app/bookingform.php:83
+msgid "Select a timeslot"
+msgstr ""
+
+#: public/app/bookingform.php:111
+msgid "Special requests"
+msgstr ""
+
+#: public/app/bookingform.php:121
+msgid "Make Booking"
+msgstr ""
+
+#: public/app/bookingform.php:130
+msgid "Fetching available Timeslots"
+msgstr ""
+
+#: public/app/content.php:13 public/app/content.php:38
+msgid "Bookings"
+msgstr ""
+
+#: public/app/content.php:14
+msgid "Month View"
+msgstr ""
+
+#: public/app/content.php:16 public/app/content.php:41
+msgid "Updated"
+msgstr ""
+
+#: public/app/content.php:23 public/app/content.php:26
+#: public/app/content.php:48 public/app/content.php:51
+msgid "Booking calendar"
+msgstr ""
+
+#: public/app/content.php:39
+msgid "Day View"
+msgstr ""
+
+#: public/app/content.php:63
+msgid "Schedules"
+msgstr ""
+
+#: public/app/content.php:65
+msgid "Schedules updated"
+msgstr ""
+
+#: public/app/content.php:71 public/app/content.php:74
+#: public/app/content.php:95 public/app/content.php:98
+msgid "Booking slots"
+msgstr ""
+
+#: public/app/content.php:87
+msgid "Guests"
+msgstr ""
+
+#: public/app/content.php:89
+msgid "Guests updated"
+msgstr ""
+
+#: public/app/content.php:113
+msgid "Settings updated"
+msgstr ""
+
+#: public/app/content.php:119
+msgid "Days Before"
+msgstr ""
+
+#: public/app/content.php:122
+msgid "Same"
+msgstr ""
+
+#: public/app/content.php:123
+msgid "How many days in advance (minimum) must be booked?"
+msgstr ""
+
+#: public/app/content.php:129
+msgid "Booking Status"
+msgstr ""
+
+#: public/app/content.php:133
+msgid "Select if a booking needs to be confirmed after being booked"
+msgstr ""
+
+#: public/app/content.php:139
+msgid "Send Reminders"
+msgstr ""
+
+#: public/app/content.php:143 public/app/content.php:180
+msgid "Select wether reminders needs to be sent."
+msgstr ""
+
+#: public/app/content.php:149
+msgid "Success Message"
+msgstr ""
+
+#: public/app/content.php:151
+msgid "Thank you for booking. Check your inbox for further instructions."
+msgstr ""
+
+#: public/app/content.php:152
+msgid "Success message when a booking is made."
+msgstr ""
+
+#: public/app/content.php:158
+msgid "Failed Message"
+msgstr ""
+
+#: public/app/content.php:160
+msgid ""
+"Your form have some errors that prevents it from being submitted. Please "
+"review the red borders and submit again."
+msgstr ""
+
+#: public/app/content.php:161
+msgid "Message when a booking is made and there is an error in the form."
+msgstr ""
+
+#: public/app/content.php:167
+msgid "Maximum bookings per period"
+msgstr ""
+
+#: public/app/content.php:170
+msgid "Maximum bookings that can be made per booking peroid."
+msgstr ""
+
+#: public/app/content.php:176
+msgid "Guest type"
+msgstr ""
+
+#: public/app/content.php:179
+msgid "Numbers"
+msgstr ""
+
+#: public/app/content.php:179
+msgid "None"
+msgstr ""
+
+#: public/app/content.php:179
+msgid "Custom"
+msgstr ""
+
+#: public/app/content.php:186
+msgid "Guest Label"
+msgstr ""
+
+#: public/app/content.php:189
+msgid "Label for guest options"
+msgstr ""
+
+#: public/app/content.php:195
+msgid "Guest description"
+msgstr ""
+
+#: public/app/content.php:198
+msgid "Label for dropdown description"
+msgstr ""
+
+#: public/app/content.php:207
+msgid "Email address that should receive bookings."
+msgstr ""
+
+#: public/app/content.php:213
+msgid "Booking form header"
+msgstr ""
+
+#: public/app/content.php:216
+msgid "Header for the booking form"
+msgstr ""
+
+#: public/app/content.php:227 public/app/content.php:280
+#: public/app/content.php:314 public/app/content.php:348
+#: public/app/content.php:382
+msgid "E-mails"
+msgstr ""
+
+#: public/app/content.php:228
+msgid "Booked"
+msgstr ""
+
+#: public/app/content.php:230 public/app/content.php:283
+#: public/app/content.php:317 public/app/content.php:351
+#: public/app/content.php:385
+msgid "Message settings updated"
+msgstr ""
+
+#: public/app/content.php:236
+msgid "Email to Admin (subject)"
+msgstr ""
+
+#: public/app/content.php:239
+msgid "Subject line of the email sent to admin when a booking is made."
+msgstr ""
+
+#: public/app/content.php:246
+msgid "Email to Admin (body)"
+msgstr ""
+
+#: public/app/content.php:249
+msgid "Message of the email sent to admin when a booking is made."
+msgstr ""
+
+#: public/app/content.php:255
+msgid "Email to client (subject)"
+msgstr ""
+
+#: public/app/content.php:258
+msgid "Subject line of the email sent to client when a booking is made."
+msgstr ""
+
+#: public/app/content.php:265
+msgid "Email to client (body)"
+msgstr ""
+
+#: public/app/content.php:268
+msgid "Message of the email sent to client when a booking is made."
+msgstr ""
+
+#: public/app/content.php:289
+msgid "Confirmation - client (subject)"
+msgstr ""
+
+#: public/app/content.php:292
+msgid "Subject line of the email sent to client when a booking is confirmed."
+msgstr ""
+
+#: public/app/content.php:299
+msgid "Confirmation -  client (body)"
+msgstr ""
+
+#: public/app/content.php:302 public/app/content.php:336
+msgid "Message of the email sent to client when a booking is confirmed."
+msgstr ""
+
+#: public/app/content.php:315
+msgid "Declined"
+msgstr ""
+
+#: public/app/content.php:323
+msgid "Declined - client (subject)"
+msgstr ""
+
+#: public/app/content.php:326
+msgid "Subject line of the email sent to client when a booking is declined."
+msgstr ""
+
+#: public/app/content.php:333
+msgid "Declined -  client (body)"
+msgstr ""
+
+#: public/app/content.php:357
+msgid "Cancelled - client (subject)"
+msgstr ""
+
+#: public/app/content.php:360
+msgid "Subject line of the email sent to client when a booking is cancelled."
+msgstr ""
+
+#: public/app/content.php:367
+msgid "Cancelled -  client (body)"
+msgstr ""
+
+#: public/app/content.php:370
+msgid "Message of the email sent to client when a booking is cancelled."
+msgstr ""
+
+#: public/app/content.php:383
+msgid "Reminded"
+msgstr ""
+
+#: public/app/content.php:391
+msgid "Reminded - client (subject)"
+msgstr ""
+
+#: public/app/content.php:394
+msgid "Subject line of the email sent to client when a booking is reminded."
+msgstr ""
+
+#: public/app/content.php:401
+msgid "Reminded -  client (body)"
+msgstr ""
+
+#: public/app/content.php:404
+msgid "Message of the email sent to client when a booking is reminded."
+msgstr ""
+
+#: public/framework/banner.php:40
+msgid "Days"
+msgstr ""
+
+#: public/framework/banner.php:42
+msgid "Min"
+msgstr ""
+
+#: public/framework/banner.php:43
+msgid "Sec"
+msgstr ""
+
+#: public/framework/calendar.php:28 public/framework/calendar.php:47
+msgid "Time:"
+msgstr ""
+
+#: public/framework/calendar.php:84
+msgid "Every day from"
+msgstr ""
+
+#: public/framework/calendar.php:92 public/framework/calendar.php:110
+#: public/framework/calendar.php:128 public/framework/calendar.php:166
+msgid "To"
+msgstr ""
+
+#: public/framework/images.php:216
+msgid "Tag Archives: "
+msgstr ""
+
+#: public/framework/images.php:218
+msgid "Search Results for \""
+msgstr ""
+
+#: public/framework/images.php:220
+msgid "Page not found"
+msgstr ""
+
+#: public/framework/newsletters.php:80
+msgid "Information submitted"
+msgstr ""
+
+#: public/framework/newsletters.php:85
+msgid "Copyright"
+msgstr ""
+
+#: public/meta-boxes/content-tax.php:15 public/meta-boxes/content.php:29
+#: public/meta-boxes/content.php:188 public/meta-boxes/content.php:252
+#: public/meta-boxes/content.php:317 public/meta-boxes/content.php:381
+msgid "Sidebar"
+msgstr ""
+
+#: public/meta-boxes/content-tax.php:17
+msgid "Sidebar for this category"
+msgstr ""
+
+#: public/meta-boxes/content.php:13 public/meta-boxes/content.php:172
+msgid "Page additional content"
+msgstr ""
+
+#: public/meta-boxes/content.php:21 public/meta-boxes/content.php:180
+#: public/meta-boxes/content.php:244 public/meta-boxes/content.php:309
+#: public/meta-boxes/content.php:373
+msgid "With Sidebar"
+msgstr ""
+
+#: public/meta-boxes/content.php:22 public/meta-boxes/content.php:181
+#: public/meta-boxes/content.php:245 public/meta-boxes/content.php:310
+#: public/meta-boxes/content.php:374
+msgid "Should the page have a sidebar or not?"
+msgstr ""
+
+#: public/meta-boxes/content.php:31 public/meta-boxes/content.php:189
+#: public/meta-boxes/content.php:254 public/meta-boxes/content.php:319
+#: public/meta-boxes/content.php:382
+msgid "If the page is not fullwidth, what widget area should be used?"
+msgstr ""
+
+#: public/meta-boxes/content.php:41
+msgid "Slideshow additional content"
+msgstr ""
+
+#: public/meta-boxes/content.php:49
+msgid "Image Title"
+msgstr ""
+
+#: public/meta-boxes/content.php:50
+msgid "Name of the image title?"
+msgstr ""
+
+#: public/meta-boxes/content.php:57
+msgid "Link label"
+msgstr ""
+
+#: public/meta-boxes/content.php:58
+msgid "Name link label"
+msgstr ""
+
+#: public/meta-boxes/content.php:65
+msgid "Slider Content"
+msgstr ""
+
+#: public/meta-boxes/content.php:67
+msgid "Content of the slider area"
+msgstr ""
+
+#: public/meta-boxes/content.php:78
+msgid "Locations additional content"
+msgstr ""
+
+#: public/meta-boxes/content.php:86
+msgid "Street address"
+msgstr ""
+
+#: public/meta-boxes/content.php:88
+msgid "Physical Street address"
+msgstr ""
+
+#: public/meta-boxes/content.php:95
+msgid "Map zoom"
+msgstr ""
+
+#: public/meta-boxes/content.php:97
+msgid "how far should the map be zoomed"
+msgstr ""
+
+#: public/meta-boxes/content.php:104
+msgid "Map height"
+msgstr ""
+
+#: public/meta-boxes/content.php:105
+msgid "what is the height in of the map?"
+msgstr ""
+
+#: public/meta-boxes/content.php:112
+msgid "Streetview orientation."
+msgstr ""
+
+#: public/meta-boxes/content.php:113
+msgid " from 0degrees to 360degrees how should the streetview be changed?"
+msgstr ""
+
+#: public/meta-boxes/content.php:120
+msgid "Lattitude and longitude."
+msgstr ""
+
+#: public/meta-boxes/content.php:121
+msgid ""
+"What is the lattitude and longitude of the map as specified in the map tool?"
+msgstr ""
+
+#: public/meta-boxes/content.php:128
+msgid "Telephone number"
+msgstr ""
+
+#: public/meta-boxes/content.php:129
+msgid "What is the telephone number"
+msgstr ""
+
+#: public/meta-boxes/content.php:137
+msgid "What is the email address?"
+msgstr ""
+
+#: public/meta-boxes/content.php:144
+msgid "Fax number"
+msgstr ""
+
+#: public/meta-boxes/content.php:145
+msgid "What is the fax number?"
+msgstr ""
+
+#: public/meta-boxes/content.php:152
+msgid "Directions link"
+msgstr ""
+
+#: public/meta-boxes/content.php:153
+msgid ""
+"What is the web address that we should link to for the get directions map?"
+msgstr ""
+
+#: public/meta-boxes/content.php:160
+msgid "Hours of operation"
+msgstr ""
+
+#: public/meta-boxes/content.php:161
+msgid "Description of the hours of operation"
+msgstr ""
+
+#: public/meta-boxes/content.php:197
+msgid "Read more button"
+msgstr ""
+
+#: public/meta-boxes/content.php:199
+msgid "Should we add a read more button in category view?"
+msgstr ""
+
+#: public/meta-boxes/content.php:206
+msgid "Video for video post"
+msgstr ""
+
+#: public/meta-boxes/content.php:207
+msgid ""
+"If this is a video type post, add a link to the Youtube or Vimeo video here."
+msgstr ""
+
+#: public/meta-boxes/content.php:218
+msgid "Events additional content"
+msgstr ""
+
+#: public/meta-boxes/content.php:225 public/meta-boxes/content.php:400
+msgid "Time settings"
+msgstr ""
+
+#: public/meta-boxes/content.php:227 public/meta-boxes/content.php:402
+msgid "Select the time of the event"
+msgstr ""
+
+#: public/meta-boxes/content.php:234 public/meta-boxes/content.php:299
+msgid "Type of event"
+msgstr ""
+
+#: public/meta-boxes/content.php:236
+msgid "select the recurring type of this event"
+msgstr ""
+
+#: public/meta-boxes/content.php:263 public/meta-boxes/content.php:327
+#: public/meta-boxes/content.php:437
+msgid "one"
+msgstr ""
+
+#: public/meta-boxes/content.php:263 public/meta-boxes/content.php:327
+#: public/meta-boxes/content.php:437
+msgid "two"
+msgstr ""
+
+#: public/meta-boxes/content.php:263 public/meta-boxes/content.php:327
+#: public/meta-boxes/content.php:437
+msgid "three"
+msgstr ""
+
+#: public/meta-boxes/content.php:264 public/meta-boxes/content.php:328
+#: public/meta-boxes/content.php:438
+msgid "Select a date"
+msgstr ""
+
+#: public/meta-boxes/content.php:271
+msgid "Banner description"
+msgstr ""
+
+#: public/meta-boxes/content.php:273
+msgid "Short description if the banners are used."
+msgstr ""
+
+#: public/meta-boxes/content.php:283
+msgid "Promotions additional content"
+msgstr ""
+
+#: public/meta-boxes/content.php:290
+msgid "Time description"
+msgstr ""
+
+#: public/meta-boxes/content.php:292
+msgid ""
+"What is the time description (in words) of this promotion (ex: 10h00 till "
+"22h00)"
+msgstr ""
+
+#: public/meta-boxes/content.php:301
+msgid "Select the recurring type for this event"
+msgstr ""
+
+#: public/meta-boxes/content.php:335 public/meta-boxes/content.php:363
+msgid "Description"
+msgstr ""
+
+#: public/meta-boxes/content.php:337
+msgid "Short description of the event"
+msgstr ""
+
+#: public/meta-boxes/content.php:344
+msgid "Special price"
+msgstr ""
+
+#: public/meta-boxes/content.php:346
+msgid "Price or value description for the promotion"
+msgstr ""
+
+#: public/meta-boxes/content.php:356
+msgid "Teams additional content"
+msgstr ""
+
+#: public/meta-boxes/content.php:365
+msgid "Short description of the team member"
+msgstr ""
+
+#: public/meta-boxes/content.php:393
+msgid "Reservations additional content"
+msgstr ""
+
+#: public/meta-boxes/content.php:409
+msgid "Status"
+msgstr ""
+
+#: public/meta-boxes/content.php:411
+msgid "Reservation status"
+msgstr ""
+
+#: public/meta-boxes/content.php:420
+msgid "Customer email"
+msgstr ""
+
+#: public/meta-boxes/content.php:429
+msgid "Customer Telephone number"
+msgstr ""
+
+#: public/meta-boxes/content.php:436
+msgid "Booking Date"
+msgstr ""
+
+#: public/meta-boxes/content.php:445
+msgid "Notes"
+msgstr ""
+
+#: public/meta-boxes/content.php:447
+msgid "Booking notes"
+msgstr ""
+
+#: public/meta-boxes/content.php:457
+msgid "Menus additional content"
+msgstr ""
+
+#: public/meta-boxes/content.php:464
+msgid "Price"
+msgstr ""
+
+#: public/meta-boxes/content.php:466
+msgid "Price for the item"
+msgstr ""
+
+#: public/tparts/content-audio.php:22
+msgid "0"
+msgstr ""
+
+#: public/tparts/content-audio.php:22
+msgid "1"
+msgstr ""
+
+#: public/tparts/content-audio.php:22
+msgid "%"
+msgstr ""
+
+#: public/tparts/content-audio.php:59 public/tparts/content-quote.php:32
+#: public/tparts/content-search.php:24 public/tparts/content-video.php:57
+#: public/tparts/content.php:46
+msgid "Read more"
+msgstr ""
+
+#: public/tparts/content-audio.php:64 public/tparts/content-quote.php:37
+#: public/tparts/content-video.php:62 public/tparts/content.php:52
+msgid "Leave a reply"
+msgstr ""
+
+#: public/tparts/content-audio.php:64 public/tparts/content-quote.php:37
+#: public/tparts/content-video.php:62 public/tparts/content.php:52
+msgid "1 Reply"
+msgstr ""
+
+#: public/tparts/content-audio.php:64 public/tparts/content-quote.php:37
+#: public/tparts/content-video.php:62 public/tparts/content.php:52
+msgid "% Replies"
+msgstr ""
+
+#: public/tparts/content-video.php:76
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
