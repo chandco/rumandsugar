@@ -1,0 +1,152 @@
+/********** Code Index
+ *
+ * -01- GLOBAL
+ */
+
+
+
+
+ /* 
+ * -01- GLOBAL
+ * */
+
+
+ .cro_shcode_strap{
+  background: none repeat scroll 0 0 #F9F9F9;
+  border: 1px solid #EFEFEF;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; 
+  margin: 20px 0 0 0;
+  padding: 10px;
+  position: relative;
+  min-height: 460px;
+ }
+
+
+ .cro_shcode_main {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+ ul.cro_shccode_men{
+  float: left;
+  width: 40%;
+  list-style-type: none;
+  margin: 0 auto;
+  background:#FFFFFF;
+  border: 1px solid #DDDDDD !important;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; 
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05); 
+  padding: 2px ;
+ }
+
+ .tabstrap{
+  float: left;
+  margin-left: 5%;
+  width: 53%;
+ }
+
+
+ ul.cro_shccode_men li {
+  background: #FAFAFB;
+  border: 1px solid #D8DADB;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-top: 1px solid #fff;
+  margin: 0;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);s
+}
+
+ ul.cro_shccode_men li.cro_topcurrent {
+  background: #fff;
+}
+
+
+ul.cro_shccode_men li span {
+  color: #333333;
+  display: block;
+  font-size: 14px;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #FFFFFF;
+  cursor: pointer;
+  text-align: left;
+}
+
+
+ input#cro-shortcode-submit {
+  background: none repeat scroll 0 0 #95CA40;
+  border: 1px solid #88BF2F;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; 
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px !important;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  height: 40px;
+}
+
+ input.finput {
+  -webkit-border-radius: 2px;
+  border-radius: 2px; 
+  padding: 10px;
+  width: 80%;
+}
+
+label.frlabel{
+  display: block;
+}
+
+.cro_tabpage{
+  display: none;
+  background:#FFFFFF;
+  border: 1px solid #DDDDDD !important;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; 
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05); 
+
+}
+
+.cro_tabcurrent{
+  display: block;
+  
+}
+
+.cro_tabpage select{
+  padding: 10px;
+  min-width: 80%;
+  height: 40px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; 
+}
+
+.cro_tabpage textarea{
+  padding: 10px;
+  min-width: 80%;
+  min-height: 100px;
+  height: 100px;
+}
+
+p.cro_titler{
+  padding: 15px 0 !important;
+  margin: 0;
+  background: #FAFAFB;
+  border-bottom: 1px solid #ddd;
+  text-shadow: 1px 1px 1px 0 #fff;
+  text-transform: uppercase;
+}
+
+p.shcode-explain{
+  margin: 10px !important;
+  padding: 10px !important;
+  background: none repeat scroll 0 0 #F9F9F9;
+  border: 1px solid #EFEFEF;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; 
+}

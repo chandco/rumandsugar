@@ -1,0 +1,39 @@
+#cro-menu {
+	.bernard;
+	text-transform: uppercase;
+	li {
+		a {
+			text-shadow:none;
+			font-size: 1.4em;
+			transition:transform 0.1s ease;
+			&:hover {
+				background: @white;
+				transform:scale(1.2,1.2);
+			}
+		}
+	}
+}
+
+
+// tabs
+
+#menu-main-submenu {
+	.bernard;
+	text-transform: uppercase;
+	// here I make this big - this is only if it's for book a table, so watch out for adding other things!
+	li a {
+		font-size: 2em;
+		border: 1px solid @black;
+		background: @white;
+		color: @red;
+		padding-bottom:10px;
+		position: relative;
+		transition:transform 0.1s ease;
+		&:hover {
+				//background: @black;
+				color: @black;
+				transform:translateY(-10px);
+				
+			}
+	}
+}

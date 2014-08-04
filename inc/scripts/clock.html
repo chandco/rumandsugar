@@ -1,0 +1,289 @@
+
+<html>
+<head>
+<style type="text/css">
+body {
+                margin:0px;
+                padding:0px;
+                background-color:#68bdda;
+}
+
+h1 {
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.clock {
+    position: relative;
+}
+
+.val {
+    margin:0;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    line-height: 122px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color:#FFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:#FFF;
+    background:#64b5d1;   
+    text-align: center;   
+    text-transform: uppercase;   
+}
+
+</style>
+
+<script>
+//Set Initial Count
+var secCountFix=10;
+var minCountFix=10;
+var hrCountFix=4;
+var dayCountFix=2;
+
+//Set Max Count
+var secCountReset=10;
+var minCountReset=10;
+var hrCountReset=4;
+var dayCountReset=dayCountFix;
+
+//timer:- tirgger in ms
+var speed=100;
+
+var secCount=secCountFix;
+var minCount=minCountFix;
+var hrCount=hrCountFix;
+var dayCount=dayCountFix;
+
+var unitCount_sec=2/secCountFix;
+var unitCount_min=2/minCountFix;
+var unitCount_hr=2/hrCountFix;
+var unitCount_day=2/dayCountFix;
+
+var globCount_sec=0,globCount_min=0,globCount_hr=0,globCount_day=0;
+var canvas_sec,ctx_sec;
+var canvas_min,ctx_min;
+var canvas_hr,ctx_hr;
+var canvas_day,ctx_day;
+var redirectCount=0;
+
+function init(){  
+                document.getElementById("timeSec").innerHTML=secCountFix;
+                document.getElementById("timeMin").innerHTML=minCountFix;
+                document.getElementById("timeHr").innerHTML=hrCountFix;
+                document.getElementById("timeDay").innerHTML=dayCountFix;
+               
+                //Sec
+                canvas_sec=document.getElementById("canvas_sec");
+                ctx_sec=canvas_sec.getContext("2d");
+                ctx_sec.beginPath();
+                ctx_sec.strokeStyle = '#64b5d1';               
+                ctx_sec.arc(60,65,50,0,2*Math.PI);
+                ctx_sec.lineWidth = 10;
+                ctx_sec.stroke();             
+               
+                //Min
+                canvas_min=document.getElementById("canvas_min");
+                ctx_min=canvas_min.getContext("2d");              
+                ctx_min.beginPath();
+                ctx_min.strokeStyle = '#64b5d1';               
+                ctx_min.arc(60,65,50,0,2*Math.PI);
+                ctx_min.lineWidth = 10;
+                ctx_min.stroke();
+               
+                //Hr
+                canvas_hr=document.getElementById("canvas_hr");
+                ctx_hr=canvas_hr.getContext("2d");     
+                ctx_hr.beginPath();
+                ctx_hr.strokeStyle = '#64b5d1';               
+                ctx_hr.arc(60,65,50,0,2*Math.PI);
+                ctx_hr.lineWidth = 10;
+                ctx_hr.stroke();
+               
+                //Day
+                canvas_day=document.getElementById("canvas_day");
+                ctx_day=canvas_day.getContext("2d");               
+                ctx_day.beginPath();
+                ctx_day.strokeStyle = '#64b5d1';               
+                ctx_day.arc(60,65,50,0,2*Math.PI);
+                ctx_day.lineWidth = 10;
+                ctx_day.stroke();
+}                                                             
+setInterval(function(){
+                if(secCount==0 && redirectCount==3)return;
+                //Sec    
+                if(secCount-1==-1){
+                                document.getElementById("timeSec").innerHTML=secCountReset;
+                                --secCount;
+                }else{
+                                document.getElementById("timeSec").innerHTML=--secCount;
+                }
+                ctx_sec.beginPath();
+                ctx_sec.strokeStyle = 'white';    
+               
+                globCount_sec+=unitCount_sec;
+                ctx_sec.arc(60,65,50,0,globCount_sec*Math.PI);
+                ctx_sec.lineWidth = 10;
+                ctx_sec.stroke();
+               
+                if(secCount==-1){           
+                                ctx_sec.clearRect(0,0,canvas_sec.width,canvas_sec.height);                                                      
+                                globCount_sec=0;          
+                                ctx_sec.strokeStyle = '#64b5d1';               
+                                ctx_sec.arc(60,65,50,0,2*Math.PI);
+                                ctx_sec.lineWidth = 10;
+                                ctx_sec.stroke();
+                                secCount=secCountReset;         
+                                unitCount_sec=2/secCountReset;
+                                if(redirectCount==3){
+                                                return;
+                                }
+                               
+                                //Min   
+                                if(minCount-1==-1){
+                                                document.getElementById("timeMin").innerHTML=minCountReset;
+                                                --minCount;
+                                }else{
+                                                document.getElementById("timeMin").innerHTML=--minCount;
+                                }
+                                ctx_min.beginPath();
+                                ctx_min.strokeStyle = 'white';   
+                               
+                                globCount_min+=unitCount_min;
+                                ctx_min.arc(60,65,50,0,globCount_min*Math.PI);
+                                ctx_min.lineWidth = 10;
+                                ctx_min.stroke();
+                                if(minCount==-1){          
+                                                ctx_min.clearRect(0,0,canvas_min.width,canvas_min.height);                                                   
+                                                globCount_min=0;         
+                                                ctx_min.strokeStyle = '#64b5d1';               
+                                                ctx_min.arc(60,60,50,0,2*Math.PI);
+                                                ctx_min.lineWidth = 10;
+                                                ctx_min.stroke();
+                                                minCount=minCountReset;       
+                                                unitCount_min=2/minCountReset;
+                                                if(redirectCount==2){redirectCount+=1;}
+                                               
+                                                //Hr      
+                                                if(hrCount-1==-1){
+                                                                document.getElementById("timeHr").innerHTML=hrCountReset;
+                                                                --hrCount;
+                                                }else{
+                                                                document.getElementById("timeHr").innerHTML=--hrCount;
+                                                }
+                                                ctx_hr.beginPath();
+                                                ctx_hr.strokeStyle = 'white';      
+                                               
+                                                globCount_hr+=unitCount_hr;
+                                                ctx_hr.arc(60,65,50,0,globCount_hr*Math.PI);
+                                                ctx_hr.lineWidth = 10;
+                                                ctx_hr.stroke();
+                                               
+                                                if(hrCount==-1){             
+                                                                ctx_hr.clearRect(0,0,canvas_hr.width,canvas_hr.height);                                                             
+                                                                globCount_hr=0;             
+                                                                ctx_hr.strokeStyle = '#64b5d1';                
+                                                                ctx_hr.arc(60,65,50,0,2*Math.PI);
+                                                                ctx_hr.lineWidth = 10;
+                                                                ctx_hr.stroke();
+                                                                hrCount=hrCountReset;              
+                                                                unitCount_hr=2/hrCountReset;                                                                
+                                                               
+                                                                //Day   
+                                                                if(dayCount-1==-1){
+                                                                                document.getElementById("timeDay").innerHTML=dayCountFix;
+                                                                                --dayCount;
+                                                                }else{
+                                                                                document.getElementById("timeDay").innerHTML=--dayCount;
+                                                                }
+                                                                ctx_day.beginPath();
+                                                                ctx_day.strokeStyle = 'white';   
+                                                               
+                                                                globCount_day+=unitCount_day;
+                                                                ctx_day.arc(60,65,50,0,globCount_day*Math.PI);
+                                                                ctx_day.lineWidth = 10;
+                                                                ctx_day.stroke();
+                                                               
+                                                                if(dayCount==-1){          
+                                                                                ctx_day.clearRect(0,0,canvas_day.width,canvas_day.height);                                                   
+                                                                                globCount_day=0;          
+                                                                                ctx_day.strokeStyle = '#64b5d1';               
+                                                                                ctx_day.arc(60,65,50,0,2*Math.PI);
+                                                                                ctx_day.lineWidth = 10;
+                                                                                ctx_day.stroke();
+                                                                                dayCount=dayCountReset;        
+                                                                                unitCount_day=2/dayCountReset;                                          
+                                                                               
+                                                                }else if(dayCount==0){
+                                                                                redirectCount+=1;
+                                                                }
+                                                }else if(hrCount==0 && redirectCount==1){
+                                                                redirectCount+=1;
+                                                }
+                                }else if(minCount==0 && redirectCount==2){
+                                                redirectCount+=1;
+                                }                             
+                }else if(secCount==0 && redirectCount==3){
+                                document.getElementById("timeSec").innerHTML=0;                  
+                                window.location="http://www.google.com";
+                }             
+},speed);
+
+</script>
+</head>
+<body onload="init()">
+<center>
+<h1>Page Under construction. We will Go Live In:</h1>
+<table>
+<tr>
+<td>
+<div class="clock">
+<canvas id="canvas_day"  height="125" width="120" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<p class="val" id="timeDay">0</p>
+<p class="text">Days</p>
+</div>
+<td>
+
+<td>
+<div class="clock">
+<canvas id="canvas_hr"  height="125" width="120" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<p class="val" id="timeHr">0</p>
+<p class="text">Hours</p>
+</div>
+<td>
+
+<td>
+<div class="clock">
+<canvas id="canvas_min"  height="125" width="120" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<p class="val" id="timeMin">0</p>
+<p class="text">Minutes</p>
+</div>
+<td>
+
+<td>
+<div class="clock">
+<canvas id="canvas_sec"  height="125" width="120" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<p class="val" id="timeSec">0</p>
+<p class="text">Seconds</p>
+</div>
+<td>
+</tr>
+</table>
+</center>
+
+</body>
+</html>
