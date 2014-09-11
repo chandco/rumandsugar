@@ -167,8 +167,16 @@ function cro_headerimg($id, $type, $ban){
 	}
 
 
+	/* old croma code:
 	$headimg = get_header_image();
 	$defimg  = get_template_directory_uri() . '/public/styles/images/defimg.jpg';
+	*/
+
+	// new code:
+	get_the_post_thumbnail( $post_id, $size, $attr );
+	$headimg = current(wp_get_attachment_image_src(get_post_thumbnail_id($id), 'sshow'));
+	$defimg  = get_template_directory_uri() . '/public/styles/images/defimg.jpg';
+
 	$minetitle = '';
 
 	if ($headimg) {
@@ -205,6 +213,8 @@ function cro_headerimg($id, $type, $ban){
 					$defimg = $image_img_tag[0];
 				}				
 			}
+
+			
 		}
 
 		$minetitle = '<h1 class="cro_accent">' . get_the_title($id) . '</h1>';

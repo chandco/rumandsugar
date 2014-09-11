@@ -202,4 +202,6 @@ function cro_comment( $comment, $args, $depth ) {
 }
 endif;
 
+ require("lib/functions.php");
+
 ?>

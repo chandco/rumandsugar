@@ -1,0 +1,53 @@
+
+
+.imgdiv {
+	background-size: 100% auto !important; // stretch for larger screens.
+}
+
+
+// php debugging
+
+.xdebug-var-dump {
+	display: block;
+	position: fixed;
+	z-index: 99999999999999999999999999999999999999999999;
+	left: 0;
+	top: 0;
+	padding: 20px;
+	background:#fff;
+	color: #000;
+}
+
+
+ul.cro_gallerylist li {
+	background: RGBA(0,0,0,1);
+	border: solid 1px RGBA(255,255,255,0.3);
+	overflow: hidden;
+
+	&:hover {
+		img {
+			transform:scale(1.1,1.1);
+		}
+	}
+
+	.imgouter.galholderski {
+		img {
+			z-index: 4;
+			transition:transform .3s ease;
+			position: relative;
+		}
+
+		h5.cro_accent.cro_galtitle {
+			
+			color: @red;
+			font-weight:normal;
+			background: @black;
+			z-index: 5;
+			position: relative;
+		}
+	}
+	
+}
+.galholderski .cro_galoverlay {
+	background: none;
+}
