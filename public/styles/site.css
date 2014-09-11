@@ -4441,7 +4441,6 @@ ul.cro_twister li.promodivider{
 .cro_fpc .fptitles h3{
 	display: inline-block;
 	font-weight: normal;
-	background: transparent; -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)"; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);  zoom: 1;
 	background: rgba(0,0,0,0.6);
 	border: 1px solid #999;
 	border: 1px solid rgba(255,255,255,0.4);
@@ -4468,10 +4467,6 @@ ul.cro_twister li.promodivider{
 	display :none;
 }
 
-
-.cro_fpc:hover .slidelinkspan{
-	display :block;
-}
 
 
 .cro_fpc .slidelinkspan a{
@@ -4538,37 +4533,6 @@ ul.cro_twister li.promodivider{
 
 
 
-.cro_fpc:hover .fpcontents{
-	-moz-transform: translateY(-50px);
-	-webkit-transform: translateY(-50px);
-	-o-transform: translateY(-50px);
-	-ms-transform:translateY(-50px);
-	transform: translateY(-50px);
-}
-
-.cro_fpc:hover .fptitles h3{
-	border: 0px solid #000 !important;
-}
-
-.cro_fpc:hover  img{
-	-moz-transform: translateY(-60px);
-	-webkit-transform: translateY(-60px);
-	-o-transform: translateY(-60px);
-	-ms-transform:translateY(-60px);
-	transform: translateY(-60px);
-}
-
-.cro_fpsmall:hover  img{
-	-moz-transform: translateY(-60px);
-	-webkit-transform: translateY(-60px);
-	-o-transform: translateY(-60px);
-	-ms-transform:translateY(-60px);
-	transform: translateY(-60px);
-}
-
-.cro_fpsmall:hover .fptitles{
-	transform: translateY(-0px);
-}
 
 
 .cro_intro_content{

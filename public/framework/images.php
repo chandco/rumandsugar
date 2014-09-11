@@ -365,120 +365,89 @@ function get_frontcontent() {
 	$fourth = '';
 
 
+	$substring = '';
 	if (!empty($str)) {
+
+
+		$perColumn = ceil(count($str) / 2);
+		var_dump($perColumn);
+		$firstColumn = true;
 
 	
 		// top left content
-		$img = get_the_post_thumbnail( $str[0], 'fc1' );
-		$tttl 	= get_post_meta($str[0], 'cro_imgtitle', true);
-		$tttcnt = get_post_meta($str[0], 'cro_imgcontent', true);
+		$output = '<div class="six columns">';
+
+
+		foreach ($str as $index => $unit):// seriously why didn't they do this in the first place?
+
+
+		if ($index >= $perColumn and $firstColumn) {
+			$output .= "</div><div class='six columns'>";
+			$firstColumn = false;
+
+		}
+
 		$substring = '';
-		$sllink 		= get_post_meta($str[0], 'ss-pagelink', true);
-		$altlink 		= get_post_meta($str[0], 'cro_altlink', true);
+		$img = get_the_post_thumbnail( $unit, 'fc1' );
+		$tttl 	= get_post_meta($unit, 'cro_imgtitle', true);
+		$tttcnt = get_post_meta($unit, 'cro_imgcontent', true);
+
+		
+		$sllink 		= get_post_meta($unit, 'ss-pagelink', true);
+		$altlink 		= get_post_meta($unit, 'cro_altlink', true);
 		$slidelabel 	=  __('More Info','localize');
 		$altstring		= '<div class="slidelinkspan"><a href="' . $altlink  . '">' .  $slidelabel  .  '</a></div>';
+		
+		
+
 		$slidestring 	= ($sllink && $sllink && $sllink !== 0) ? '<div class="slidelinkspan"><a href="' . get_permalink($sllink)  . '">' .  $slidelabel  .  '</a></div>' : '' ;
+		
+
 		$slidestring	= ($altlink) ? $altstring : $slidestring;
 
 	
 		if (!empty($tttl)) {
-			$substring .= '<div class="fptitles"><h3 class="fptitle cro_accent"><a href="' . get_permalink($sllink)  . '">' . $tttl  . '</a></h3></div>';
+
+			
+
+			if ($sllink)
+				$substring .= '<div class="fptitles"><h3 class="fptitle cro_accent"><a href="' . get_permalink($sllink)  . '">' . $tttl  . '</a></h3></div>';
+			else 
+				$substring .= '<div class="fptitles nolink"><h3 class="fptitle cro_accent">' . $tttl  . '</h3></div>';
 		}
+
 		if (!empty($tttcnt)) {
 			$substring .= '<div class="fpcontents"><p class="cro_accent"><a href="' . get_permalink($sllink)  . '">' . $tttcnt  . '</a></p></div>';
 		}
 
 
-
-		if ($img || !empty($tttl) || !empty($tttcnt)){
-			$first .= '<div class="cro_fpc cro_fpbig">
+		
+		if ($sllink) {
+				$output .= '<div class="cro_fpc crolink cro_fpbig">
 					<div class="cro_backgroundmask">&nbsp;</div>'
 						. $img . $substring . $slidestring . '
 				</div>';
-		}
+		} else {
 
-
-		// bottom left content
-		$img = get_the_post_thumbnail( $str[1], 'fc2' );
-		$tttl 	= get_post_meta($str[1], 'cro_imgtitle', true);
-		$sllink 		= get_post_meta($str[1], 'ss-pagelink', true);
-		$altlink 		= get_post_meta($str[1], 'cro_altlink', true);
-		$slidelabel 	=  __('More Info','localize');
-		$altstring		= '<div class="slidelinkspan"><a href="' . $altlink  . '">' .  $slidelabel  .  '</a></div>';
-		$slidestring 	= ($sllink && $sllink && $sllink !== 0) ? '<div class="slidelinkspan"><a href="' . get_permalink($sllink)  . '">' .  $slidelabel  .  '</a></div>' : '' ;
-		$slidestring	= ($altlink) ? $altstring : $slidestring;
-		if (!empty($tttl)) {
-			$substring = '<div class="fptitles"><h3 class="fptitle cro_accent"><a href="' . get_permalink($sllink)  . '">' . $tttl  . '</a></h3></div>';
-			$second = '
-				<div class="cro_fpc cro_fpsmall">
-					<div class="cro_backgroundmask">&nbsp;</div>'
-					. $img . $substring . $slidestring . '
-				</div>';
-
-		}
-
-		// top right content
-		$img = get_the_post_thumbnail( $str[2], 'fc2' );
-		$tttl 	= get_post_meta($str[2], 'cro_imgtitle', true);
-		$sllink 		= get_post_meta($str[2], 'ss-pagelink', true);
-		$altlink 		= get_post_meta($str[2], 'cro_altlink', true);
-		$slidelabel 	=  __('More Info','localize');
-		$altstring		= '<div class="slidelinkspan"><a href="' . $altlink  . '">' .  $slidelabel  .  '</a></div>';
-		$slidestring 	= ($sllink && $sllink && $sllink !== 0) ? '<div class="slidelinkspan"><a href="' . get_permalink($sllink)  . '">' .  $slidelabel  .  '</a></div>' : '' ;
-		$slidestring	= ($altlink) ? $altstring : $slidestring;
-		if (!empty($tttl)) {
-			$substring = '<div class="fptitles"><h3 class="fptitle cro_accent"><a href="' . get_permalink($sllink)  . '">' . $tttl  . '</a></h3></div>';
-			$third = '
-				<div class="cro_fpc cro_fpsmall">
-					<div class="cro_backgroundmask">&nbsp;</div>'
-					. $img . $substring  . $slidestring .  '
-				</div>';
-		}
-
-
-		// bottom right content
-		$img = get_the_post_thumbnail( $str[3], 'fc1' );
-		$tttl 	= get_post_meta($str[3], 'cro_imgtitle', true);
-		$tttcnt = get_post_meta($str[3], 'cro_imgcontent', true);
-		$substring = '';
-		$sllink 		= get_post_meta($str[3], 'ss-pagelink', true);
-		$altlink 		= get_post_meta($str[3], 'cro_altlink', true);
-		$slidelabel 	=  __('More Info','localize');
-		$altstring		= '<div class="slidelinkspan"><a href="' . $altlink  . '">' .  $slidelabel  .  '</a></div>';
-		$slidestring 	= ($sllink && $sllink && $sllink !== 0) ? '<div class="slidelinkspan"><a href="' . get_permalink($sllink)  . '">' .  $slidelabel  .  '</a></div>' : '' ;
-		$slidestring	= ($altlink) ? $altstring : $slidestring;
-
-	
-		if (!empty($tttl)) {
-			$substring .= '<div class="fptitles"><h3 class="fptitle cro_accent"><a href="' . get_permalink($sllink)  . '">' . $tttl  . '</a></h3></div>';
-		}
-		if (!empty($tttcnt)) {
-			$substring .= '<div class="fpcontents"><p class="cro_accent"><a href="' . get_permalink($sllink)  . '">' . $tttcnt  . '</a></p></div>';
-		}
-
-
-
-		if ($img || !empty($tttl) || !empty($tttcnt)){
-			$fourth .= '<div class="cro_fpc cro_fpbig">
+				$output .= '<div class="cro_fpc cro_nolink cro_fpbig">
 					<div class="cro_backgroundmask">&nbsp;</div>'
 						. $img . $substring . $slidestring . '
 				</div>';
+
 		}
 
+		
 
 
-	$op = '
-	<div class="six columns">
-			' .   $first   . '
-			' .   $second   . '
-	</div>
 
-	<div class="six columns">
-			' .   $third   . '
-			' .   $fourth   . '
-	</div>';
 
-	return $op;
+		endforeach;
+
+
+		$output .= '</div>';
+
+
+		return $output;
 
 	}
 
