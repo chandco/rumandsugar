@@ -29,7 +29,7 @@
 <!--
  * -02- START FOOTER
 -->	
-<div class="footer">
+<div class="footer" id='footer'>
 	<div class="footinner">
 		<div class="row">
 
@@ -74,17 +74,17 @@
 			<div class="six columns">
 				<div id="site-info">
 					<a href="<?php echo home_url( '/' ) ?>" class="whites" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<?php bloginfo( 'name' ); ?> &copy; (<?php echo date('Y'); ?>)
+						&copy; <a href='http://www.ampersandcatering.co.uk'>Ampersand</a> <?php echo date('Y'); ?>
 					</a>
+					<Br /><br />
+					No.1 Warehouse, West India Quay, Canary Wharf, E14 4AL ( <a href='<?php echo get_site_url(); ?>/about-us/'> Find Us </a> )
 				</div>					
 			</div>
 
 			<div class="six columns">
 				<div id="site-generator">
-					<a href="<?php echo esc_url( __('http://www.cro.ma', 'localize') ); ?>" 
-						title="<?php esc_attr_e('Croma', 'localize'); ?>" rel="generator">
-						<?php printf( __('Proudly Designed by %s', 'localize'), '<span>Croma</span>' ); ?>
-					</a>
+					<img src='<?php echo get_stylesheet_directory_uri(); ?>/lib/images/museumlogo-mod.png' id='mold-logo' />
+					<?php include(get_stylesheet_directory() . "/lib/images/ampersand.svg"); ?>
 				</div><!-- #site-generator -->				
 			</div>
 		</div>

@@ -5,11 +5,44 @@
 		a {
 			text-shadow:none;
 			font-size: 1.4em;
-			transition:transform 0.1s ease;
-			&:hover {
+			transition:color 0.4s ease;
+			
+			position: relative;
+			z-index: 1;
+
+			
+		}
+
+
+		&:before {
+				content: "";
 				background: @white;
-				transform:scale(1.2,1.2);
+				opacity: 0;
+				display: block;
+				position: absolute;
+				z-index: 0;
+				width: 100%;
+				height: 100%;
+				top:0;
+				left: 0;
+				transition:transform 0.2s ease, opacity 0.2s ease;
+				transform:scale(0.1,0.1);
 			}
+
+		&:hover {
+
+			a {
+				color: @red;
+
+				
+			}
+
+			&:before {
+					
+					transform:scale(1.1,1.1);
+					opacity: 1;
+				}
+
 		}
 	}
 }
@@ -23,8 +56,9 @@
 	// here I make this big - this is only if it's for book a table, so watch out for adding other things!
 	li a {
 		font-size: 2em;
-		border: 1px solid @black;
-		background: @white;
+		border: 2px solid RGBA(0,0,0,0.5);
+		background-clip: padding-box;
+		background:  RGBA(255,255,255,1);
 		color: @red;
 		padding-bottom:10px;
 		position: relative;

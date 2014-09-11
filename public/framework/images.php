@@ -174,7 +174,8 @@ function cro_headerimg($id, $type, $ban){
 
 	// new code:
 	get_the_post_thumbnail( $post_id, $size, $attr );
-	$headimg = current(wp_get_attachment_image_src(get_post_thumbnail_id($id), 'sshow'));
+	$headimg = wp_get_attachment_image_src(get_post_thumbnail_id($id), 'sshow');
+	if (is_array($headimg)) $headimg = current($headimg); else $headimg = false;
 	$defimg  = get_template_directory_uri() . '/public/styles/images/defimg.jpg';
 
 	$minetitle = '';
@@ -214,7 +215,7 @@ function cro_headerimg($id, $type, $ban){
 				}				
 			}
 
-			
+
 		}
 
 		$minetitle = '<h1 class="cro_accent">' . get_the_title($id) . '</h1>';
