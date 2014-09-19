@@ -370,7 +370,7 @@ function get_frontcontent() {
 
 
 		$perColumn = ceil(count($str) / 2);
-		var_dump($perColumn);
+		
 		$firstColumn = true;
 
 	
