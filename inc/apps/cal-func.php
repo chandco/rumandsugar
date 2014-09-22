@@ -397,7 +397,7 @@ function fetch_front_agenda($type, $day , $month, $year, $default) {
         $op .= '<li class="twistercontent">';
         $op .= '<div class="promoimg">';
         $op .= ($img) ? $img : '' ;
-         $op .= '<div class="agendadate">' .  date_i18n( 'j' , $cro_v['date'], false )   . '<br/>' .  date_i18n( 'M' , $cro_v['date'], false )   . '</div>';
+         $op .= '<div class="agendadate">' .  date_i18n( 'j' , $cro_v['date'], false )   . ' ' .  date_i18n( 'M' , $cro_v['date'], false )   . '</div>';
         $op .= '</div>';
         $op .= '<h5 class="cro_accent;">' . get_the_title($cro_v['id']) . '</h5>';
         $op .= '<div class="fpdiv"><span class="cro_foodprice">' .  date_i18n( get_option('time_format') , $cro_v['date'], false ) . '</span></div>';
@@ -473,7 +473,7 @@ function fetch_upc_agenda($type, $day , $month, $year, $default) {
         $op .= '<li class="twistercontent">';
         $op .= '<div class="promoimg">';
         $op .= ($img) ? $img : '' ;
-        $op .= '<div class="agendadate">' .  date_i18n( 'j' , $cro_v['strdate'], false )   . '<br/>' .  date_i18n( 'D' , $cro_v['strdate'], false )   . '</div>';
+        $op .= '<div class="agendadate">' .  date_i18n( 'j' , $cro_v['strdate'], false )   . ' ' .  date_i18n( 'D' , $cro_v['strdate'], false )   . '</div>';
         $op .= '</div>';
         $op .= '<h5 class="cro_accent">' . get_the_title($cro_v['cids']) . '</h5>';
         $op .= '<div class="fpdiv"><span class="cro_foodprice">' .  date_i18n( get_option('time_format') , $cro_v['strdate'], false ) . '</span></div>';
