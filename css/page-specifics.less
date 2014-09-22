@@ -5,14 +5,80 @@
 		color: #000;
 		font-weight: normal !important;
 		text-transform: uppercase;
-		font-size: 4em;
+		font-size: 3em;
 	}
-}
 
 
+
+// FOOD MENU STUFF
 
 ul.cro_masthead {
 	background: @white;
 	border: none;
 	border-bottom: 2px solid @red;
+
+	h5 {
+		text-transform: uppercase;
+	}
+
+	.cro_foodprice:before {
+		//content: "£";
+	}
+}
+
+
+.six.column {
+	ul.cro_masthead {
+		.mastheadli {
+			width: 100%;
+		}
+	}
+}
+
+
+.menu-box {
+	width: 90%;
+	padding: 5%;
+	margin-top: 13px; // stupid hardcoded theme
+	border: solid 2px @red;
+
+	h3 {
+		padding-bottom: 10px;
+		border-bottom: solid 2px @red;
+		margin-bottom: 10px;
+	} 
+
+	li { 
+		color: @black; 
+		position: relative;
+		padding-right: 5%;
+		text-transform: uppercase;
+	}
+
+	li:nth-of-type(even) {
+		color: @red;
+	}
+
+	.price {
+		position: absolute;
+		right: 10%;
+		text-align: right;
+		width: 5%;
+	}
+
+	&.black {
+
+		h3 {
+			color: @red;
+		}
+
+		h4 {
+			color: @white;
+			text-transform: uppercase;
+		}
+		background: @black;
+		color: @white;
+	}
+}
+
 }

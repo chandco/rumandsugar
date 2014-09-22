@@ -55,6 +55,9 @@ function cro_menulist_func( $atts ) {
     
             foreach( $myposts as $apost ) : setup_postdata($apost);
                 $fp = get_post_meta( $apost->ID, 'cro_foodprice' , true);
+
+             
+                if ($fp && substr($fp, 1) != "£") $fp = "£" . $fp;
                 $img = get_the_post_thumbnail($apost->ID,'thumbnail');
                 $op .= '<li  class="mainstayli">';
                 if ($img){
@@ -88,6 +91,8 @@ function cro_menulist_func( $atts ) {
     
             foreach( $myposts as $apost ) : setup_postdata($apost);
                 $fp = get_post_meta( $apost->ID, 'cro_foodprice' , true);
+
+                if ($fp && substr($fp, 1) != "£") $fp = "£" . $fp;
 
                 $img = get_the_post_thumbnail($apost->ID,'thumbnail');
                 if ($img) {
