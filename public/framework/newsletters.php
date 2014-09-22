@@ -234,10 +234,20 @@ function cro_sendnewsletter($data){
 
 	foreach ($replacearray as $k => $v) $tpl = str_replace($k,$v,$tpl);
 
+	// HORRIBLE HACK BUT THIS HAS TO BE DONE
+
 
 	$realemail = (is_email($data['emailaddress'])) ? $data['emailaddress'] : get_option('admin_email');
 	add_filter('wp_mail_content_type',create_function('', 'return "text/html"; '));	
-	$headers = 'From: '. get_option('blogname') .' <' . $realemail . '>';
+
+	if ($realemail == get_option('admin_email')) // we're sendign to the admin
+	{
+		$headers = 'From: ' . $realemail . '';	
+	} else {
+		// it's going externally, send from teh admin
+		$headers = 'From: '. htmlspecialchars_decode(get_option('blogname')) .' <' . get_option('admin_email') . '>';
+	}
+	
 
 
 	if ($tpl && $data['title']) {
