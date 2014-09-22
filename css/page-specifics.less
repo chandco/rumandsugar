@@ -1,19 +1,24 @@
 #post-854 {
-	background: @white; // this is the menus page - make it white like a menu;
+	background: @black; // this is the menus page - make it white like a menu;
 
 	h3 {
-		color: #000;
+		color: #fff;
 		font-weight: normal !important;
 		text-transform: uppercase;
 		font-size: 3em;
 	}
 
+	color: #999;
+
+	@padtop : 60px;
+	padding-top: @padtop;
+	margin-top: -@padtop;
 
 
 // FOOD MENU STUFF
 
 ul.cro_masthead {
-	background: @white;
+	background: none;
 	border: none;
 	border-bottom: 2px solid @red;
 
@@ -21,8 +26,31 @@ ul.cro_masthead {
 		text-transform: uppercase;
 	}
 
+	li.mastheadli {
+		margin-left: 0;
+	}
+
+	p.mastheadp {
+		color: #ccc;
+	}
+
 	.cro_foodprice:before {
 		//content: "£";
+	}
+
+	.cro_foodprice {
+		margin-right: 0;
+		padding-right: 0;
+	}
+
+	img {
+		margin: 10px auto;
+	}
+
+	li.mastheadli:nth-child(2n+2) {
+		h5, .cro_foodprice {
+			color: @white;
+		}
 	}
 }
 
@@ -37,10 +65,10 @@ ul.cro_masthead {
 
 
 .menu-box {
-	width: 90%;
-	padding: 5%;
-	margin-top: 13px; // stupid hardcoded theme
-	border: solid 2px @red;
+	//width: 90%;
+	//padding: 5%;
+	margin: 13px auto 40px auto;
+	//border: solid 2px @red;
 
 	h3 {
 		padding-bottom: 10px;
@@ -49,10 +77,14 @@ ul.cro_masthead {
 	} 
 
 	li { 
-		color: @black; 
+		color: @white; 
 		position: relative;
-		padding-right: 5%;
+		padding-right: 10%;
 		text-transform: uppercase;
+		.bernard();
+		list-style-type: none;
+		width: 90%;
+
 	}
 
 	li:nth-of-type(even) {
@@ -61,23 +93,27 @@ ul.cro_masthead {
 
 	.price {
 		position: absolute;
-		right: 10%;
+		right: -10%;
 		text-align: right;
-		width: 5%;
+		width: 10%;
 	}
 
 	&.black {
 
+		width: 100%;
+		padding: 5%;
+		background: @white;
+
 		h3 {
 			color: @red;
+			margin-top: 0;
 		}
 
 		h4 {
-			color: @white;
+			color: @black;
 			text-transform: uppercase;
+			margin: 0;
 		}
-		background: @black;
-		color: @white;
 	}
 }
 
