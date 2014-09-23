@@ -27,6 +27,7 @@ $tlset = get_option( "tlset" );
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width" />
 <?php
 echo '<title>' .  wp_title('-' , 0, 'right' ) . '</title>';

@@ -21,12 +21,22 @@ var popup = {
 
             },
 
+    inline : {
+      type:'inline',
+      midClick: true
+    }
+
 }
 
 $('a[href$=".jpg"]').each(function(index, element) {
     console.log($(element));
     $(element).magnificPopup(popup.gallery);
 });
+
+
+$('a.popup-box-link').each(function(index, element) {
+  $(element).magnificPopup(popup.inline);
+})
 
 
 
