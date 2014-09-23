@@ -35,4 +35,7 @@ function custom_image_media_send_to_editor($html, $attachment_id, $attachment) {
     return $html;
 }
 add_filter('media_send_to_editor', 'custom_image_media_send_to_editor', 11, 3);
+
+add_filter('widget_text', 'do_shortcode');
+
 ?>
