@@ -71,6 +71,14 @@ function cro_menulist_func( $atts ) {
 
                 $op .= '<h5 class="mainstayhead">' . $apost->post_title . '</h5>';
 
+                $edit_post_link = get_edit_post_link( $apost->ID );
+
+                if ($edit_post_link) 
+                {
+                
+                    $op .= "<a href='" . $edit_post_link . "'>Edit</a>";
+                }
+
                 $op .= '<p class="mainstayp">' . get_the_content() . '</p>';
 
                 $op .= '</div>';
