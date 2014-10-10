@@ -124,7 +124,7 @@ function cro_menulist_func( $atts ) {
                 {
                 
                     $pp .= "<a href='" . $edit_post_link . "'>Edit</a>";
-                } el
+                }
                 $pp .= '<p class="mastheadp">' . get_the_content() . '</p>';
 
                 $pp .= '</div>';
