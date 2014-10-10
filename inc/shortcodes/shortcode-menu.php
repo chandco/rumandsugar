@@ -118,7 +118,13 @@ function cro_menulist_func( $atts ) {
                 }
 
                 $pp .= '<h5 class="mastheadh">' . $apost->post_title . '</h5>';
+                $edit_post_link = get_edit_post_link( $apost->ID );
 
+                if ($edit_post_link) 
+                {
+                
+                    $op .= "<a href='" . $edit_post_link . "'>Edit</a>";
+                }
                 $pp .= '<p class="mastheadp">' . get_the_content() . '</p>';
 
                 $pp .= '</div>';
