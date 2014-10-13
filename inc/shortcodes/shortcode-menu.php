@@ -34,14 +34,18 @@ function cro_menulist_func( $atts ) {
 
     if ($no >= 1) {
     	$catargs = array( 
-    		'post_type' => 'menus', 
-    		'numberposts' => -1, 
-    		'foodmenu' => $term->slug
+    		'post_type'           => 'menus', 
+    		'numberposts'         => -1, 
+    		'foodmenu'            => $term->slug,
+            'orderby'             => 'post_date',
+            'order'               => 'ASC',
     	); 
     } else {
     	$catargs = array( 
     		'post_type' => 'menus', 
-    		'numberposts' => -1, 
+    		'numberposts' => -1,
+            'orderby'             => 'post_date',
+            'order'               => 'ASC',
     	);   	
     }
 
