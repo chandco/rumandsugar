@@ -10,12 +10,14 @@ $.fn.exists = function(callback) {
   return this;
 };
 
-console.log("hello?");
 
 
 var popup = {
     gallery : {
                 type:'image', 
+                gallery: {
+                  enabled: true
+                },
                 removalDelay: 300,
                 mainClass: 'mfp-fade'  
 
