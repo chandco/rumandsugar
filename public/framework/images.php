@@ -332,7 +332,7 @@ function get_gallery_data($id, $content){
 		$scrp = '';
 		foreach ( $imgarr as $cro_v ) {
 			$tid = wp_get_attachment_image_src( $cro_v, 'thumbnail');
-            $fid = wp_get_attachment_image_src( $cro_v, 'full');
+            $fid = wp_get_attachment_image_src( $cro_v, 'large');
             $scrp .=  '<li rel="' .  $tid[0]  . '" contents="' . $fid[0]  . '" title="' . get_the_title($cro_v)  . '"></li>'; 
 		}
 
@@ -342,7 +342,7 @@ function get_gallery_data($id, $content){
     	$images = get_children( array( 'post_parent' => $id , 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC', 'numberposts' => 999 ) );
         foreach ( $images as $attachment_id => $attachment ) {
             $tid = wp_get_attachment_image_src( $attachment_id, 'thumbnail');
-            $fid = wp_get_attachment_image_src( $attachment_id, 'full');        
+            $fid = wp_get_attachment_image_src( $attachment_id, 'large');        
             $scrp .=  '<li rel="' .  $tid[0]  . '" contents="' . $fid[0]  . '" title="' . $attachment->post_title  . '"></li>';
 
         }
