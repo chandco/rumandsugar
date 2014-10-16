@@ -32,7 +32,7 @@ var popup = {
 
 
 
-$('.mfp-gallery-item').magnificPopup(popup.gallery);
+$('.gallery-item a[href$=".jpg"]').magnificPopup(popup.gallery);
 
 
 $('a.popup-box-link').each(function(index, element) {
