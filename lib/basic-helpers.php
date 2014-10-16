@@ -6,7 +6,7 @@ function oikos_get_attachment_link_filter( $content, $post_id, $size, $permalink
     //if (! $permalink) {
         // This returns an array of (url, width, height)
         $image = wp_get_attachment_image_src( $post_id, 'large' );
-        $new_content = preg_replace('/href=\'(.*?)\'/', 'href=\'' . $image[0] . '\' data-fancybox-group=\'articlegallery\' rel=\'lightbox[gallery]\'', $content );
+        $new_content = preg_replace('/href=\'(.*?)\'/', 'href=\'' . $image[0] . '\' class="mfp-gallery-item" data-fancybox-group=\'articlegallery\' rel=\'lightbox[gallery]\'', $content );
         return $new_content;
     //} else {
 		// change attachment page to 
