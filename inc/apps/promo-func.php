@@ -93,7 +93,7 @@ function fetch_front_promos($reqtype){
 					$cnt1 .= '</div>';
 
 					//$cnt2 = '<h6 class="cro_promodate">' . $timename . ' ' . $timeline . '</h6>';
-					$cnt2 .= '<h4 class="valueline cro_accent"><a href="' .  get_permalink( $apost['id']) . '">' . $valueline  . '</a></h4>';
+					$cnt2 = '<h4 class="valueline cro_accent"><a href="' .  get_permalink( $apost['id']) . '">' . $valueline  . '</a></h4>';
 					
 
 
