@@ -202,7 +202,7 @@ function promo_header($id){
 	$cnt1 .= '</div>';
 
 	
-	$cnt2 = '<h3 class="cro_maindate cro_datebylines">' . $timename . ' ' . $timeline . '</h6>';
+	$cnt2 = '';//<h3 class="cro_maindate cro_datebylines">' . $timename . ' ' . $timeline . '</h6>';
 	$cnt2 .= '<h5 class="cro_bynone  cro_accent">' . $byline . '</h5>';
 	$cnt2 .= '<div class="clearfix"></div><h4 class="valueline cro_accent"><a href="' .  get_permalink( $id) . '">' . $valueline  . '</a></h4>';
 
