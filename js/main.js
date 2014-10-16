@@ -30,15 +30,16 @@ var popup = {
 
 }
 
-$('a[href$=".jpg"]').each(function(index, element) {
-    console.log($(element));
-    $(element).magnificPopup(popup.gallery);
-});
+
+
+$('.mfp-gallery-item').magnificPopup(popup.gallery);
 
 
 $('a.popup-box-link').each(function(index, element) {
   $(element).magnificPopup(popup.inline);
 })
+
+
 
 
 
