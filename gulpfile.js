@@ -11,6 +11,7 @@ var gulp = require('gulp'),
 			rename = require("gulp-rename"),
             uglifycss = require("gulp-uglifycss"),
             plumber = require("gulp-plumber"),
+            cmq = require('gulp-combine-media-queries'),
 			changed = require("gulp-changed");
 
 //gulp.src(['js/**/*.js', '!js/**/*.min.js'])
@@ -71,6 +72,9 @@ gulp.task('dist-css', function () {
                 //.pipe(sourcemaps.init())
                 .pipe(less())
                 .pipe(autoprefixer())
+                .pipe(cmq({
+                  log: true
+                }))
                 .pipe(uglifycss())
                 //.pipe(sourcemaps.write('./maps'))
                 .pipe(gulp.dest('./css/'));
