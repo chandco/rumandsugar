@@ -5,8 +5,8 @@
 
 require("basic-helpers.php"); 
 
-
 require("comments-off.php");
 
-
 require("scripts.php");
+
+require("gallery.php");
