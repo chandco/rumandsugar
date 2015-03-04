@@ -54,7 +54,7 @@ gulp.task('javascript', function() {
 
 
 gulp.task('compile-css', function () {
-	gulp.src('./css/less.less')
+	gulp.src('./css/main.less')
                 .pipe(plumber())
 				.pipe(sourcemaps.init())
 			    .pipe(less())
@@ -66,7 +66,7 @@ gulp.task('compile-css', function () {
 });
 
 gulp.task('dist-css', function () {
-    gulp.src('./css/less.less')
+    gulp.src('./css/main.less')
                 .pipe(plumber())
                 //.pipe(sourcemaps.init())
                 .pipe(less())
