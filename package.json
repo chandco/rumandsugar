@@ -1,0 +1,22 @@
+{
+  "name": "rumansugar",
+  "description": "Rum and Sugar theme",
+  "author": "Nathan Edwards <nathan@chandco.net>",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-changed": "latest",
+    "gulp-image-resize": "latest",
+    "gulp-jshint": "latest",
+    "gulp-less": "latest",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "latest",
+    "gulp-run": "~1.6.6",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "gulp-uglifycss": "latest",
+    "gulp-watch": "latest",
+    "requirejs": "~2.1.16"
+  }
+}
