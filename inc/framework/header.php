@@ -100,10 +100,6 @@ function croma_fetch_headerstuff() {
 		color: <?php echo $cro_col; ?> !important;
 	}
 
-	#access ul li ul li:hover > a{
-		border-right: 5px solid <?php echo $cro_col; ?> !important;
-	}
-
 	<?php /* Stop the below from happening
 	<?php if (0){ //($tlset['cro_font'] && $tlset['cro_font'] != '') { ?>
 		.cro_accent, h3.widget-title, #access a, .cro_headerspace .cro_title h1, .secondnav ul li a, 

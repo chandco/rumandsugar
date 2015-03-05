@@ -31,7 +31,7 @@ function cf_cleaner_gallery( $output, $attr ) {
 		'icontag'     => 'div',
 		'captiontag'  => 'figcaption',
 		'columns'     => 0,
-		'size'        => 'thumbnail',
+		'size'        => 'gallery-thumb',
 		'ids'         => '',
 		'include'     => '',
 		'exclude'     => '',

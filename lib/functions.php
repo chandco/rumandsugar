@@ -10,3 +10,5 @@ require("comments-off.php");
 require("scripts.php");
 
 require("gallery.php");
+
+require("image-sizes.php");
