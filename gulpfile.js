@@ -23,7 +23,7 @@ gulp.task('default', ['compile-css', 'javascript'], function () {
 
 
     browserSync({
-            proxy: "192.168.0.209",
+            proxy: "rumandsugar.dev.chand.co",
             files: "./css/*.css"
         });
     
