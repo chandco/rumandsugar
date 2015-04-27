@@ -40,6 +40,3 @@ add_image_size('featured-image', 630, 400, true);
 
 //     return array_merge( $sizes, $tomerge );
 // }
-
-?>
-
