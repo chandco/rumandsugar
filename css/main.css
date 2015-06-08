@@ -2,7 +2,7 @@
 .avenir {
   font-family: 'Avenir W01';
 }
-.bernard {
+.oswald {
   font-family: 'Oswald', sans-serif;
 }
 h1,
@@ -856,13 +856,12 @@ div.cro_sldr {
   color: #333;
 }
 #post-854 {
-  background: #000000;
   color: #999;
   padding-top: 60px;
   margin-top: -60px;
 }
 #post-854 h3 {
-  color: #fff;
+  color: #000;
   font-weight: normal !important;
   text-transform: uppercase;
   font-size: 3em;
@@ -879,7 +878,7 @@ div.cro_sldr {
   margin-left: 0;
 }
 #post-854 ul.cro_masthead p.mastheadp {
-  color: #ccc;
+  color: #961515;
 }
 #post-854 ul.cro_masthead .cro_foodprice {
   margin-right: 0;
@@ -888,9 +887,9 @@ div.cro_sldr {
 #post-854 ul.cro_masthead img {
   margin: 10px auto;
 }
-#post-854 ul.cro_masthead li.mastheadli:nth-child(2n+2) h5,
-#post-854 ul.cro_masthead li.mastheadli:nth-child(2n+2) .cro_foodprice {
-  color: #ffffff;
+#post-854 ul.cro_masthead li.mastheadli h5,
+#post-854 ul.cro_masthead li.mastheadli .cro_foodprice {
+  color: #000000;
 }
 #post-854 .six.column ul.cro_masthead .mastheadli {
   width: 100%;
