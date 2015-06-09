@@ -1,0 +1,236 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"feat",
+				"featured-image"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/R/rumandsugar",
+		"/R/rumandsugar/css",
+		"/R/rumandsugar/lib"
+	],
+	"file_history":
+	[
+		"/R/rumandsugar/css/page-specifics.less",
+		"/C/Users/Raj.Chudasama/Documents/GitHub/ita-email-template/email-mailer-editable.html",
+		"/R/rumandsugar/lib/functions.php",
+		"/R/rumandsugar/public/tparts/content.php",
+		"/R/rumandsugar/public/tparts/content-video.php",
+		"/R/rumandsugar/style.css",
+		"/R/rumandsugar/lib/image-sizes.php",
+		"/R/rumandsugar/gulpfile.js",
+		"/R/rumandsugar/css/main.less",
+		"/R/rumandsugar/public/styles/site.css",
+		"/R/rumandsugar/css/layout.less",
+		"/R/rumandsugar/css/main.css",
+		"/R/rumandsugar/public/tparts/content-quote.php",
+		"/R/rumandsugar/public/tparts/content-audio.php",
+		"/R/rumandsugar/public/tparts/content-search.php",
+		"/R/rumandsugar/inc/shortcodes/shortcode-layout.php",
+		"/R/rumandsugar/lib/gallery.php",
+		"/R/rumandsugar/inc/framework/header.php",
+		"/R/rumandsugar/comments.php",
+		"/R/rumandsugar/single.php",
+		"/R/rumandsugar/404.php",
+		"/R/rumandsugar/archive.php",
+		"/R/rumandsugar/category.php",
+		"/R/rumandsugar/index.php",
+		"/R/rumandsugar/functions.php",
+		"/R/rumandsugar/page-res.php",
+		"/R/rumandsugar/page.php",
+		"/R/rumandsugar/page-front.php",
+		"/R/rumandsugar/header.php",
+		"/R/rumandsugar/lib/scripts.php",
+		"/R/rumandsugar/inc/custom-functions.php",
+		"/R/rumandsugar/inc/index.php",
+		"/C/Windows/System32/drivers/etc/hosts"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"R:\\rumandsugar",
+			"R:\\rumandsugar\\inc,R:\\rumandsugar\\lib",
+			"R:\\rumandsugar\\inc,R:\\rumandsugar\\lib,R:\\rumandsugar\\public",
+			"R:\\rumandsugar\\inc,R:\\rumandsugar\\lib",
+			"R:\\rumandsugar",
+			"R:\\rumandsugar,R:\\rumandsugar\\inc",
+			"R:\\rumandsugar"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"#access ul ul",
+			"entry-content",
+			"div id",
+			"img",
+			"entry-title",
+			"class=\"main singleitem\"",
+			"eight column",
+			"entry-title cro_accent",
+			"class=\"entry-title cro_accent\"",
+			"entry-title",
+			"div class=entry-title",
+			"div class=\"entry-title\"",
+			"<div class=\"entry-title\">",
+			"entry-title",
+			"\"entry-title\"",
+			"<div class=\"entry-title\">",
+			"class=entry-title",
+			"class=\"entry-title\"",
+			"class=\"main singleitem\"",
+			"class=main singleitem",
+			"class=\"main singleitem\"",
+			"vhost"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 161.0
+	},
+	"pinned_build_system": "",
+	"project": "museumlogo-mod.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 308.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
