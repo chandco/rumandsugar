@@ -18,13 +18,46 @@ color: #333;
 	padding-top: @padtop;
 	margin-top: -@padtop;
 
+	.border {
+	  	border-width:1px;
+	  	border-color:black;
+	  	margin-top:0;
+	}
+	.dashed {
+	  	border-style:dashed;
+	  	margin-top:0;
+	}
+	.double {
+		border-bottom: solid 5px black;
+  		border-top: solid 1px black;
+  		padding-bottom: 1px;
+  		margin-top:0;
+	}
+	.single {
+	  	border-style:single;
+	  	margin-top:0;
+	}
+
+	.star {
+		background: url(/wp-content/uploads//2015/06/star.svg) repeat-x;
+		height:20px;
+		border:0;
+	}
+
+	.slash {
+		background: url(/wp-content/uploads//2015/06/slash.svg) repeat-x;
+		height:30px;
+		border:0;
+	}
+
 
 // FOOD MENU STUFF
 
 ul.cro_masthead {
 	background: none;
 	border: none;
-	border-bottom: 2px solid @red;
+	//border-bottom: 2px solid @red; 
+	margin-bottom: 0;
 
 	h5 {
 		text-transform: uppercase;
@@ -35,7 +68,7 @@ ul.cro_masthead {
 	}
 
 	p.mastheadp {
-		color: #961515;
+		color: #000;
 	}
 
 	.cro_foodprice:before {
@@ -76,12 +109,11 @@ ul.cro_masthead {
 
 	h3 {
 		padding-bottom: 10px;
-		border-bottom: solid 2px @red;
 		margin-bottom: 10px;
 	} 
 
 	li { 
-		color: @white; 
+		color: @black; 
 		position: relative;
 		padding-right: 10%;
 		text-transform: uppercase;
@@ -91,9 +123,6 @@ ul.cro_masthead {
 
 	}
 
-	li:nth-of-type(even) {
-		color: @red;
-	}
 
 	.price {
 		position: absolute;
@@ -103,13 +132,9 @@ ul.cro_masthead {
 	}
 
 	&.black {
-
 		width: 100%;
-		padding: 5%;
-		background: @white;
 
 		h3 {
-			color: @red;
 			margin-top: 0;
 		}
 
@@ -155,4 +180,6 @@ ul.cro_masthead {
 	    transform: translateY(-15%);
 	}
 }
+
+
 

@@ -10,7 +10,6 @@
  * -01- GLOBAL
  * */
 
-
  .cro_shcode_strap{
   background: none repeat scroll 0 0 #F9F9F9;
   border: 1px solid #EFEFEF;
@@ -150,3 +149,5 @@ p.shcode-explain{
   -webkit-border-radius: 2px;
   border-radius: 2px; 
 }
+
+

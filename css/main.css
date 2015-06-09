@@ -866,10 +866,39 @@ div.cro_sldr {
   text-transform: uppercase;
   font-size: 3em;
 }
+#post-854 .border {
+  border-width: 1px;
+  border-color: black;
+  margin-top: 0;
+}
+#post-854 .dashed {
+  border-style: dashed;
+  margin-top: 0;
+}
+#post-854 .double {
+  border-bottom: solid 5px black;
+  border-top: solid 1px black;
+  padding-bottom: 1px;
+  margin-top: 0;
+}
+#post-854 .single {
+  border-style: single;
+  margin-top: 0;
+}
+#post-854 .star {
+  background: url(/wp-content/uploads//2015/06/star.svg) repeat-x;
+  height: 20px;
+  border: 0;
+}
+#post-854 .slash {
+  background: url(/wp-content/uploads//2015/06/slash.svg) repeat-x;
+  height: 30px;
+  border: 0;
+}
 #post-854 ul.cro_masthead {
   background: none;
   border: none;
-  border-bottom: 2px solid #e31836;
+  margin-bottom: 0;
 }
 #post-854 ul.cro_masthead h5 {
   text-transform: uppercase;
@@ -878,7 +907,7 @@ div.cro_sldr {
   margin-left: 0;
 }
 #post-854 ul.cro_masthead p.mastheadp {
-  color: #961515;
+  color: #000;
 }
 #post-854 ul.cro_masthead .cro_foodprice {
   margin-right: 0;
@@ -899,20 +928,16 @@ div.cro_sldr {
 }
 #post-854 .menu-box h3 {
   padding-bottom: 10px;
-  border-bottom: solid 2px #e31836;
   margin-bottom: 10px;
 }
 #post-854 .menu-box li {
-  color: #ffffff;
+  color: #000000;
   position: relative;
   padding-right: 10%;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   list-style-type: none;
   width: 90%;
-}
-#post-854 .menu-box li:nth-of-type(even) {
-  color: #e31836;
 }
 #post-854 .menu-box .price {
   position: absolute;
@@ -922,11 +947,8 @@ div.cro_sldr {
 }
 #post-854 .menu-box.black {
   width: 100%;
-  padding: 5%;
-  background: #ffffff;
 }
 #post-854 .menu-box.black h3 {
-  color: #e31836;
   margin-top: 0;
 }
 #post-854 .menu-box.black h4 {

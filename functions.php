@@ -56,6 +56,7 @@ function cro_setup() {
 	require( get_template_directory() . '/inc/shortcodes/shortcode-callout.php' );
 	require( get_template_directory() . '/inc/shortcodes/shortcode-button.php' );
 	require( get_template_directory() . '/inc/shortcodes/shortcode-accordion.php' );
+	require( get_template_directory() . '/inc/shortcodes/shortcode-border.php' );
 	require( get_template_directory() . '/inc/admin/page-controller.php');
 	require( get_template_directory() . '/inc/admin/page-parts.php');
 	require( get_template_directory() . '/inc/admin/admin-helpers.php');
@@ -134,6 +135,14 @@ function cro_show_admin_mess() {
 
 	}
 }
+
+
+//Allow Wordpres to upload SVG file format
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
 
 /** 
   * Call showAdminMessages() when showing other admin 
