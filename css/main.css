@@ -895,6 +895,11 @@ div.cro_sldr {
   height: 30px;
   border: 0;
 }
+#post-854 .banner {
+  background: url(/wp-content/uploads//2015/06/banner.svg) no-repeat;
+  border: 0;
+  height: 80px;
+}
 #post-854 ul.cro_masthead {
   background: none;
   border: none;
