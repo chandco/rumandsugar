@@ -1,4 +1,5 @@
 <?php
+
 add_shortcode('border', 'border_shortcode');
 
 function border_shortcode( $atts, $content = null ) 
@@ -8,6 +9,7 @@ function border_shortcode( $atts, $content = null )
        return "<hr class='{$atts['style']}'/>";
     }  
 }
+
 
 add_shortcode('banner-title', 'banner_title_shortcode');
 
@@ -24,3 +26,4 @@ add_shortcode('banner-title', 'banner_title_shortcode');
 	}
 
 ?>
+

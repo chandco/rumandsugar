@@ -895,10 +895,36 @@ div.cro_sldr {
   height: 30px;
   border: 0;
 }
-#post-854 .banner {
-  background: url(/wp-content/uploads//2015/06/banner.svg) no-repeat;
-  border: 0;
+#post-854 .banner-wrapper {
+  position: relative;
+  background: green;
+  display: inline-block;
+  margin: 0 0 50px 50px;
+  max-width: 300px;
+}
+#post-854 .banner-wrapper .banner {
   height: 80px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  line-height: 1.1em;
+  font-family: bernard;
+  text-align: center;
+  font-size: 25px;
+}
+#post-854 .banner-wrapper .banner:after {
+  content: url('/wp-content/uploads//2015/06/right-ribbon.svg');
+  position: absolute;
+  right: -57px;
+  top: 28px;
+  width: 100px;
+}
+#post-854 .banner-wrapper .banner:before {
+  content: url('/wp-content/uploads//2015/06/left-ribbon.svg');
+  position: absolute;
+  left: -57px;
+  width: 100px;
+  top: 28px;
 }
 #post-854 ul.cro_masthead {
   background: none;
