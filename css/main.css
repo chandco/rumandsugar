@@ -2,8 +2,8 @@
 .avenir {
   font-family: 'Avenir W01';
 }
-.oswald {
-  font-family: 'Oswald', sans-serif;
+.bernard {
+  font-family: 'Monotype Bernard W01';
 }
 h1,
 h2,
@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Monotype Bernard W01';
   font-weight: normal;
   transform: translateZ(0);
 }
@@ -502,7 +502,7 @@ a.popup-box-link:before {
   fill: #ffffff;
 }
 #cro-menu {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Monotype Bernard W01';
   text-transform: uppercase;
 }
 #cro-menu li a {
@@ -536,7 +536,7 @@ a.popup-box-link:before {
   opacity: 1;
 }
 #menu-main-submenu {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Monotype Bernard W01';
   text-transform: uppercase;
 }
 #menu-main-submenu li a {
@@ -558,7 +558,7 @@ ul.cro_masthead li.mastheadli h5.mastheadh {
 }
 ul.cro_masthead li.mastheadli span.cro_foodprice {
   font-weight: normal;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Monotype Bernard W01';
 }
 .imgdiv {
   background-size: 100% auto !important;
@@ -846,7 +846,7 @@ div.cro_sldr {
   color: #e31836;
   width: 100%;
   left: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Monotype Bernard W01';
   line-height: 1;
   padding: 0;
   text-align: center;
@@ -900,17 +900,18 @@ div.cro_sldr {
   background: green;
   display: inline-block;
   margin: 0 0 50px 50px;
-  max-width: 300px;
+  max-width: 336px;
 }
 #post-854 .banner-wrapper .banner {
   height: 80px;
   background: #000;
   color: #fff;
-  padding: 10px;
-  line-height: 1.1em;
-  font-family: bernard;
+  padding: 10px 40px;
+  line-height: 1.6em;
+  font-family: 'Monotype Bernard W01';
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 #post-854 .banner-wrapper .banner:after {
   content: url('/wp-content/uploads//2015/06/right-ribbon.svg');
@@ -925,6 +926,9 @@ div.cro_sldr {
   left: -57px;
   width: 100px;
   top: 28px;
+}
+#post-854 .banner-wrapper .double-text {
+  line-height: 1.1em;
 }
 #post-854 ul.cro_masthead {
   background: none;
@@ -966,7 +970,7 @@ div.cro_sldr {
   position: relative;
   padding-right: 10%;
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Monotype Bernard W01';
   list-style-type: none;
   width: 90%;
 }
