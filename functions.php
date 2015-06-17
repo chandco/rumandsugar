@@ -1,4 +1,6 @@
 <?php
+
+require( 'editor-buttons/editor-buttons.php' );
 /**
  * functions and definitions
  */

@@ -927,7 +927,7 @@ form.custom .custom.disabled {
 /* The Grid ---------------------- */
 
 .row {
- width: 990px; max-width: 100%; min-width: 768px; margin: 0 auto; 
+ min-width: 768px; margin: 0 auto; 
 }
 
 
