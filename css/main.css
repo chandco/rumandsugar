@@ -856,7 +856,7 @@ div.cro_sldr {
   color: #333;
 }
 .row {
-  width: 70%;
+  width: 65%;
 }
 .row #post-854 {
   color: #999;
@@ -875,6 +875,68 @@ div.cro_sldr {
   font-size: 1.5em;
   padding-top: 10px;
 }
+.row #post-854 .menu-image-wrapper {
+  position: relative;
+  width: 500px;
+  margin: auto;
+}
+.row #post-854 .menu-image-wrapper img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 4px solid #fff;
+  box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.row #post-854 .menu-image-wrapper:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -5%;
+  transform: rotate(-45deg);
+  background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/06/background-texture9.jpg');
+  z-index: 2;
+  width: 10%;
+  height: 20px;
+  box-shadow: 0 3px 4px -2px rgba(0, 0, 0, 0.2);
+}
+.row #post-854 .menu-image-wrapper:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -5%;
+  transform: rotate(45deg);
+  background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/06/background-texture9.jpg');
+  z-index: 2;
+  width: 10%;
+  height: 20px;
+  box-shadow: 0 3px 4px -2px rgba(0, 0, 0, 0.2);
+}
+.row #post-854 .inner:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -5%;
+  transform: rotate(45deg);
+  background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/06/background-texture9.jpg');
+  z-index: 2;
+  width: 10%;
+  height: 20px;
+  box-shadow: 0 3px 4px -2px rgba(0, 0, 0, 0.2);
+}
+.row #post-854 .inner:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -5%;
+  transform: rotate(45deg);
+  background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/06/background-texture9.jpg');
+  z-index: 2;
+  width: 10%;
+  height: 20px;
+  box-shadow: 0 -3px 4px -2px rgba(0, 0, 0, 0.2);
+}
 .row #post-854 ul {
   font-family: 'Oswald', sans-serif;
   color: #000;
@@ -883,7 +945,7 @@ div.cro_sldr {
   margin: 0;
 }
 .row #post-854 ul .food {
-  width: 485px;
+  width: 420px;
   font-size: 1.7em;
   vertical-align: top;
   position: relative;
