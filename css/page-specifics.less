@@ -104,29 +104,38 @@ color: #333;
 			font-family: 'Oswald', sans-serif;
 			color: #000;
 			list-style:none;
-			padding:0;
 			margin:0;
+			box-sizing: border-box;
+			margin-top:20px;
+			line-height:2em;
+			width:100%;
+
+		
 
 			
+			li {
+				
+				position:relative;
+				font-size:1.5em;
+				padding-right:80px;
+				
+			
 
-			.food {
-				width: 433px;
-	  			font-size: 1.7em;
-	  			vertical-align: top;
-	  			position: relative;
-	  			margin-top:30px;
-	  			line-height:1.3em;
-	 
-			}
 
-			.price {
-			  	font-size: 1.7em;
-			  	position: absolute;
-			  	top: 0px;
-			  	list-style: none;
-			  	right: -120px;
-			  	line-height:1.3em;
-			}
+				ul{
+					li {
+						width:0;
+						position:absolute;
+						top:0;
+						right:0;
+						text-align: right;
+						font-size:1.5em;
+							padding-right:50px;
+							
+
+					}
+				}
+			}			
 		}
 
 
