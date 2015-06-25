@@ -855,8 +855,25 @@ div.cro_sldr {
 #croma_bookingform {
   color: #333;
 }
+.topper {
+  background: red;
+}
 .row {
-  width: 65%;
+  width: 60%;
+}
+.row .bannerprocess {
+  display: none;
+}
+.row .tllogo {
+  float: left;
+}
+.row #mainmen {
+  float: left;
+  background: #000;
+}
+.row #social-links {
+  float: right;
+  background: green;
 }
 #post-854 {
   color: #999;

@@ -45,14 +45,6 @@ function ntfetch_social() {
 		array('class' => 'foursquare',	'name' => __('foursquare','localize'))
 	);
 							
-	$op .= '<ul class="sociallinks">';	
-	foreach ($servicesarray as $tl){
-		if (isset( $tlset[$tl['class']] )) {
-			$op .= ($tlset[$tl['class']]) ? '<li id="' . $tl['class'] . '" ><em>' . $tl['name'] . '</em><a href="' . $tlset[$tl['class']] . '" target=_blank"><span>' . $tl['name']  . '</span></a></li>' : '' ;
-		}
-	}	
-	$op .= '</ul>';	
-	return $op;
 }
 
 
