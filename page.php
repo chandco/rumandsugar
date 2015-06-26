@@ -26,7 +26,7 @@ get_header();
 	?>
 
 	<div class="main singleitem row" style="background:rgb(77, 27, 27); margin:0 auto;">				
-		<div class="row singlepage" style="background: url(/wp-content/uploads//2015/06/background-texture9.jpg); margin:20px; display:inline-block;">
+		<div class="row singlepage" style="background: url(/wp-content/uploads//2015/06/background-texture9.jpg); margin:20px;">
 
 
 			<?php if ($sbar == 1) { ?>

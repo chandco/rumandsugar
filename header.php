@@ -86,8 +86,10 @@ wp_head();
 
 			</div>	
 		</div>
-		<div id="social-links">social media</div>
+		<div id="social-menu">
+			<?php echo ntfetch_social(); ?>	
+		</div>
 		<div class="clearfix"></div>
-		<?php echo ntfetch_social(); ?>	
+		
 	</div>
 </div>

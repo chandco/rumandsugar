@@ -855,25 +855,13 @@ div.cro_sldr {
 #croma_bookingform {
   color: #333;
 }
-.topper {
-  background: red;
-}
 .row {
   width: 60%;
 }
-.row .bannerprocess {
-  display: none;
-}
-.row .tllogo {
-  float: left;
-}
-.row #mainmen {
-  float: left;
-  background: #000;
-}
-.row #social-links {
-  float: right;
-  background: green;
+@media screen and (max-width: 767px) {
+  .row {
+    width: 100%;
+  }
 }
 #post-854 {
   color: #999;
@@ -921,9 +909,9 @@ div.cro_sldr {
 #post-854 .menu-image-wrapper:after {
   content: "";
   position: absolute;
-  top: -10px;
+  bottom: -10px;
   right: -5%;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/06/background-texture9.jpg');
   z-index: 2;
   width: 10%;
