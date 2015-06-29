@@ -48,7 +48,7 @@ wp_head();
 	if ($ap != '') { ?>
 		<body <?php body_class(); ?> onload="initialize()">
 	<?php } else { ?>
-		<body <?php body_class(); ?>>
+		<body <?php body_class();?> >
 	<?php } 
 ?>
 
@@ -58,6 +58,7 @@ wp_head();
  * -05- START THE MAINBODY
 -->
 <div class="mbod">
+<a href="#" style="font-size:30px;" class="menu-toggle">Toggle</a>	
 	<div class="topper">
 		<div class="row">
 			<?php 
@@ -76,7 +77,8 @@ wp_head();
 					}
 				}
 			?>
-		<div id="mainmen">
+
+		<div class="mainmen">
 
 			<div id="access">	
 				<?php 

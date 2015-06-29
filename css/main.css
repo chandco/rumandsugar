@@ -858,9 +858,42 @@ div.cro_sldr {
 .row {
   width: 60%;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+  .page {
+    background: green;
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+    transition: left 200ms ease;
+  }
+  .menu-open {
+    left: 210px;
+  }
+  .menu-open .mainmen {
+    left: 0 !important;
+    background: blue;
+    transition: left 200ms ease;
+  }
   .row {
     width: 100%;
+  }
+  .row .mainmen {
+    background: #ccc;
+    position: fixed;
+    height: 100%;
+    width: 210px;
+    left: -210px;
+    top: 0;
+  }
+  .row .mainmen #access ul {
+    float: none;
+  }
+  .row .mainmen #access ul li {
+    float: none;
+    width: 100%;
+  }
+  .row .mainmen #access ul #cro-menu li:before {
+    background: red;
   }
 }
 #post-854 {

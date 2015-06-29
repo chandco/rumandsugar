@@ -486,14 +486,9 @@ select.selectnav{
 
 @media only screen and (max-width: 850px) {
 	
-	select.selectnav{
-	display: block;
-	margin: 4px auto 0 auto;
-	}
 	
-	ul#cro-menu{
-		display: none;
-	}
+	
+	
 	
 }
 
@@ -508,13 +503,7 @@ select.selectnav{
 
 	@media only screen and (max-width: 767px) {
 
-	#mainmen{
-		width: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		margin-top: 0;
-	}
+
 
 	.secondnav ul li a{
 		line-height: 25px;

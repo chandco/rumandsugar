@@ -42,6 +42,12 @@ $('a.popup-box-link').each(function(index, element) {
 
 $('img').wrap('<div class="menu-image-wrapper"><div class="inner"></div></div>');
 
+var body = $('body');
+$('.menu-toggle').bind('click', function(){
+  body.toggleClass('menu-open');
+  return false;
+});
+
 
 
 

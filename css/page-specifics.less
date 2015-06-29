@@ -4,17 +4,69 @@
 color: #333;
 }
 
+.row {
+	width:60%;
+}
 
 
-	.row {
-		width:60%;
-	}
+	@media only screen and (max-width: 767px) {
+	.page{
+			background:green;
+			overflow-x:hidden;
+			position:relative;
+			left:0;
+			transition: left 200ms ease;
 
-	@media screen and (max-width: 767px) {
+		}
+
+		.menu-open {
+			left:210px;
+
+			.mainmen {
+				left:0 !important;
+				background:blue;
+				transition: left 200ms ease;
+			}
+
+		}
+
+
 		.row {
 			width:100%;
+
+			.mainmen {
+				background:#ccc;
+				position:fixed;
+				height:100%;
+				width:210px;
+				left:-210px;
+				top:0;
+
+				#access ul {
+					float:none;
+
+					li {
+						float:none;
+						width:100%;
+					}
+
+					#cro-menu {
+						li {
+							&:before {
+								background:red;
+							}
+						}
+					}
+				}	 
+			}
 		}
 	}
+
+
+	
+
+
+	
 	
 	#post-854 {
 
