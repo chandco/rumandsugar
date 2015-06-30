@@ -871,6 +871,14 @@ div.cro_sldr {
     font-size: 50px;
     color: #ffffff;
   }
+  .page .cro_headerspace {
+    position: static;
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
+  .page .cro_headerspace .imgdiv {
+    -webkit-filter: blur(4px) grayscale(25%);
+  }
   .menu-open {
     left: 210px;
   }
@@ -881,6 +889,12 @@ div.cro_sldr {
   }
   .row {
     width: 100%;
+  }
+  .row .menu-toggle {
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 10px;
   }
   .row .mainmen {
     background: #201F1F;
@@ -918,12 +932,12 @@ div.cro_sldr {
   .row .mainmen #access ul #cro-menu li:before {
     background: blue !important;
   }
-  .row .cro_title {
+  .cro_title {
     margin: 0 auto;
     float: none;
     border: solid 2px #ffffff;
   }
-  .row .cro_title h1 {
+  .cro_title h1 {
     font-size: 34px;
   }
 }
