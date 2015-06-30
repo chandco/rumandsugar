@@ -528,12 +528,13 @@ a.popup-box-link:before {
   transition: transform 0.2s ease, opacity 0.2s ease;
   transform: scale(0.1, 0.1);
 }
+@media only screen and (max-width: 767px) {
+  #cro-menu li:before {
+    background: none;
+  }
+}
 #cro-menu li:hover a {
   color: #e31836;
-}
-#cro-menu li:hover:before {
-  transform: scale(1.1, 1.1);
-  opacity: 1;
 }
 #menu-main-submenu {
   font-family: 'Monotype Bernard W01';
@@ -866,6 +867,11 @@ div.cro_sldr {
     left: 0;
     transition: left 200ms ease;
   }
+  .page .fa {
+    padding: 10px;
+    font-size: 50px;
+    color: #ffffff;
+  }
   .menu-open {
     left: 210px;
   }
@@ -878,7 +884,7 @@ div.cro_sldr {
     width: 100%;
   }
   .row .mainmen {
-    background: #ccc;
+    background: #201F1F;
     position: fixed;
     height: 100%;
     width: 210px;
@@ -887,13 +893,31 @@ div.cro_sldr {
   }
   .row .mainmen #access ul {
     float: none;
+    display: block;
   }
   .row .mainmen #access ul li {
     float: none;
     width: 100%;
+    padding-top: 15px;
+    font-size: 18px;
+  }
+  .row .mainmen #access ul li:first-child {
+    padding-top: 0;
+  }
+  .row .mainmen #access ul li a {
+    color: #ffffff;
+  }
+  .row .mainmen #access ul li ul {
+    position: static;
+  }
+  .row .mainmen #access ul li ul li {
+    background: none;
+  }
+  .row .mainmen #access ul li ul li a {
+    font-size: 1.2em;
   }
   .row .mainmen #access ul #cro-menu li:before {
-    background: red;
+    background: blue !important;
   }
 }
 #post-854 {

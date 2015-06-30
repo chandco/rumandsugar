@@ -17,6 +17,12 @@ color: #333;
 			left:0;
 			transition: left 200ms ease;
 
+			.fa {
+				padding:10px;
+				font-size:50px;
+				color:#ffffff;
+			}
+
 		}
 
 		.menu-open {
@@ -35,7 +41,7 @@ color: #333;
 			width:100%;
 
 			.mainmen {
-				background:#ccc;
+				background:#201F1F;
 				position:fixed;
 				height:100%;
 				width:210px;
@@ -44,18 +50,41 @@ color: #333;
 
 				#access ul {
 					float:none;
+					display:block;
 
 					li {
 						float:none;
 						width:100%;
-					}
+						padding-top:15px;
+						font-size:18px;
+
+						&:first-child {
+						padding-top:0;
+						}
+
+						a {
+							color:#ffffff;
+						}
+
+						ul{
+							position:static;
+								li {
+									background:none;
+									a {
+										font-size:1.2em;
+									}
+								} 
+							} 
+						}
+
+
 
 					#cro-menu {
 						li {
 							&:before {
-								background:red;
+								background:blue !important;
 							}
-						}
+						}		
 					}
 				}	 
 			}

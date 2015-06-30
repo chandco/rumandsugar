@@ -58,7 +58,7 @@ wp_head();
  * -05- START THE MAINBODY
 -->
 <div class="mbod">
-<a href="#" style="font-size:30px;" class="menu-toggle">Toggle</a>	
+<a href="#" style="font-size:30px;" class="menu-toggle"><i class="fa fa-bars"></i></a>	
 	<div class="topper">
 		<div class="row">
 			<?php 
