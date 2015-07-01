@@ -60,22 +60,7 @@ wp_head();
 <div class="mbod">
 	<div class="topper">
 		<div class="row">
-			<?php 
-
-				if (defined('CROCSH') && CROCSH == '1') {
-					if (isset($_COOKIE['cro_cssb']) && $_COOKIE['cro_cssb'] == '2'){
-						echo '<a href="'. esc_url( home_url( '/' ) ) .' class="logolink" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home"><img class="tllogo" title="' .  esc_attr( get_bloginfo( 'name', 'display' )) . '" src="' . get_template_directory_uri() . '/public/styles/images/darklogo.png" /></a>';
-					} else {
-						echo '<a href="'. esc_url( home_url( '/' ) ) .'" class="logolink" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home"><img class="tllogo" title="' .  esc_attr( get_bloginfo( 'name', 'display' )) . '" src="' .  $tlset['logo'] . '" /></a>';
-					}
-				} else {
-					if(isset($tlset['logo']) && $tlset['logo'])  {
-						echo '<a href="'. esc_url( home_url( '/' ) ) .'" class="logolink" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home"><img class="tllogo" title="' .  esc_attr( get_bloginfo( 'name', 'display' )) . '" src="' .  $tlset['logo'] . '" /></a>';
-					} else {
-						echo '&nbsp;';
-					}
-				}
-			?>
+			<div id="logo">RUM AND SUGAR LOGO</div>
 
 		<a href="#" class="menu-toggle"><i class="fa fa-bars"></i></a>	
 		<div class="mainmen">
