@@ -22,40 +22,6 @@
  */
  
 
- /* 
-  * -02- SOCIAL LINKS
-  * */
-  
- function ntfetch_social() {
- 	$op = '';
- 	$tlset = get_option( 'tlset' );
- 	$servicesarray = array(
- 		array('class' => 'facebook',	'name' => __('facebook','localize')),
- 		array('class' => 'twitter',		'name' => __('twitter','localize')),
- 		array('class' => 'rss',			'name' => __('rss','localize')),
- 		array('class' => 'mail',		'name' => __('email','localize')),
- 		array('class' => 'googleplus',	'name' => __('google+','localize')),
- 		array('class' => 'pinterest',	'name' => __('pinterest','localize')),
- 		array('class' => 'vimeo',		'name' => __('vimeo','localize')),
- 		array('class' => 'youtube',		'name' => __('youtube','localize')),
- 		array('class' => 'linkedin',	'name' => __('linkedin','localize')),
- 		array('class' => 'flickr',		'name' => __('flickr','localize')),
- 		array('class' => 'instagram',	'name' => __('instagram','localize')),
- 		array('class' => 'foursquare',	'name' => __('foursquare','localize'))
- 	);
- 							
-	$op .= '<ul class="sociallinks">';	
-	foreach ($servicesarray as $tl){
-		if (isset( $tlset[$tl['class']] )) {
-			$op .= ($tlset[$tl['class']]) ? '<li id="' . $tl['class'] . '" ><em>' . $tl['name'] . '</em><a href="' . $tlset[$tl['class']] . '" target=_blank"><span>' . $tl['name']  . '</span></a></li>' : '' ;
-		}
-	}	
-	$op .= '</ul>';	
-	return $op;
- }
- 
-
-
 
 
 /* 

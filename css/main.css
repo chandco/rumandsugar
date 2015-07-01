@@ -697,7 +697,7 @@ div.cro_sldr {
   background: rgba(0, 0, 0, 0.7);
 }
 .cro_headerspace {
-  border-bottom: solid 1px #e31836;
+  border-bottom: solid 1px #f0f0f0;
 }
 .cro_fpc {
   margin-bottom: 30px;
@@ -872,23 +872,53 @@ div.cro_sldr {
     color: #ffffff;
   }
   .page .cro_headerspace {
-    position: static;
+    position: relative;
     overflow: hidden;
     margin-bottom: 60px;
   }
-  .page .cro_headerspace .imgdiv {
-    -webkit-filter: blur(4px) grayscale(25%);
-  }
   .menu-open {
-    left: 210px;
+    left: 250px;
   }
   .menu-open .mainmen {
     left: 0 !important;
     background: blue;
     transition: left 200ms ease;
   }
+  .menu-open .mainmen .mobile-social-menu {
+    position: absolute;
+    bottom: 350px;
+    left: 10px;
+    padding: 0;
+    martgin: 0;
+  }
+  .menu-open .mainmen .mobile-social-menu li {
+    list-style: none;
+    float: left;
+  }
   .row {
     width: 100%;
+  }
+  .row .secondnav {
+    left: 0;
+  }
+  .row .secondnav ul li {
+    float: none;
+  }
+  .row .secondnav ul li a {
+    padding-top: 10px;
+  }
+  .row .secondnav #menu-main-submenu li a:hover {
+    transform: none;
+  }
+  .row .cro_title {
+    margin: 0 auto;
+    float: none;
+    border: solid 2px #ffffff;
+    position: relative;
+    top: 150px;
+  }
+  .row .cro_title h1 {
+    font-size: 34px;
   }
   .row .menu-toggle {
     font-size: 40px;
@@ -900,8 +930,8 @@ div.cro_sldr {
     background: #201F1F;
     position: fixed;
     height: 100%;
-    width: 210px;
-    left: -210px;
+    width: 250px;
+    left: -250px;
     top: 0;
   }
   .row .mainmen #access ul {
@@ -932,13 +962,10 @@ div.cro_sldr {
   .row .mainmen #access ul #cro-menu li:before {
     background: blue !important;
   }
+}
+@media only screen and (min-width: 701px) and (max-width: 767px) {
   .cro_title {
-    margin: 0 auto;
-    float: none;
-    border: solid 2px #ffffff;
-  }
-  .cro_title h1 {
-    font-size: 34px;
+    top: 300px !important;
   }
 }
 #post-854 {

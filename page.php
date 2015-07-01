@@ -25,8 +25,8 @@ get_header();
 		echo cro_headerimg($post->ID, 'page', $ps);			
 	?>
 
-	<div class="main singleitem row" style="background:rgb(77, 27, 27); margin:0 auto;">				
-		<div class="row singlepage" style="background: url(/wp-content/uploads//2015/06/background-texture9.jpg); margin:20px;">
+	<div class="main singleitem row" style="background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/clipboard-bg.jpg');">				
+		<div class="row singlepage" style="background: url(/wp-content/uploads//2015/06/background-texture9.jpg); margin:15px;">
 
 
 			<?php if ($sbar == 1) { ?>
