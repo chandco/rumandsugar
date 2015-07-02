@@ -618,7 +618,6 @@ ul.cro_gallerylist li .imgouter.galholderski h5.cro_accent.cro_galtitle {
   }
   .secondnav {
     z-index: 99999999999999999999999999999999999;
-    position: relative;
   }
   .cro_sldr .bannercover {
     height: 100%;
@@ -867,14 +866,22 @@ div.cro_sldr {
     transition: left 200ms ease;
   }
   .page .fa {
-    padding: 10px;
-    font-size: 50px;
+    font-size: 45px;
     color: #ffffff;
   }
   .page .cro_headerspace {
     position: relative;
     overflow: hidden;
     margin-bottom: 60px;
+  }
+  .page .topper {
+    height: 60px;
+    background: red;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 60;
+    background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/clipboard-bg.jpg');
   }
   .menu-open {
     left: 250px;
@@ -898,16 +905,32 @@ div.cro_sldr {
   .row {
     width: 100%;
   }
-  .row .secondnav {
+  .row #logo {
+    position: absolute;
+    right: 10px;
+    width: 210px;
+    top: 10px;
+  }
+  .row .leftmenrow {
+    padding: 0;
+  }
+  .row .leftmenrow .secondnav {
     left: 0;
   }
-  .row .secondnav ul li {
+  .row .leftmenrow .secondnav ul li {
     float: none;
   }
-  .row .secondnav ul li a {
+  .row .leftmenrow .secondnav ul li a {
     padding-top: 10px;
   }
-  .row .secondnav #menu-main-submenu li a:hover {
+  .row .leftmenrow .secondnav #menu-main-submenu li {
+    float: left;
+    width: 50%;
+  }
+  .row .leftmenrow .secondnav #menu-main-submenu li a {
+    margin: 0;
+  }
+  .row .leftmenrow .secondnav #menu-main-submenu:hover {
     transform: none;
   }
   .row .cro_title {
@@ -921,9 +944,8 @@ div.cro_sldr {
     font-size: 34px;
   }
   .row .menu-toggle {
-    font-size: 40px;
     position: absolute;
-    top: 0;
+    top: 7px;
     left: 10px;
   }
   .row .mainmen {
@@ -1259,11 +1281,6 @@ ul.cro_masthead li.mastheadli .cro_foodprice {
   }
   .leftmenrow .secondnav {
     left: 0;
-  }
-  .leftmenrow .secondnav #menu-main-submenu .menu-item {
-    width: 100%;
-    display: block;
-    float: none;
   }
   .leftmenrow .secondnav #menu-main-submenu .menu-item a {
     line-height: 1;

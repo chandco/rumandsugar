@@ -99,14 +99,6 @@ z-index: 5;
  * -03- LOGO
  * */
 
- .topper{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100px;
-	width: 100%;
-	z-index: 60;
-}
 
 
 .topper .row{
@@ -410,12 +402,6 @@ select.selectnav{
 }
 
 
-.secondnav{
-	position: absolute;
-	bottom: -9px;
-	right: 15px;
-	height: 40px;
-}
 
 .secondnav ul{
 	height: 40px;

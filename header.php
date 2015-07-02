@@ -60,9 +60,9 @@ wp_head();
 <div class="mbod">
 	<div class="topper">
 		<div class="row">
-			<div id="logo">RUM AND SUGAR LOGO</div>
-
-		<a href="#" class="menu-toggle"><i class="fa fa-bars"></i></a>	
+			<a href="#" class="menu-toggle"><i class="fa fa-bars"></i></a>	
+			<div id="logo" style="max-width:100%;"><img src="http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/SMALL-LOGO2.png" alt="Rum And Sugar" /></div>
+		
 		<div class="mainmen">
 
 			<div id="access">	

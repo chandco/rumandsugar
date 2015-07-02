@@ -24,8 +24,7 @@ color: #333;
 			transition: left 200ms ease;
 
 			.fa {
-				padding:10px;
-				font-size:50px;
+				font-size:45px;
 				color:#ffffff;
 			}
 
@@ -33,9 +32,18 @@ color: #333;
 				position:relative;
 				overflow:hidden;
 				margin-bottom:60px;
-				
 			}
 
+			.topper {
+				height:60px;
+				background:red;
+				//position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 60;
+				background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/clipboard-bg.jpg');
+			}
 		}
 
 		.menu-open {
@@ -66,22 +74,45 @@ color: #333;
 		.row {
 			width:100%;
 
-			.secondnav {
-				left:0;
-				 ul li {
-					float:none;
+			#logo {
+				position:absolute;
+				right:10px;
+				width:210px;
+				top:10px;
+			}
 
-					a {
-						padding-top:10px;
+			.leftmenrow {
+				padding:0;
+
+
+				.secondnav {
+					left:0;
+					 ul li {
+						float:none;
+
+						a {
+							padding-top:10px;
+						}
 					}
-				}
 
-				#menu-main-submenu li a {
-					&:hover {
-						transform:none;
+					#menu-main-submenu {
+
+						li {
+							float:left;
+							width:50%;
+							a {
+								margin:0;
+							}
+
+						}
+						&:hover {
+							transform:none;
+						}
 					}
 				}
 			}
+
+			
 
 			.cro_title {
 				margin:0 auto;
@@ -97,10 +128,9 @@ color: #333;
 
 		
 
-			.menu-toggle {
-				font-size:40px;
+			.menu-toggle {	
 				position:absolute;
-				top:0;
+				top:7px;
 				left:10px;
 			}
 
