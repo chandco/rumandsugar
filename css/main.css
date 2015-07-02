@@ -552,7 +552,6 @@ a.popup-box-link:before {
 }
 #menu-main-submenu li a:hover {
   color: #000000;
-  transform: translateY(-10px);
 }
 ul.cro_masthead li.mastheadli h5.mastheadh {
   margin-bottom: 5px;
@@ -865,24 +864,6 @@ div.cro_sldr {
     left: 0;
     transition: left 200ms ease;
   }
-  .page .fa {
-    font-size: 45px;
-    color: #ffffff;
-  }
-  .page .cro_headerspace {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 60px;
-  }
-  .page .topper {
-    height: 60px;
-    background: red;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 60;
-    background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/clipboard-bg.jpg');
-  }
   .menu-open {
     left: 250px;
   }
@@ -891,64 +872,22 @@ div.cro_sldr {
     background: blue;
     transition: left 200ms ease;
   }
-  .menu-open .mainmen .mobile-social-menu {
-    position: absolute;
-    bottom: 350px;
-    left: 10px;
-    padding: 0;
-    martgin: 0;
-  }
-  .menu-open .mainmen .mobile-social-menu li {
-    list-style: none;
-    float: left;
-  }
-  .row {
-    width: 100%;
-  }
-  .row #logo {
-    position: absolute;
+  .topper .row #logo {
     right: 10px;
     width: 210px;
     top: 10px;
   }
-  .row .leftmenrow {
-    padding: 0;
-  }
-  .row .leftmenrow .secondnav {
-    left: 0;
-  }
-  .row .leftmenrow .secondnav ul li {
-    float: none;
-  }
-  .row .leftmenrow .secondnav ul li a {
-    padding-top: 10px;
-  }
-  .row .leftmenrow .secondnav #menu-main-submenu li {
-    float: left;
-    width: 50%;
-  }
-  .row .leftmenrow .secondnav #menu-main-submenu li a {
-    margin: 0;
-  }
-  .row .leftmenrow .secondnav #menu-main-submenu:hover {
-    transform: none;
-  }
-  .row .cro_title {
-    margin: 0 auto;
-    float: none;
-    border: solid 2px #ffffff;
-    position: relative;
-    top: 150px;
-  }
-  .row .cro_title h1 {
-    font-size: 34px;
-  }
-  .row .menu-toggle {
+  .topper .row .menu-toggle {
     position: absolute;
     top: 7px;
     left: 10px;
+    display: block !important;
   }
-  .row .mainmen {
+  .topper .row .menu-toggle .fa {
+    font-size: 45px;
+    color: #ffffff;
+  }
+  .topper .mainmen {
     background: #201F1F;
     position: fixed;
     height: 100%;
@@ -956,39 +895,108 @@ div.cro_sldr {
     left: -250px;
     top: 0;
   }
-  .row .mainmen #access ul {
+  .topper .mainmen .mobile-social-menu {
+    position: absolute;
+    left: 15px;
+    bottom: 70px;
+  }
+  .topper .mainmen .mobile-social-menu ul {
+    padding: 0;
+    margin: 0;
+  }
+  .topper .mainmen .mobile-social-menu li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    font-size: 35px;
+  }
+  .topper .mainmen #access ul {
     float: none;
     display: block;
   }
-  .row .mainmen #access ul li {
+  .topper .mainmen #access ul li {
     float: none;
     width: 100%;
     padding-top: 15px;
     font-size: 18px;
   }
-  .row .mainmen #access ul li:first-child {
+  .topper .mainmen #access ul li:first-child {
     padding-top: 0;
   }
-  .row .mainmen #access ul li a {
+  .topper .mainmen #access ul li a {
     color: #ffffff;
   }
-  .row .mainmen #access ul li ul {
+  .topper .mainmen #access ul li ul {
     position: static;
   }
-  .row .mainmen #access ul li ul li {
+  .topper .mainmen #access ul li ul li {
     background: none;
   }
-  .row .mainmen #access ul li ul li a {
+  .topper .mainmen #access ul li ul li a {
     font-size: 1.2em;
   }
-  .row .mainmen #access ul #cro-menu li:before {
+  .topper .mainmen #access ul #cro-menu li:before {
     background: blue !important;
   }
-}
-@media only screen and (min-width: 701px) and (max-width: 767px) {
-  .cro_title {
-    top: 300px !important;
+  .bannercover {
+    height: 100%;
   }
+  .row {
+    width: 100%;
+  }
+  .row .cro_title {
+    margin: 0 auto;
+    float: none;
+    border: solid 2px #ffffff;
+    position: relative;
+    top: 120px;
+  }
+  .row .cro_title h1 {
+    font-size: 34px;
+  }
+  .row .secondnav {
+    left: 0;
+  }
+  .row .secondnav ul li {
+    float: none;
+  }
+  .row .secondnav ul li a {
+    padding-top: 10px;
+  }
+  .row .secondnav #menu-main-submenu li {
+    float: left;
+    width: 50%;
+  }
+  .row .secondnav #menu-main-submenu li a {
+    margin: 0;
+  }
+  .row .secondnav #menu-main-submenu:hover {
+    transform: none;
+  }
+  .row .leftmenrow {
+    padding: 0;
+  }
+}
+.topper {
+  height: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 60;
+  background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/clipboard-bg.jpg');
+  position: relative;
+}
+.topper .row .menu-toggle {
+  display: none;
+}
+.topper .row #logo {
+  position: absolute;
+  top: 7px;
+}
+.topper .row .mainmen {
+  background: red;
+  overflow: auto;
+  margin-top: 60px;
 }
 #post-854 {
   color: #999;
@@ -1264,10 +1272,6 @@ ul.cro_masthead li.mastheadli .cro_foodprice {
   }
   #footer table {
     width: 100%;
-  }
-  .topper {
-    position: relative;
-    height: auto;
   }
   .cro_headerspace {
     height: auto;

@@ -63,6 +63,9 @@ wp_head();
 			<a href="#" class="menu-toggle"><i class="fa fa-bars"></i></a>	
 			<div id="logo" style="max-width:100%;"><img src="http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/SMALL-LOGO2.png" alt="Rum And Sugar" /></div>
 		
+		
+		</div>
+
 		<div class="mainmen">
 
 			<div id="access">	
@@ -76,11 +79,9 @@ wp_head();
 				<li><a href="https://www.facebook.com/RUMandSUGAR"><i class="fa fa-facebook-square" style="color: rgb(75, 131, 219);" ></i></a></li>
 				<li><a href="https://twitter.com/RUMandSUGAR"><i class="fa fa-twitter-square" style="color:rgb(74, 169, 210);"></i></a></li>
 				<li><a href="https://www.youtube.com/channel/UCw0gJxSVWjk2lrIbd4PKXEQ"><i class="fa fa-youtube-square" style="color:rgb(228, 60, 60);"></i></a></li>
+			</ul>
 			</div>
-		</div>
-		<div id="social-menu">
-	
-		</div>
+
 		<div class="clearfix"></div>
 		
 	</div>
