@@ -857,6 +857,9 @@ div.cro_sldr {
 .row {
   width: 60%;
 }
+.bannercover {
+  height: 100%;
+}
 @media only screen and (max-width: 767px) {
   .page {
     overflow-x: hidden;
@@ -875,7 +878,7 @@ div.cro_sldr {
   .topper .row #logo {
     right: 10px;
     width: 210px;
-    top: 10px;
+    top: 10px !important;
   }
   .topper .row .menu-toggle {
     position: absolute;
@@ -937,9 +940,6 @@ div.cro_sldr {
   }
   .topper .mainmen #access ul #cro-menu li:before {
     background: blue !important;
-  }
-  .bannercover {
-    height: 100%;
   }
   .row {
     width: 100%;
@@ -1130,35 +1130,33 @@ div.cro_sldr {
 }
 #post-854 .banner-wrapper {
   position: relative;
-  background: green;
-  display: inline-block;
-  margin: 0 0 50px 50px;
-  max-width: 336px;
+  margin: 0 auto 65px auto;
+  max-width: 50%;
 }
 #post-854 .banner-wrapper .banner {
-  height: 80px;
+  height: 65px;
   background: #000;
   color: #BF9E72;
-  padding: 10px 40px;
-  line-height: 1.6em;
+  padding: 18px 6px;
+  line-height: 1em;
   font-family: 'Monotype Bernard W01';
   text-align: center;
-  font-size: 40px;
+  font-size: 32px;
   text-transform: uppercase;
 }
 #post-854 .banner-wrapper .banner:after {
   content: url('/wp-content/uploads//2015/06/right-ribbon.svg');
   position: absolute;
-  right: -57px;
-  top: 28px;
-  width: 100px;
+  right: -47px;
+  top: 25px;
+  width: 80px;
 }
 #post-854 .banner-wrapper .banner:before {
   content: url('/wp-content/uploads//2015/06/left-ribbon.svg');
   position: absolute;
-  left: -57px;
-  width: 100px;
-  top: 28px;
+  left: -47px;
+  width: 80px;
+  top: 25px;
 }
 ul.cro_masthead {
   background: none;

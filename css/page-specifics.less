@@ -9,69 +9,69 @@ color: #333;
 	width:60%;
 }
 
+.bannercover {
+	height:100%;
+}
+
+
 
 	@media only screen and (max-width: 767px) {
 
 	.page{
-			overflow-x:hidden;
-			position:relative;
-			left:0;
+		overflow-x:hidden;
+		position:relative;
+		left:0;
+		transition: left 200ms ease;
+
+	
+
+	}
+
+	.menu-open {
+		left:250px;
+			
+		.mainmen {
+			left:0 !important;
+			background:blue;
 			transition: left 200ms ease;
-
 		}
-
-		.menu-open {
-			left:250px;
-			.mainmen {
-				left:0 !important;
-				background:blue;
-				transition: left 200ms ease;
-			}
-
-		}
+	}
 
 		
-
 
 .topper {
 
 
-		.row {
+	.row {
 
-			#logo {
-				right:10px;
-				width:210px;
-				top:10px;
-			}
-
-
-			.menu-toggle {	
-				position:absolute;
-				top:7px;
-				left:10px;
-				display:block !important;
-
-				.fa {
-					font-size:45px;
-					color:#ffffff;
-				}
-			}
-	 
+		#logo {
+			right:10px;
+			width:210px;
+			top:10px !important;
 		}
 
 
+		.menu-toggle {	
+			position:absolute;
+			top:7px;
+			left:10px;
+			display:block !important;
+
+			.fa {
+				font-size:45px;
+				color:#ffffff;
+			}
+		} 
+	}
 
 
-
-			.mainmen {
-				background:#201F1F;
-				position:fixed;
-				height:100%;
-				width:250px;
-				left:-250px;
-				top:0;
-				
-
+		.mainmen {
+			background:#201F1F;
+			position:fixed;
+			height:100%;
+			width:250px;
+			left:-250px;
+			top:0;
 
 			.mobile-social-menu {
 				position:absolute;
@@ -91,54 +91,50 @@ color: #333;
 				}
 			}	
 
-				#access ul {
+			#access ul {
+				float:none;
+				display:block;
+
+				li {
 					float:none;
-					display:block;
+					width:100%;
+					padding-top:15px;
+					font-size:18px;
 
-					li {
-						float:none;
-						width:100%;
-						padding-top:15px;
-						font-size:18px;
-
-						&:first-child {
+					&:first-child {
 						padding-top:0;
-						}
-
-						a {
-							color:#ffffff;
-						}
-
-						ul{
-							position:static;
-								li {
-									background:none;
-									a {
-										font-size:1.2em;
-									}
-								} 
-							} 
-						}
-
-
-
-					#cro-menu {
-						li {
-							&:before {
-								background:blue !important;
-							}
-						}		
 					}
+
+					a {
+						color:#ffffff;
+					}
+
+					ul{
+						position:static;
+						
+						li {
+							background:none;
+								
+							a {
+								font-size:1.2em;
+							}
+						} 
+					} 
 				}
 
+			#cro-menu {
+				li {
+					&:before {
+						background:blue !important;
+					}
+				}		
 			}
+		}
+	}
 }
 
 
-.bannercover {
-	height:100%;
-}
-
+		
 				
 
 .row {
@@ -146,61 +142,52 @@ color: #333;
 	width:100%;
 
 	.cro_title {
-				margin:0 auto;
-				float:none;
-				border:solid 2px #ffffff;
-				position:relative;
-				top:120px;
+		margin:0 auto;
+		float:none;
+		border:solid 2px #ffffff;
+		position:relative;
+		top:120px;
 
-				h1 {
-					font-size:34px;
-				}
-			}
+		h1 {
+			font-size:34px;
+		}
+	}
 
 	.secondnav {
-				left:0;
-				 ul li {
-					float:none;
+		left:0;
+				
+		ul li {
+			float:none;
 
-					a {
-						padding-top:10px;
-					}
-				}
+			a {
+				padding-top:10px;
+			}
+		}
 
-				#menu-main-submenu {
+		#menu-main-submenu {
 
-					li {
-						float:left;
-						width:50%;
-						a {
-							margin:0;
-						}
-
-					}
-					&:hover {
-						transform:none;
-					}
+			li {
+				float:left;
+				width:50%;
+						
+				a {
+					margin:0;
 				}
 			}
 
-			.leftmenrow {
-						padding:0;
-					}
+			&:hover {
+				transform:none;
+			}
+		}
+	}
 
-
-
-			
-
+	.leftmenrow {
+		padding:0;
+	}	
 }
 
 
-	
-
-	
-
-		}
-
-		
+}
 
 
 
@@ -403,36 +390,34 @@ color: #333;
 	.banner-wrapper {
 
 		position:relative;
-		background:green;
-		display:inline-block;
-		margin:0 0 50px 50px;
-		max-width:336px;
+		margin:0 auto 65px auto;
+		max-width:50%;
 
 			.banner {
-				height:80px;
+				height:65px;
 				background:#000;
 				color:#BF9E72;
-				padding:10px 40px;
-				line-height:1.6em;
+				padding:18px 6px;
+				line-height:1em;
 				font-family:'Monotype Bernard W01';
 				text-align:center;
-				font-size:40px;
+				font-size:32px;
 				text-transform:uppercase;
 
 				&:after {
 					content: url('/wp-content/uploads//2015/06/right-ribbon.svg');
 					position:absolute;
-					right: -57px;
-		  			top: 28px;
-		  			width:100px;
+					right: -47px;
+		  			top: 25px;
+		  			width:80px;
 				}
 
 				&:before {
 					content: url('/wp-content/uploads//2015/06/left-ribbon.svg');
 					position:absolute;
-					left: -57px;
-					width:100px;
-					top:28px;
+					left: -47px;
+					width:80px;
+					top:25px;
 					
 				}
 
