@@ -977,6 +977,53 @@ div.cro_sldr {
     padding: 0;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 880px) {
+  .bannercover {
+    position: static;
+  }
+  .topper .mainmen {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background: #201F1F;
+  }
+  .topper .mainmen #access {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .topper .mainmen #access #cro-menu li a {
+    font-size: 1.7em;
+  }
+  .topper .mainmen #access #cro-menu li a:first-child a {
+    padding-left: 0;
+  }
+  .topper .mainmen ul.mobile-social-menu {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    list-style: none;
+  }
+  .topper .mainmen ul.mobile-social-menu li {
+    float: left;
+    margin-right: 10px;
+    font-size: 40px;
+  }
+  .topper .mainmen ul.mobile-social-menu li a .fa {
+    color: #ffffff;
+  }
+  .row .leftmenrow {
+    width: 100%;
+  }
+  .row .leftmenrow .secondnav ul#menu-main-submenu {
+    float: right;
+    margin-top: 100px;
+  }
+  .row .leftmenrow .secondnav ul#menu-main-submenu li {
+    float: none;
+    margin-top: 20px;
+    width: 250px;
+  }
+}
 .topper {
   height: 60px;
   top: 0;

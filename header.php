@@ -76,9 +76,9 @@ wp_head();
 
 			</div>	
 			<ul class ="mobile-social-menu">
-				<li><a href="https://www.facebook.com/RUMandSUGAR"><i class="fa fa-facebook-square" style="color: rgb(75, 131, 219);" ></i></a></li>
-				<li><a href="https://twitter.com/RUMandSUGAR"><i class="fa fa-twitter-square" style="color:rgb(74, 169, 210);"></i></a></li>
-				<li><a href="https://www.youtube.com/channel/UCw0gJxSVWjk2lrIbd4PKXEQ"><i class="fa fa-youtube-square" style="color:rgb(228, 60, 60);"></i></a></li>
+				<li><a href="https://www.facebook.com/RUMandSUGAR"><i class="fa fa-facebook-square"></i></a></li>
+				<li><a href="https://twitter.com/RUMandSUGAR"><i class="fa fa-twitter-square"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCw0gJxSVWjk2lrIbd4PKXEQ"><i class="fa fa-youtube-square"></i></a></li>
 			</ul>
 			</div>
 
