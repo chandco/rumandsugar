@@ -1016,7 +1016,7 @@ div.cro_sldr {
   }
   .row .leftmenrow .secondnav ul#menu-main-submenu {
     float: right;
-    margin-top: 100px;
+    margin-top: 120px;
   }
   .row .leftmenrow .secondnav ul#menu-main-submenu li {
     float: none;
@@ -1028,12 +1028,17 @@ div.cro_sldr {
     border-right: solid 2px #000;
   }
   .row .cro_title {
-    top: 280px;
     border: solid 1px #ffffff;
   }
 }
+@media only screen and (max-width: 1409px) {
+  .topper .row .header-menu #access li a {
+    font-size: 19px !important;
+    padding-right: 5px !important;
+  }
+}
 .topper {
-  height: 60px;
+  height: 50px;
   top: 0;
   left: 0;
   width: 100%;
@@ -1054,7 +1059,6 @@ div.cro_sldr {
 .topper .row ul.header-menu li {
   display: block;
   float: left;
-  padding-right: 10px;
   font-family: 'Monotype Bernard W01';
 }
 .topper .row ul.header-menu #logo {
@@ -1066,9 +1070,13 @@ div.cro_sldr {
 }
 .topper .row ul.header-menu #access a {
   font-size: 21px;
+  padding-right: 10px;
 }
 .topper .row ul.header-menu li.mobile-social-menu {
   margin-top: 10px;
+}
+.topper .row ul.header-menu li.mobile-social-menu a {
+  padding-right: 10px;
 }
 .topper .row ul.header-menu li.mobile-social-menu a .fa {
   color: #ffffff;
