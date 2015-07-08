@@ -341,7 +341,7 @@ ul.sociallinks li#foursquare span{
 }
 #access a {
 	display: block;
-	padding: 0 23px;
+	padding: 0;
 	text-decoration: none;
 	font-weight: normal;
 	font-size: 15px;
@@ -463,24 +463,7 @@ select.selectnav{
 
 
 
-@media only screen and (max-width: 850px) {
-	
-	
-	
-	
-	
-}
-
-@media only screen and (max-width: 990px) {
-
-	#access a {
-	padding: 0 15px;
-	font-size: 14px;
-	}
-	
-}
-
-	@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
 
 

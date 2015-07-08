@@ -57,32 +57,61 @@ wp_head();
 <!--
  * -05- START THE MAINBODY
 -->
-<div class="mbod">
 	<div class="topper">
 		<div class="row">
 			<a href="#" class="menu-toggle"><i class="fa fa-bars"></i></a>	
-			<div id="logo" style="max-width:100%;"><img src="http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/SMALL-LOGO2.png" alt="Rum And Sugar" /></div>
+			<!-- <div id="logo" style="max-width:100%;"><img src="http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/SMALL-LOGO2.png" alt="Rum And Sugar" /></div> -->
 		
-		
-		</div>
 
-		<div class="mainmen">
+			<ul class="header-menu">
+				<li id="logo"><img src="http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/SMALL-LOGO2.png" alt="Rum And Sugar" /></li>
+				
+				<li id="access">
+					<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/about-us/">About</a></li>
+					<li><a href="/menu/">Menu</a></li>
+					<li><a href="/events/">Events</a></li>
+					<li><a href="/promotions/">Promotions</a></li>
+					<li><a href="/party-bookings/">Parties</a></li>
+					<li><a href="/the-cafe/">Museum Cafe</a></li>
+					</ul>
+				</li>
 
-			<div id="access">	
+				<li class="mobile-social-menu">
+					<ul>
+						<li><a href="https://www.facebook.com/RUMandSUGAR"><i class="fa fa-facebook-square"></i></a></li>
+						<li><a href="https://twitter.com/RUMandSUGAR"><i class="fa fa-twitter-square"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCw0gJxSVWjk2lrIbd4PKXEQ"><i class="fa fa-youtube-square"></i></a></li>
+					</ul>
+
+				</li>
+			</ul>
+
+
+			
+			<!-- <div id="access">	
 				<?php 
 					if ( has_nav_menu('primary' ) ) {
 						wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary', 'menu_id'  => 'cro-menu' ) ); 
 				} ?>
 
-			</div>	
+			</div>			
+	
+
+		<div class="social-menu">
 			<ul class ="mobile-social-menu">
 				<li><a href="https://www.facebook.com/RUMandSUGAR"><i class="fa fa-facebook-square"></i></a></li>
 				<li><a href="https://twitter.com/RUMandSUGAR"><i class="fa fa-twitter-square"></i></a></li>
 				<li><a href="https://www.youtube.com/channel/UCw0gJxSVWjk2lrIbd4PKXEQ"><i class="fa fa-youtube-square"></i></a></li>
 			</ul>
-			</div>
+		</div> -->
+
+		
+		</div>
+
+	
 
 		<div class="clearfix"></div>
 		
 	</div>
-</div>
