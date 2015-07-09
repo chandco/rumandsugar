@@ -69,7 +69,11 @@ wp_head();
 				<li id="access">
 					<ul>
 					<li><a href="/">Home</a></li>
-					<li><a href="/about-us/">About</a></li>
+					<li><a href="/about-us/">About</a>
+						<ul class="sub-menu">
+							<li><a href="/gallery/">Gallerey</a></li>
+						</ul>
+					</li>
 					<li><a href="/menu/">Menu</a></li>
 					<li><a href="/events/">Events</a></li>
 					<li><a href="/promotions/">Promotions</a></li>

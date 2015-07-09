@@ -317,6 +317,7 @@ color: #333;
   					//border:1px solid #f0f;
   					float:left;
   					font-family: 'Monotype Bernard W01';
+  					text-transform: uppercase;
 				}
 
 				#logo {
@@ -327,10 +328,46 @@ color: #333;
 				#access {
 					margin-top:6px;
 
-					a {
-						font-size:21px;
-						padding-right:10px;
-					}
+					li {
+
+					
+
+						&:before {
+							content: " ";
+  background: #fff;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: transform .2s ease,opacity .2s ease;
+  transform: scale(0.1,0.1);
+}
+
+&:hover {
+	> a {
+		color: #e31836 !important;
+		z-index:10000;
+		transform: translateZ(0);
+	}
+
+	&:before {
+		transform: scale(1.1,1.1);
+  		opacity: 1;
+	}
+}
+
+
+
+
+						a {
+							font-size:21px;
+							padding:0 5px;
+						}
+					}					
 				}
 
 		

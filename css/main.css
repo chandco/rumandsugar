@@ -1060,6 +1060,7 @@ div.cro_sldr {
   display: block;
   float: left;
   font-family: 'Monotype Bernard W01';
+  text-transform: uppercase;
 }
 .topper .row ul.header-menu #logo {
   width: 180px;
@@ -1068,9 +1069,32 @@ div.cro_sldr {
 .topper .row ul.header-menu #access {
   margin-top: 6px;
 }
-.topper .row ul.header-menu #access a {
+.topper .row ul.header-menu #access li:before {
+  content: " ";
+  background: #fff;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: transform .2s ease,opacity .2s ease;
+  transform: scale(0.1, 0.1);
+}
+.topper .row ul.header-menu #access li:hover > a {
+  color: #e31836 !important;
+  z-index: 10000;
+  transform: translateZ(0);
+}
+.topper .row ul.header-menu #access li:hover:before {
+  transform: scale(1.1, 1.1);
+  opacity: 1;
+}
+.topper .row ul.header-menu #access li a {
   font-size: 21px;
-  padding-right: 10px;
+  padding: 0 5px;
 }
 .topper .row ul.header-menu li.mobile-social-menu {
   margin-top: 10px;
