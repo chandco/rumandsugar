@@ -408,7 +408,6 @@ function get_frontcontent() {
 	
 		if (!empty($tttl)) {
 
-			
 
 			if ($sllink)
 				$substring .= '<div class="fptitles"><h3 class="fptitle cro_accent"><a href="' . get_permalink($sllink)  . '">' . $tttl  . '</a></h3></div>';

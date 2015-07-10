@@ -90,28 +90,7 @@ wp_head();
 					</ul>
 
 				</li>
-			</ul>
-
-
-			
-			<!-- <div id="access">	
-				<?php 
-					if ( has_nav_menu('primary' ) ) {
-						wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary', 'menu_id'  => 'cro-menu' ) ); 
-				} ?>
-
-			</div>			
-	
-
-		<div class="social-menu">
-			<ul class ="mobile-social-menu">
-				<li><a href="https://www.facebook.com/RUMandSUGAR"><i class="fa fa-facebook-square"></i></a></li>
-				<li><a href="https://twitter.com/RUMandSUGAR"><i class="fa fa-twitter-square"></i></a></li>
-				<li><a href="https://www.youtube.com/channel/UCw0gJxSVWjk2lrIbd4PKXEQ"><i class="fa fa-youtube-square"></i></a></li>
-			</ul>
-		</div> -->
-
-		
+			</ul>	
 		</div>
 
 	

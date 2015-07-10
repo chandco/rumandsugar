@@ -11,32 +11,8 @@ function tli_sidebars() {
  
 	$sidebarsarray = array(
 						array(
-							'class' => 'cro_sidebarmain',
-							'name' => __('Main Sidebar','localize')
-						),
-						array(
-							'class' => 'trifronttop',
-							'name' => __('Front Page left','localize')
-						),
-						array(
-							'class' => 'tcifronttop',
-							'name' => __('Front Page center','localize')
-						),
-						array(
-							'class' => 'tlifronttop',
-							'name' => __('Front Page right','localize')
-						),
-						array(
-							'class' => 'cro_footleft',
-							'name' => __('Footer left','localize')
-						),
-						array(
-							'class' => 'cro_footcent',
-							'name' => __('Footer center','localize')
-						),
-						array(
-							'class' => 'cro_footright',
-							'name' => __('Footer right','localize')
+						'class' => 'sidebar-widget-area',
+						'name' => __('Widget Area','localize')
 						)
 						
 					);

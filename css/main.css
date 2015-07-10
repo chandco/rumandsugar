@@ -855,7 +855,20 @@ div.cro_sldr {
   color: #333;
 }
 .row {
-  width: 60%;
+  width: 100%;
+  max-width: 1400px;
+}
+.left-content {
+  float: left;
+  width: 76%;
+}
+.right-content {
+  width: 20%;
+  margin-left: 4%;
+  float: right;
+}
+.right-content li {
+  list-style: none;
 }
 .bannercover {
   height: 100%;
@@ -872,73 +885,72 @@ div.cro_sldr {
   }
   .menu-open .mainmen {
     left: 0 !important;
-    background: blue;
     transition: left 200ms ease;
   }
-  .topper .row #logo {
+  .topper .row .header-menu {
+    flex-direction: column !important;
+  }
+  .topper .row .header-menu #logo {
     right: 10px;
     width: 210px;
     top: 10px !important;
+    position: relative;
   }
-  .topper .row .menu-toggle {
+  .topper .row .header-menu #access {
+    background: red;
+    height: 100%;
+  }
+  .topper .row .header-menu .menu-toggle {
     position: absolute;
     top: 7px;
     left: 10px;
     display: block !important;
   }
-  .topper .row .menu-toggle .fa {
+  .topper .row .header-menu .menu-toggle .fa {
     font-size: 45px;
     color: #ffffff;
   }
-  .topper .mainmen {
-    background: #201F1F;
-    position: fixed;
-    height: 100%;
-    width: 250px;
-    left: -250px;
-    top: 0;
-  }
-  .topper .mainmen .mobile-social-menu {
+  .topper .mobile-social-menu {
     position: absolute;
     left: 15px;
     bottom: 70px;
   }
-  .topper .mainmen .mobile-social-menu ul {
+  .topper .mobile-social-menu ul {
     padding: 0;
     margin: 0;
   }
-  .topper .mainmen .mobile-social-menu li {
+  .topper .mobile-social-menu li {
     list-style: none;
     float: left;
     margin-right: 10px;
     font-size: 35px;
   }
-  .topper .mainmen #access ul {
+  .topper #access ul {
     float: none;
     display: block;
   }
-  .topper .mainmen #access ul li {
+  .topper #access ul li {
     float: none;
     width: 100%;
     padding-top: 15px;
     font-size: 18px;
   }
-  .topper .mainmen #access ul li:first-child {
+  .topper #access ul li:first-child {
     padding-top: 0;
   }
-  .topper .mainmen #access ul li a {
+  .topper #access ul li a {
     color: #ffffff;
   }
-  .topper .mainmen #access ul li ul {
+  .topper #access ul li ul {
     position: static;
   }
-  .topper .mainmen #access ul li ul li {
+  .topper #access ul li ul li {
     background: none;
   }
-  .topper .mainmen #access ul li ul li a {
+  .topper #access ul li ul li a {
     font-size: 1.2em;
   }
-  .topper .mainmen #access ul #cro-menu li:before {
+  .topper #access ul #cro-menu li:before {
     background: blue !important;
   }
   .row {
@@ -975,60 +987,6 @@ div.cro_sldr {
   }
   .row .leftmenrow {
     padding: 0;
-  }
-}
-@media only screen and (min-width: 772px) {
-  .bannercover {
-    position: static;
-  }
-  .topper .mainmen {
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    background: #201F1F;
-  }
-  .topper .mainmen #access {
-    width: 768px;
-    margin: 0 auto;
-  }
-  .topper .mainmen #access #cro-menu li a {
-    font-size: 1.7em;
-  }
-  .topper .mainmen #access #cro-menu li a:first-child a {
-    padding-left: 0;
-  }
-  .topper .mainmen ul.mobile-social-menu {
-    position: absolute;
-    right: 10px;
-    top: -60px;
-    list-style: none;
-  }
-  .topper .mainmen ul.mobile-social-menu li {
-    float: left;
-    margin-right: 10px;
-    font-size: 40px;
-  }
-  .topper .mainmen ul.mobile-social-menu li a .fa {
-    color: #ffffff;
-  }
-  .row .leftmenrow {
-    width: 100%;
-  }
-  .row .leftmenrow .secondnav ul#menu-main-submenu {
-    float: right;
-    margin-top: 120px;
-  }
-  .row .leftmenrow .secondnav ul#menu-main-submenu li {
-    float: none;
-    margin-top: 20px;
-    width: 250px;
-  }
-  .row .leftmenrow .secondnav ul#menu-main-submenu li a {
-    border-bottom: solid 2px#000;
-    border-right: solid 2px #000;
-  }
-  .row .cro_title {
-    border: solid 1px #ffffff;
   }
 }
 @media only screen and (max-width: 1409px) {
@@ -1085,7 +1043,6 @@ div.cro_sldr {
 }
 .topper .row ul.header-menu #access li:hover > a {
   color: #e31836 !important;
-  z-index: 10000;
   transform: translateZ(0);
 }
 .topper .row ul.header-menu #access li:hover:before {
