@@ -90,6 +90,13 @@ wp_head();
 					</ul>
 
 				</li>
+
+				<li class="header-tabs">
+					<ul>
+						<li>Book a table</li>
+						<li>Blog</li>
+					</ul>
+				</li>
 			</ul>	
 		</div>
 

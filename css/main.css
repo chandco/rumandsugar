@@ -886,7 +886,7 @@ div.cro_sldr {
 .bannercover {
   height: 100%;
 }
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 767px) {
   .page {
     overflow-x: hidden;
     position: relative;
@@ -1002,6 +1002,11 @@ div.cro_sldr {
     padding: 0;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+  .banner {
+    font-size: 28px !important;
+  }
+}
 .topper {
   height: 50px;
   top: 0;
@@ -1015,6 +1020,7 @@ div.cro_sldr {
   margin: 0;
   display: block;
   display: flex;
+  background: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 50px;
   flex-direction: row;
@@ -1069,6 +1075,15 @@ div.cro_sldr {
 .topper .row ul.header-menu li.mobile-social-menu a .fa {
   color: #ffffff;
   font-size: 35px;
+}
+.topper .row ul.header-menu li.header-tabs {
+  position: absolute;
+  z-index: 99999;
+  top: 210px;
+  right: 0;
+}
+.topper .row ul.header-menu li.header-tabs ul li {
+  font-size: 30px;
 }
 .topper .row .menu-toggle {
   display: none;
