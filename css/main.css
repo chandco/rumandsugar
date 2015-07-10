@@ -841,6 +841,36 @@ div.cro_sldr {
 #croma_bookingform {
   color: #333;
 }
+.topper .row ul.header-menu {
+  background: #eeeeee;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  height: 50px;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  border: 2px solid #000000;
+}
+.topper .row ul.header-menu > li {
+  width: 30%;
+}
+.topper .row ul.header-menu #logo {
+  flex: 1 0 0;
+  background: #00f;
+  margin-right: 1em;
+}
+.topper .row ul.header-menu #access {
+  flex: 4 0 0;
+  background: #f00;
+}
+.topper .row ul.header-menu .mobile-social-menu {
+  flex: 1 0 0;
+  background: #0f0;
+  justify-content: flex-end;
+  display: flex;
+  margin-left: 1em;
+}
 .row {
   width: 100%;
   max-width: 1400px;
@@ -900,26 +930,26 @@ div.cro_sldr {
     left: 0 !important;
     transition: left 200ms ease;
   }
-  .topper .row .header-menu {
+  .topper .row ul.header-menu {
     flex-direction: column !important;
   }
-  .topper .row .header-menu #logo {
+  .topper .row ul.header-menu li#logo {
     right: 10px;
     width: 210px;
     top: 10px !important;
     position: relative;
   }
-  .topper .row .header-menu #access {
+  .topper .row ul.header-menu #access {
     background: red;
     height: 100%;
   }
-  .topper .row .header-menu .menu-toggle {
+  .topper .row ul.header-menu .menu-toggle {
     position: absolute;
     top: 7px;
     left: 10px;
     display: block !important;
   }
-  .topper .row .header-menu .menu-toggle .fa {
+  .topper .row ul.header-menu .menu-toggle .fa {
     font-size: 45px;
     color: #ffffff;
   }
@@ -1002,6 +1032,7 @@ div.cro_sldr {
     padding: 0;
   }
 }
+/* Sorts out the text for the menu banner */
 @media only screen and (min-width: 768px) and (max-width: 850px) {
   .banner {
     font-size: 28px !important;

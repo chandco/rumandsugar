@@ -91,12 +91,12 @@ wp_head();
 
 				</li>
 
-				<li class="header-tabs">
+				<!-- <li class="header-tabs">
 					<ul>
 						<li>Book a table</li>
 						<li>Blog</li>
 					</ul>
-				</li>
+				</li> -->
 			</ul>	
 		</div>
 

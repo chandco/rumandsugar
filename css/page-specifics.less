@@ -4,6 +4,49 @@
 color: #333;
 }
 
+.topper {
+	.row {
+		ul.header-menu {
+			list-style-type:none;
+  			background:#eeeeee;
+  			display: flex;
+  			width: 100%;
+  			padding:0;
+  			height: 50px;
+  			flex-direction: row;
+  			list-style-type: none;
+  			justify-content: space-between;
+  			border: 2px solid #000000;
+
+  			> li {
+  				width: 30%;
+  				// * {
+  				// 	display: none;
+  				// }
+  			}
+
+  			#logo {
+  				 flex: 1 0 0;
+				  background:#00f;
+				  margin-right:1em;
+  			}
+
+  			#access {
+  				flex: 4 0 0;
+				background:#f00;
+  			}
+
+  			.mobile-social-menu {
+  				flex: 1 0 0;
+				background:#0f0;
+				justify-content: flex-end;
+				display: flex;
+				margin-left:1em;
+  			}
+		}
+	}
+}
+
 
 .row {
 	width:100%;
@@ -92,10 +135,10 @@ color: #333;
 
 	.row {
 
-		.header-menu {
+		ul.header-menu {
 			flex-direction:column !important;
 
-			#logo {
+			li#logo {
 				right:10px;
 				width:210px;
 				top:10px !important;
@@ -245,6 +288,7 @@ color: #333;
 }
 
 
+/* Sorts out the text for the menu banner */
 @media only screen and (min-width: 768px) and (max-width: 850px) {
 
 	.banner {
