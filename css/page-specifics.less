@@ -8,6 +8,38 @@ color: #333;
 .row {
 	width:100%;
 	max-width:1400px;
+
+	.cro_title {
+		border:1px solid #ffffff;
+	}
+
+	.leftmenrow {
+		position:absolute;
+		right:10px;
+		padding:0;
+		top:80px;
+		width:0;
+
+		#menu-main-submenu {
+			float:right;
+
+			&:after {
+				clear:both;
+			}
+
+			li {
+				float:none;
+				width:300px;
+				margin-top:50px;
+
+				a {
+					line-height:60px;
+					border-right: 2px solid #000000;
+					border-bottom: 2px solid #000000;
+				}
+			}
+		}
+	}
 }
 
 .left-content {
@@ -32,7 +64,7 @@ color: #333;
 
 
 
-	@media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 930px) {
 
 	.page{
 		overflow-x:hidden;
@@ -214,23 +246,6 @@ color: #333;
 
 
 
-@media only screen and (max-width: 1409px) {
-.topper {
-	.row {
-		.header-menu {
-			#access {
-				li {
-					a {
-					font-size:19px !important;
-					padding-right:5px !important;
-					}
-				}
-			}
-		}
-	}
-
-}
-}
 
 	.topper {
 		height:50px;
@@ -266,7 +281,7 @@ color: #333;
 
 				#logo {
 					width:180px;
-					margin-top:10px;
+					margin-top:7px;
 				}
 
 				#access {
@@ -311,12 +326,12 @@ color: #333;
 		
 
 				li.mobile-social-menu {
-					margin-top:10px;
+					margin-top:7px;
 					a {
 						padding-right:10px;
 						.fa {
 							color:#ffffff;
-							font-size:30px;
+							font-size:35px;
 							
 						}
 					}
