@@ -870,9 +870,20 @@ div.cro_sldr {
   justify-content: flex-end;
   display: flex;
   margin-left: 1em;
+  margin-top: 7px;
+}
+.topper .row ul.header-menu .mobile-social-menu li a {
+  padding-right: 10px;
+}
+.topper .row ul.header-menu .mobile-social-menu li a .fa {
+  color: #ffffff;
+  font-size: 35px;
+}
+.topper .row ul.header-menu .mobile-social-menu li:last-child a {
+  padding-right: 0;
 }
 .row {
-  width: 100%;
+  width: 90%;
   max-width: 1400px;
 }
 .row .cro_title {
@@ -917,19 +928,6 @@ div.cro_sldr {
   height: 100%;
 }
 @media only screen and (max-width: 767px) {
-  .page {
-    overflow-x: hidden;
-    position: relative;
-    left: 0;
-    transition: left 200ms ease;
-  }
-  .menu-open {
-    left: 250px;
-  }
-  .menu-open .mainmen {
-    left: 0 !important;
-    transition: left 200ms ease;
-  }
   .topper .row ul.header-menu {
     flex-direction: column !important;
   }
@@ -1096,16 +1094,6 @@ div.cro_sldr {
 .topper .row ul.header-menu #access li a {
   font-size: 21px;
   padding: 0 5px;
-}
-.topper .row ul.header-menu li.mobile-social-menu {
-  margin-top: 7px;
-}
-.topper .row ul.header-menu li.mobile-social-menu a {
-  padding-right: 10px;
-}
-.topper .row ul.header-menu li.mobile-social-menu a .fa {
-  color: #ffffff;
-  font-size: 35px;
 }
 .topper .row ul.header-menu li.header-tabs {
   position: absolute;
