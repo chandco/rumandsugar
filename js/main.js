@@ -40,10 +40,13 @@ $('a.popup-box-link').each(function(index, element) {
 })
 
 
+
 $('img').wrap('<div class="menu-image-wrapper"><div class="inner"></div></div>');
 
 
-
+$(".menu-toggle").click(function(){
+  $(this).toggleClass('header-menu');
+});
 
 
 

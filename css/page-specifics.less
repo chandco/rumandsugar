@@ -4,9 +4,32 @@
 color: #333;
 }
 
+.imgdiv {
+	background-size: 100% auto !important; // stretch for larger screens.
+	background-size: cover !important;
+	background-position: center center !important;
+	height:auto;
+	z-index: -1;
+
+}
+
+.cro_headerspace {
+	overflow:initial;
+}
+
+
 .topper {
 
 	.row {
+
+		#mobile-logo {
+			display:none;
+		}
+
+		.menu-toggle {
+			display:none;
+		}
+
 		ul.header-menu {
 			list-style-type:none;
   			background:#eeeeee;
@@ -17,7 +40,6 @@ color: #333;
   			flex-direction: row;
   			list-style-type: none;
   			justify-content: space-between;
-  			border: 2px solid #000000;
 
   			> li {
   				width: 30%;
@@ -32,18 +54,26 @@ color: #333;
 				  margin-right:1em;
   			}
 
-  			#access {
-  				flex: 4 0 0;
-				background:#f00;
-  			}
+  			.inner-menu {
+  				display:flex;
+  				background:green;
+  				justify-content: space-between;
+  				flex: 2 0 0;
+  				justify-content: flex-end;
+  				
 
-  			.mobile-social-menu {
-  				flex: 1 0 0;
-				background:#0f0;
-				justify-content: flex-end;
-				display: flex;
-				margin-left:1em;
-				margin-top:7px;
+  				#access {
+  					flex: 1 0 0;
+					background:#f00;
+					display:flex;
+  				}
+
+  				.social-menu {
+  					flex: 2 0 0;
+					background:#0f0;
+					margin-left:1em;
+					margin-top:7px;
+				
 
 				li {
 					a {
@@ -60,6 +90,7 @@ color: #333;
 					}
 				}
   			}
+  			}	
 		}
 	}
 }
@@ -124,175 +155,56 @@ color: #333;
 
 
 
-	@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 	
 
-.topper {
+	.topper {
 
-	.row {
+		.row {
 
-		ul.header-menu {
-			flex-direction:column !important;
-
-			li#logo {
-				right:10px;
-				width:210px;
-				top:10px !important;
-				position:relative;
-			}
-
-			#access {
-				background:red;
-				height:100%;
-			}
-
-
-		.menu-toggle {	
-			position:absolute;
-			top:7px;
-			left:10px;
-			display:block !important;
-
-			.fa {
-				font-size:45px;
-				color:#ffffff;
-			}
-		} 
-
-		}
-
-	
-	}
-
-
-		
-
-	
-			.mobile-social-menu {
-				position:absolute;
-				left:15px;
-				bottom:70px;
-
-				ul {
-					padding:0;
-					margin:0;
-				}
-
-				li {
-					list-style:none;
-					float:left;
-					margin-right:10px;
-					font-size:35px;
-				}
-			}	
-
-			#access ul {
-				float:none;
+			#mobile-logo {
 				display:block;
+			}
 
-				li {
-					float:none;
+			width:100%;
+
+			.menu-toggle {	
+				display:block;
+			} 
+			
+			.header-menu {
+				display:block !important;
+				background:#1f1d1d !important;
+				height:350px !important;
+				position:absolute;
+				top:0;
+				z-index:999999;
+				transform:translateY(-100%);
+				transition: transform 0.5s ease-in-out;
+
+			
+
+				#logo {
+					display:none;
+				}
+
+				#access {
+					z-index:99999;
 					width:100%;
-					padding-top:15px;
-					font-size:18px;
 
-					&:first-child {
-						padding-top:0;
-					}
+					ul {
+						height:100%;
+						width:100%;
 
-					a {
-						color:#ffffff;
-					}
-
-					ul{
-						position:static;
-						
 						li {
-							background:none;
-								
-							a {
-								font-size:1.2em;
-							}
-						} 
-					} 
-				}
-
-			#cro-menu {
-				li {
-					&:before {
-						background:blue !important;
+							float:none;
+						}
 					}
-				}		
-			}
-		}
-}
-
-
-		
-				
-
-.row {
-
-	width:100%;
-
-	.cro_title {
-		margin:0 auto;
-		float:none;
-		border:solid 2px #ffffff;
-		position:relative;
-		top:120px;
-
-		h1 {
-			font-size:34px;
-		}
-	}
-
-	.secondnav {
-		left:0;
-				
-		ul li {
-			float:none;
-
-			a {
-				padding-top:10px;
-			}
-		}
-
-		#menu-main-submenu {
-
-			li {
-				float:left;
-				width:50%;
-						
-				a {
-					margin:0;
 				}
 			}
-
-			&:hover {
-				transform:none;
-			}
-		}
-	}
-
-	.leftmenrow {
-		padding:0;
-	}	
-}
-
-
-}
-
-
-/* Sorts out the text for the menu banner */
-@media only screen and (min-width: 768px) and (max-width: 850px) {
-
-	.banner {
-		font-size: 28px !important;
+		}					
 	}
 }
-
-
 
 
 	.topper {
@@ -373,7 +285,7 @@ color: #333;
 
 		
 
-				// li.mobile-social-menu {
+				// li.social-menu {
 					
 
 				// }
@@ -390,10 +302,6 @@ color: #333;
 						}
 					}
 				}
-			}
-
-			.menu-toggle {
-				display:none;
 			}
 	
 		}	

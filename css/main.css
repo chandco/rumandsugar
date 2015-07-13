@@ -560,11 +560,6 @@ ul.cro_masthead li.mastheadli span.cro_foodprice {
   font-weight: normal;
   font-family: 'Monotype Bernard W01';
 }
-.imgdiv {
-  background-size: 100% auto !important;
-  background-size: cover !important;
-  background-position: center center !important;
-}
 body {
   color: #ffffff;
 }
@@ -841,6 +836,22 @@ div.cro_sldr {
 #croma_bookingform {
   color: #333;
 }
+.imgdiv {
+  background-size: 100% auto !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  height: auto;
+  z-index: -1;
+}
+.cro_headerspace {
+  overflow: initial;
+}
+.topper .row #mobile-logo {
+  display: none;
+}
+.topper .row .menu-toggle {
+  display: none;
+}
 .topper .row ul.header-menu {
   background: #eeeeee;
   display: flex;
@@ -850,7 +861,6 @@ div.cro_sldr {
   flex-direction: row;
   list-style-type: none;
   justify-content: space-between;
-  border: 2px solid #000000;
 }
 .topper .row ul.header-menu > li {
   width: 30%;
@@ -860,26 +870,32 @@ div.cro_sldr {
   background: #00f;
   margin-right: 1em;
 }
-.topper .row ul.header-menu #access {
-  flex: 4 0 0;
-  background: #f00;
-}
-.topper .row ul.header-menu .mobile-social-menu {
-  flex: 1 0 0;
-  background: #0f0;
-  justify-content: flex-end;
+.topper .row ul.header-menu .inner-menu {
   display: flex;
+  background: green;
+  justify-content: space-between;
+  flex: 2 0 0;
+  justify-content: flex-end;
+}
+.topper .row ul.header-menu .inner-menu #access {
+  flex: 1 0 0;
+  background: #f00;
+  display: flex;
+}
+.topper .row ul.header-menu .inner-menu .social-menu {
+  flex: 2 0 0;
+  background: #0f0;
   margin-left: 1em;
   margin-top: 7px;
 }
-.topper .row ul.header-menu .mobile-social-menu li a {
+.topper .row ul.header-menu .inner-menu .social-menu li a {
   padding-right: 10px;
 }
-.topper .row ul.header-menu .mobile-social-menu li a .fa {
+.topper .row ul.header-menu .inner-menu .social-menu li a .fa {
   color: #ffffff;
   font-size: 35px;
 }
-.topper .row ul.header-menu .mobile-social-menu li:last-child a {
+.topper .row ul.header-menu .inner-menu .social-menu li:last-child a {
   padding-right: 0;
 }
 .row {
@@ -928,112 +944,38 @@ div.cro_sldr {
   height: 100%;
 }
 @media only screen and (max-width: 767px) {
-  .topper .row ul.header-menu {
-    flex-direction: column !important;
+  .topper .row {
+    width: 100%;
   }
-  .topper .row ul.header-menu li#logo {
-    right: 10px;
-    width: 210px;
-    top: 10px !important;
-    position: relative;
-  }
-  .topper .row ul.header-menu #access {
-    background: red;
-    height: 100%;
-  }
-  .topper .row ul.header-menu .menu-toggle {
-    position: absolute;
-    top: 7px;
-    left: 10px;
-    display: block !important;
-  }
-  .topper .row ul.header-menu .menu-toggle .fa {
-    font-size: 45px;
-    color: #ffffff;
-  }
-  .topper .mobile-social-menu {
-    position: absolute;
-    left: 15px;
-    bottom: 70px;
-  }
-  .topper .mobile-social-menu ul {
-    padding: 0;
-    margin: 0;
-  }
-  .topper .mobile-social-menu li {
-    list-style: none;
-    float: left;
-    margin-right: 10px;
-    font-size: 35px;
-  }
-  .topper #access ul {
-    float: none;
+  .topper .row #mobile-logo {
     display: block;
   }
-  .topper #access ul li {
-    float: none;
-    width: 100%;
-    padding-top: 15px;
-    font-size: 18px;
+  .topper .row .menu-toggle {
+    display: block;
   }
-  .topper #access ul li:first-child {
-    padding-top: 0;
+  .topper .row .header-menu {
+    display: block !important;
+    background: #1f1d1d !important;
+    height: 350px !important;
+    position: absolute;
+    top: 0;
+    z-index: 999999;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
   }
-  .topper #access ul li a {
-    color: #ffffff;
+  .topper .row .header-menu #logo {
+    display: none;
   }
-  .topper #access ul li ul {
-    position: static;
-  }
-  .topper #access ul li ul li {
-    background: none;
-  }
-  .topper #access ul li ul li a {
-    font-size: 1.2em;
-  }
-  .topper #access ul #cro-menu li:before {
-    background: blue !important;
-  }
-  .row {
+  .topper .row .header-menu #access {
+    z-index: 99999;
     width: 100%;
   }
-  .row .cro_title {
-    margin: 0 auto;
+  .topper .row .header-menu #access ul {
+    height: 100%;
+    width: 100%;
+  }
+  .topper .row .header-menu #access ul li {
     float: none;
-    border: solid 2px #ffffff;
-    position: relative;
-    top: 120px;
-  }
-  .row .cro_title h1 {
-    font-size: 34px;
-  }
-  .row .secondnav {
-    left: 0;
-  }
-  .row .secondnav ul li {
-    float: none;
-  }
-  .row .secondnav ul li a {
-    padding-top: 10px;
-  }
-  .row .secondnav #menu-main-submenu li {
-    float: left;
-    width: 50%;
-  }
-  .row .secondnav #menu-main-submenu li a {
-    margin: 0;
-  }
-  .row .secondnav #menu-main-submenu:hover {
-    transform: none;
-  }
-  .row .leftmenrow {
-    padding: 0;
-  }
-}
-/* Sorts out the text for the menu banner */
-@media only screen and (min-width: 768px) and (max-width: 850px) {
-  .banner {
-    font-size: 28px !important;
   }
 }
 .topper {
@@ -1103,9 +1045,6 @@ div.cro_sldr {
 }
 .topper .row ul.header-menu li.header-tabs ul li {
   font-size: 30px;
-}
-.topper .row .menu-toggle {
-  display: none;
 }
 #post-854 {
   color: #999;
