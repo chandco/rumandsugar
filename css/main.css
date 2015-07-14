@@ -24,6 +24,12 @@ body {
   position: relative;
   margin: auto;
 }
+@media screen and (max-width: 1200px) {
+  .max-central {
+    box-sizing: border-box;
+    padding: 0 2%;
+  }
+}
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
@@ -556,6 +562,11 @@ a.popup-box-link:before {
   transition: transform 0.1s ease;
   -webkit-transform-style: preserve-3d;
 }
+#menu-main-submenu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 #menu-main-submenu li:hover {
   color: #000000;
 }
@@ -641,6 +652,12 @@ ul.cro_gallerylist li .imgouter.galholderski h5.cro_accent.cro_galtitle {
   position: relative;
   margin: auto;
 }
+@media screen and (max-width: 1200px) {
+  .main {
+    box-sizing: border-box;
+    padding: 0 2%;
+  }
+}
 svg,
 #mold-logo {
   width: 50%;
@@ -702,7 +719,8 @@ div.cro_sldr {
 }
 .topper > .max-central {
   box-sizing: border-box;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -722,25 +740,46 @@ div.cro_sldr {
 .topper #logo {
   flex: 1 0 0;
   width: 100%;
-  margin-right: 3em;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.topper #logo img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: none;
+  height: auto;
 }
 .topper .nav-menus {
   height: 100%;
-  flex: 5 0 0;
+  flex: 6 0 0;
   display: flex;
 }
 .topper .nav-menus .primary-menu {
+  margin: 0 40px;
   flex-basis: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .topper .nav-menus .primary-menu {
+    margin: 0 20px;
+  }
 }
 .topper .nav-menus .primary-menu .nav {
   justify-content: space-between;
 }
-.topper .nav-menus .social-menu {
-  flex-basis: 200px;
-  margin-left: 1em;
-}
 .topper .nav-menus .social-menu .nav {
-  justify-content: flex-end;
+  display: block;
+  text-align: right;
+}
+.topper .nav-menus .social-menu .nav > li {
+  width: 40px;
+  margin-left: 10px;
+}
+.topper .nav-menus .social-menu .nav > li:first-child {
+  margin-left: 0;
 }
 .topper .nav-menus .social-menu li {
   margin-left: 1em;
@@ -751,6 +790,9 @@ div.cro_sldr {
 }
 .topper .nav-menus .menu-container ul.nav {
   display: flex;
+}
+.topper .nav-menus .menu-container ul.nav a {
+  white-space: nowrap;
 }
 .topper .nav-menus .menu-container ul.nav li {
   position: relative;
@@ -778,13 +820,99 @@ div.cro_sldr {
   right: 0;
   top: 70px;
 }
+@media screen and (max-width: 1200px) {
+  .topper .nav-menus .secondnav-menu {
+    right: 2%;
+  }
+}
 .topper .nav-menus .secondnav-menu #menu-main-submenu li {
   float: none;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 5px 10px;
 }
 .topper .nav-menus .secondnav-menu #menu-main-submenu li a {
   padding: 0;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .topper {
+    border-bottom: 2px solid #111;
+  }
+  .topper .nav-menus {
+    transition: transform .5s ease;
+    will-change: transform;
+    transform: translateY(-100%);
+  }
+  .topper.open .nav-menus {
+    transform: translateY(0);
+  }
+  .topper .menu-toggle {
+    flex: 1 0 0;
+    font-size: 40px;
+    position: relative;
+    z-index: 90;
+    width: auto;
+    display: inline-block;
+    border: none;
+    background: none;
+    text-align: left;
+    color: #e31836;
+  }
+  .topper #logo {
+    width: auto;
+    max-width: 30%;
+    flex: 3 0 0;
+    z-index: 90;
+    position: relative;
+  }
+  .topper #logo img {
+    position: relative;
+    z-index: 50;
+  }
+  .topper .nav-menus {
+    min-height: 90vh;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 60px;
+    z-index: 0;
+    padding: 0 10px 30px;
+    display: block;
+  }
+  .topper .nav-menus .primary-menu {
+    margin: 0;
+  }
+  .topper .nav-menus .primary-menu ul.nav {
+    display: block;
+    background-color: #333;
+    width: 100%;
+  }
+  .topper .nav-menus .social-menu {
+    background-color: #333;
+  }
+  .topper .nav-menus .social-menu ul.nav {
+    justify-content: flex-start;
+  }
+  .topper .nav-menus .social-menu ul.nav li {
+    text-align: left;
+    padding-left: 2px;
+  }
+  .topper .nav-menus .secondnav-menu {
+    background-color: #333;
+    top: auto;
+    position: relative;
+    right: auto;
+  }
+  .topper .nav-menus .secondnav-menu #menu-main-submenu {
+    width: 100%;
+  }
+  .topper .nav-menus .secondnav-menu #menu-main-submenu li a {
+    text-align: left;
+  }
+}
+body {
+  height: 100%;
 }
 #menu-main-menu li {
   position: relative;
@@ -810,12 +938,19 @@ div.cro_sldr {
   position: relative;
 }
 #menu-main-menu li:hover:before {
-  transform: scale(1.1, 1.1);
+  transform: scale(1, 1);
   opacity: 1;
 }
 #menu-main-menu li a {
   font-size: 21px;
   padding: 0 5px;
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  #menu-main-menu li a {
+    font-size: 1.2em;
+  }
 }
 .cro_fpc {
   margin-bottom: 30px;

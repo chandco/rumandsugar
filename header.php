@@ -61,7 +61,7 @@ wp_head();
 		<div class='max-central'>
 
 		
-			<a href="#" class="menu-toggle"><i class="fa fa-bars"></i></a>	
+			<button class="menu-toggle"><i class="fa fa-bars"></i></button>	
 			
 			<div id="logo"><img src="http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/SMALL-LOGO2.png" alt="Rum And Sugar" /></div>
 

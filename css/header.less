@@ -53,7 +53,8 @@ div.cro_sldr {
 	> .max-central {
 
 		box-sizing: border-box;
-		padding: @header-padding 0;
+		padding-top: @header-padding;
+		padding-bottom: @header-padding; // don't use shorthand as the .max-central class does some left/right padding on narrow screens;
 
 		* {
 			box-sizing: inherit;
@@ -85,7 +86,26 @@ div.cro_sldr {
 	#logo {
 		flex: 1 0 0;
 		width: 100%;
-		margin-right: 3em;
+		
+
+		height: @header-height - (2* @header-padding);
+
+
+
+		padding: 0;
+		margin: 0;
+	
+		position: relative;
+	
+
+		img {
+			position: absolute;
+			top: 50%;
+			transform:translateY(-50%);
+			width: 100%;
+			max-width: none;
+			height: auto;
+		}
 	}
 
 	.nav-menus {
@@ -93,18 +113,23 @@ div.cro_sldr {
 		height: 100%;
 
 
-		flex: 5 0 0;
+		flex: 6 0 0;
+		
 
 		
 
-		// Menu-container is a generic class for anything within this topper that has a nav in it 
-		// In this case it's just the main menu and the social icons.  We aren't going to apply it to the secondary menu as that's going to have some weird stuff going on
 		
 
 		// align the items inside
 		display: flex;
 		.primary-menu {
 			//flex: 6 0 0;
+
+			margin: 0 @header-padding * 4;
+			@media screen and (max-width: @max-width) {
+				margin: 0 @header-padding * 2;
+			}
+
 			.nav {
 				justify-content: space-between;
 			}
@@ -115,11 +140,22 @@ div.cro_sldr {
 		.social-menu {
 			//flex: 2 0 0;
 			
-			flex-basis: 200px;
 
-			margin-left: 1em;
+			
 			.nav {
-				justify-content: flex-end;	
+				display: block;
+				text-align: right;
+				> li {
+
+
+					width: 40px; // because the FA icons are font size 
+					margin-left: 10px;
+					// No need to do flex on this, it's just squares of the same size so keep it simple.
+
+					&:first-child {
+						margin-left: 0;
+					}
+				}
 			}
 			
 
@@ -136,10 +172,16 @@ div.cro_sldr {
 
 
 
-
+		// Menu-container is a generic class for anything within this topper that has a nav in it 
+		// In this case it's just the main menu and the social icons.  We aren't going to apply it to the secondary menu as that's going to have some weird stuff going on
+		
 		.menu-container ul.nav {
 			display: flex;
 			
+			a {
+				white-space: nowrap;
+			}
+
 
 
 			li {
@@ -180,6 +222,9 @@ div.cro_sldr {
 		.secondnav-menu {
 			position: absolute;
 			right: 0;
+			@media screen and (max-width: @max-width) {
+				right: 2%; 
+			}
 			top: @header-height + @header-padding;
 
 
@@ -188,9 +233,10 @@ div.cro_sldr {
 				li {
 					float: none;
 					margin-bottom: @header-padding * 2;
-					padding: @header-padding / 2;
+					padding: (@header-padding / 2) @header-padding;
 					a {
 						padding: 0;
+						text-align: center;
 					}
 
 				}
@@ -200,16 +246,126 @@ div.cro_sldr {
 
 
 	
+	@media screen and (max-width: 800px) {
 
+
+		border-bottom: 2px solid #111;
+		.nav-menus {
+			transition: transform .5s ease;
+			will-change: transform;
+			transform: translateY(-100%);
+		}
+		&.open {
+			.nav-menus {
+				transform:translateY(0);
+			}
+		}
+
+		.menu-toggle {
+			flex: 1 0 0;
+			font-size: @header-height - (@header-padding*2);
+			position: relative;
+			z-index: 90;
+			width: auto;
+			display: inline-block;
+			border:none;
+			background:none;
+			text-align: left;
+			color: @red;
+		}
+
+
+		#logo {
+			width: auto;
+			max-width: 30%;
+			flex: 3 0 0;
+			
+			z-index: 90;
+
+			position: relative;
+			img {
+				position: relative;
+				z-index: 50;
+			}
+
+			
+		}
+		.nav-menus {
+
+			
+			min-height: 90vh;
+
+			background-color: #333;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			top: @header-height; // make it full width and position it under the header
+			z-index: 0;
+
+			padding: 0 @header-padding 30px;
+
+			display: block;
+
+			.primary-menu {
+				margin: 0;
+		
+
+				ul.nav {
+					display: block;
+					background-color: #333;
+					width: 100%;
+
+					
+				}
+			}
+
+			.social-menu {
+				background-color: #333;
+				ul.nav {
+					justify-content: flex-start;
+
+					li {
+						text-align: left;
+						padding-left: 2px; // fa icon weirdness;
+					}
+				}
+			}
+
+			.secondnav-menu {
+				
+				background-color: #333;
+				top: auto;
+				position: relative;
+				right: auto;
+
+
+				#menu-main-submenu {
+					
+					width: 100%;
+
+					li a {
+						text-align: left;
+					}
+				}
+
+			}
+		}
+
+
+
+	
+	}
 
 	
 
 
 
 
+} // end of .topper
+
+body {
+	height: 100%;
 }
-
-
 
 
 
@@ -221,6 +377,7 @@ div.cro_sldr {
 	li {
 		position: relative;
 		z-index: 1;
+
 
 		&:before {
 			content: " ";
@@ -245,7 +402,7 @@ div.cro_sldr {
 			}
 
 			&:before {
-				transform: scale(1.1,1.1);
+				transform: scale(1,1);
 					opacity: 1;
 			}
 		}
@@ -253,6 +410,13 @@ div.cro_sldr {
 		a {
 			font-size:21px;
 			padding:0 5px;
+			display: block;
+			width: 100%;
+			@media screen and (max-width: 800px) {
+			
+				font-size: 1.2em; 
+			
+			}
 		}
 	}					
 }

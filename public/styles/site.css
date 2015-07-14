@@ -403,33 +403,6 @@ select.selectnav{
 
 
 
-.secondnav ul{
-	height: 40px;
-	list-style-type: none;
-}
-
-.secondnav ul li{
-	line-height: 40px;
-	position: relative;
-	height: 40px;
-	float: left;
-
-}
-
-.secondnav ul li a{
-	display: block;
-	line-height: 40px;
-	font-size: 14px;
-	color: #fff;
-	padding: 0px 0 0 0;
-	text-align: center; 
-	white-space: nowrap;
-	padding: 0 10px;
-	margin-left: 5px;
-	overflow: hidden;
-	font-weight: normal;
-}
-
 
 .secondnav ul li a span.sub{
 	display: none;
