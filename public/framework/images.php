@@ -151,13 +151,6 @@ function cro_headerimg($id, $type, $ban){
 	}
 
 	if ( has_nav_menu('secondnav' ) ) {
-		$cp =  wp_nav_menu( array( 'container_class' => 'secondnav', 'theme_location' => 'secondnav', 'echo' => false ) );
-		$cp = $cbanleft . '<div class="six column ' . $cbanclass  . '">' . $cp  . '</div>';
-	} else {
-		$cp = '<div class="six column">&nbsp;</div>';
-	}
-
-	if ( has_nav_menu('secondnav' ) ) {
 		$cclass .= ' cro_withnav ';
 	}
 

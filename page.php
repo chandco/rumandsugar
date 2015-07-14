@@ -11,11 +11,9 @@ $tlset = get_option( 'tlset' );
 
 get_header(); 
 
-	if (isset($tlset['cro_showbanindex']) && $tlset['cro_showbanindex'] == 1 ){
-		$ps =  cro_fetch_banner('inner'); 
-	} else {
+	
 		$ps =  ''; 
-	}
+	
 
 ?>
 
@@ -25,8 +23,8 @@ get_header();
 		echo cro_headerimg($post->ID, 'page', $ps);			
 	?>
 
-	<div class="main singleitem row" style="background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/clipboard-bg.jpg');">				
-		<div class="row singlepage" style="background: url(/wp-content/uploads//2015/06/background-texture9.jpg); margin:15px;">
+	<div class="main singleitem row">				
+		<div class="row singlepage">
 
 
 			<?php if ($sbar == 1) { ?>

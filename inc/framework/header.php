@@ -64,55 +64,7 @@ function croma_fetch_headerstuff() {
 
 	?>
 
-	<style type="text/css">
 
-	.cro_formquote, .cromacol11 .mejs-container, .widget_tli-newsletter .newssubmit, 
-	.comments-area li.comment .comment-meta,.comments-area input#submit, h5.cro_bynone, .cro_timewithimage, 
-	h6.cro_promodate, .cro_drivedirections a,.cro_bookingsform table tbody td.daynum span.daynumber:hover, 
-	.cro_bookingsform .cro_isselected, ul.sociallinks li:hover,.cro_themecallout, 
-	.comments-area li.comment .reply a:hover, .footer .widget_cro_twitter{
-		background: <?php echo $cro_col; ?>;
-	}
-
-	.widget_tli-newsletter .newssubmit, .caldiv .daynum span.thisday, .agendadate, .cro_stickwrap, .pagination span,
-	ul.cro_directionscal li input#driveclick:hover,.cro_bookingsform .cro_bookingformsub:hover, 
-	.secondnav ul li a, .cro_fpc:hover .fptitles h3, .mejs-container,.cro_caldayholder, .clarlabel:hover a, 
-	form#ctcform input#cro_form_sub:hover, .secondnav ul li a:hover, .widget_cro_twitter, .footer .widget_search input#searchsubmit{
-		background: <?php echo $cro_col; ?>;
-	}
-
-	 .cromacol11 .caldiv .daynum span.daybox:hover{
- 		border: 4px solid <?php echo $cro_col; ?>;
- 	}
-
- 	ul.accordion > li.active {
-    	border-top: 3px solid <?php echo $cro_col; ?> !important;
-	}
-
-	a, .footer ul.footwidget li h3.widget-title,  #access .current_page_item > a,#access .current_page_ancestor > a,
-	#access ul  li:hover > a, .entry-title h2 a:hover, .comments-area h2.comments-title span,
-	.caldiv .daynum span span.daynumber,.prevm:hover, .nextm:hover, .cromacol11 ul.ctclabels li.ctcclearside h4, 
-	form#ctcform h4, .bannerprevious:hover, .bannernext:hover{
-		color: <?php echo $cro_col; ?>;
-	}
-
-	ul.maincal li.daynum span.numbdesc a:hover, .quickiemenu span.quickieprice{
-		color: <?php echo $cro_col; ?> !important;
-	}
-
-	<?php /* Stop the below from happening
-	<?php if (0){ //($tlset['cro_font'] && $tlset['cro_font'] != '') { ?>
-		.cro_accent, h3.widget-title, #access a, .cro_headerspace .cro_title h1, .secondnav ul li a, 
-		.cro_formquote p,h3#reply-title, ul.calday li, ul.calhead li, .cro_timewithimage, span.cro_foodprice, 
-		h5.mainstayhead, h5.mastheadh,form#ctcform input#cro_form_sub, .cro_drivedirections a, tr.calhead, 
-		.cro_bookingsform table tbody tr td.dayname,.cro_caldayholder span.month, .cro_caldayholder span.day, 
-		.hentry h1, .hentry h2, .hentry h3, .hentry h4, .hentry h5, .hentry h6, .cro_fpc .slidelinkspan a,
-		.cro_eventinfoholder a{
-			font-family: <?php echo $tlset['cro_font']; ?>, cursive; font-weight: normal !important;
-		}	
-	<?php } */ ?>
-
-	</style>
 	<?php 
 	if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' );
 	wp_enqueue_script( 'jquery' );

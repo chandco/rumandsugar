@@ -29,4 +29,230 @@ div.cro_sldr {
 
 .cro_headerspace {
 	border-bottom: solid 1px #f0f0f0; //RGBA(255,255,255,1);
+	position: relative;
+	z-index: 50;
+}
+
+
+// HEADER
+// LAYOUT
+
+@header-height  : 60px;
+@header-padding : 10px;
+
+.topper {
+	background-color: #333;
+	height: @header-height;
+
+	width: 100%;
+
+	position: relative;
+	z-index: 80;
+
+
+	> .max-central {
+
+		box-sizing: border-box;
+		padding: @header-padding 0;
+
+		* {
+			box-sizing: inherit;
+		}
+
+		display: flex; // set flex
+		justify-content: space-between; // stretch the items
+	}
+
+	// hide the hamburger on desktops
+	@media screen and (min-width: 768px) {
+		.menu-toggle {
+			display: none;
+		}
+	}
+
+	// we aren't going to have any bulleted lists in this header, 
+	// so make sure to remove bullet points on all ULs and reset the padding which is a browser default
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+
+
+
+
+	#logo {
+		flex: 1 0 0;
+		width: 100%;
+		margin-right: 3em;
+	}
+
+	.nav-menus {
+
+		height: 100%;
+
+
+		flex: 5 0 0;
+
+		
+
+		// Menu-container is a generic class for anything within this topper that has a nav in it 
+		// In this case it's just the main menu and the social icons.  We aren't going to apply it to the secondary menu as that's going to have some weird stuff going on
+		
+
+		// align the items inside
+		display: flex;
+		.primary-menu {
+			//flex: 6 0 0;
+			.nav {
+				justify-content: space-between;
+			}
+
+			flex-basis: 100%;
+		}
+
+		.social-menu {
+			//flex: 2 0 0;
+			
+			flex-basis: 200px;
+
+			margin-left: 1em;
+			.nav {
+				justify-content: flex-end;	
+			}
+			
+
+			li {
+				margin-left: 1em;
+				font-size: 2em; // these are FA icons so increase the size
+				a {
+					color: #fff;
+				}
+			}
+
+
+		}
+
+
+
+
+		.menu-container ul.nav {
+			display: flex;
+			
+
+
+			li {
+				position: relative;
+				height: @header-height - (2 * @header-padding);
+				line-height: @header-height - (2 * @header-padding);
+			}
+
+			.sub-menu {
+				display: block;
+				visibility: hidden;
+				position: absolute;
+				background: #7a7a7a;
+				color: #ffffff;
+				overflow: hidden;
+				margin: 0;
+
+			}
+
+			li:hover { 
+
+				.sub-menu {
+					top: 100%;
+					left: 0;
+					overflow: visible;
+					visibility: visible;
+					margin: 0;
+				}
+
+			}
+
+
+		}
+
+
+		// book a table, blog etc.  This is going to break out of the natural flow by being
+		// position absolute.  But because it's still within the header this makes mobile menu easier.
+		.secondnav-menu {
+			position: absolute;
+			right: 0;
+			top: @header-height + @header-padding;
+
+
+			#menu-main-submenu {
+
+				li {
+					float: none;
+					margin-bottom: @header-padding * 2;
+					padding: @header-padding / 2;
+					a {
+						padding: 0;
+					}
+
+				}
+			}
+		}
+	}
+
+
+	
+
+
+	
+
+
+
+
+}
+
+
+
+
+
+// HEADER
+// DESIGN
+#menu-main-menu {
+					
+
+	li {
+		position: relative;
+		z-index: 1;
+
+		&:before {
+			content: " ";
+			background: #fff;
+			opacity: 0;
+			display: block;
+			position: absolute;
+			z-index: 0;
+			width: 100%;
+			height: 80%;
+			top: 10%;
+			left: 0;
+			transition: transform .2s ease,opacity .2s ease;
+			transform: scale(0.1,0.1);
+		}
+
+		&:hover {
+			> a {
+				color: #e31836 !important;
+				z-index: 2;
+				position: relative;
+			}
+
+			&:before {
+				transform: scale(1.1,1.1);
+					opacity: 1;
+			}
+		}
+
+		a {
+			font-size:21px;
+			padding:0 5px;
+		}
+	}					
 }
