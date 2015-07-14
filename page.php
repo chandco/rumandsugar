@@ -23,8 +23,8 @@ get_header();
 		echo cro_headerimg($post->ID, 'page', $ps);			
 	?>
 
-	<div class="main singleitem row">				
-		<div class="row singlepage">
+	<div class="main clipboard-outer">				
+		<div class="row clipboard-inner">
 
 
 			<?php if ($sbar == 1) { ?>

@@ -1,5 +1,8 @@
 
 
+@theme-path: '/wp-content/themes/nathan/rumandsugar'; // this is only necessary so the critical path thing can do its thing.  Normally we'd just use relative paths.
+
+
 // global setup stuff
 @import "fonts";
 @import "variables";
@@ -17,6 +20,8 @@
 @import "layout"; // arranging the page and general styles for the look of the site that aren't covered above
 @import "footer"; // the footer
 @import "header";
+
+@import "design"; // styling things visually, such as the clipboard effect
 
 @import "homepage";
 

@@ -18,6 +18,9 @@ h6 {
 body {
   font-family: 'Avenir W01';
 }
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
 .max-central {
   width: 100%;
   max-width: 1200px;
@@ -27,7 +30,8 @@ body {
 @media screen and (max-width: 1200px) {
   .max-central {
     box-sizing: border-box;
-    padding: 0 2%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
 /* Magnific Popup CSS */
@@ -627,9 +631,6 @@ ul.cro_gallerylist li .imgouter.galholderski h5.cro_accent.cro_galtitle {
     position: relative;
     top: 21px;
   }
-  .secondnav {
-    z-index: 99999999999999999999999999999999999;
-  }
   .cro_sldr .bannercover {
     height: 100%;
   }
@@ -646,17 +647,31 @@ ul.cro_gallerylist li .imgouter.galholderski h5.cro_accent.cro_galtitle {
     top: 0;
   }
 }
-.main {
+.imgdiv,
+.cro_withnav .row {
+  height: 100%;
+}
+.cro_title {
   width: 100%;
   max-width: 1200px;
   position: relative;
   margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
 }
 @media screen and (max-width: 1200px) {
-  .main {
+  .cro_title {
     box-sizing: border-box;
-    padding: 0 2%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
+}
+.cro_title h1 {
+  text-shadow: 0 0px 55px rgba(255, 255, 255, 0.49);
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #000;
 }
 svg,
 #mold-logo {
@@ -952,6 +967,131 @@ body {
     font-size: 1.2em;
   }
 }
+.brown-paper {
+  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
+}
+.clipboard-inner {
+  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
+  padding-top: 2em;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 0;
+}
+.clipboard-outer {
+  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/dark-repeating-texture.jpg');
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: content-box;
+  padding: 70px;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 4px 5px rgba(49, 32, 4, 0.87), 0 0 47px 2px rgba(0, 0, 0, 0.68);
+  border: 2px solid #271902;
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .clipboard-outer {
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+.clipboard-outer:before {
+  content: "";
+  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/clip.png');
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 353px;
+  height: 126px;
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .clipboard-outer {
+    padding-top: 35px;
+  }
+  .clipboard-outer:before {
+    width: 176.5px;
+    top: -47px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .clipboard-outer .clipboard-inner {
+    width: 92%;
+    padding-top: 35px;
+  }
+}
+body {
+  background: #333;
+}
+.menu-image-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.menu-image-wrapper img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  margin: 0 !important;
+  border: 4px solid #fff;
+  box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.2);
+  min-height: 100px;
+}
+.menu-image-wrapper:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -28px;
+  transform: rotate(-45deg);
+  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
+  z-index: 2;
+  width: 54px;
+  height: 23px;
+  box-shadow: 0 5px 3px -4px rgba(0, 0, 0, 0.2);
+}
+.menu-image-wrapper:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: -28px;
+  transform: rotate(-45deg);
+  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
+  z-index: 2;
+  width: 54px;
+  height: 23px;
+  box-shadow: 0 -5px 3px -4px rgba(0, 0, 0, 0.2);
+}
+.menu-image-wrapper .inner:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -28px;
+  transform: rotate(45deg);
+  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
+  z-index: 2;
+  width: 54px;
+  height: 23px;
+  box-shadow: 0 5px 3px -4px rgba(0, 0, 0, 0.2);
+}
+.menu-image-wrapper .inner:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -28px;
+  transform: rotate(45deg);
+  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
+  z-index: 2;
+  width: 54px;
+  height: 23px;
+  box-shadow: 0 -5px 3px -4px rgba(0, 0, 0, 0.2);
+}
 .cro_fpc {
   margin-bottom: 30px;
   position: relative;
@@ -1135,66 +1275,6 @@ body {
 #post-854 p {
   font-size: 1.5em;
   padding-top: 10px;
-}
-#post-854 .menu-image-wrapper {
-  position: relative;
-}
-#post-854 .menu-image-wrapper img {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  border: 4px solid #fff;
-  box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.2);
-}
-#post-854 .menu-image-wrapper:before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -5%;
-  transform: rotate(-45deg);
-  background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/06/background-texture9.jpg');
-  z-index: 2;
-  width: 10%;
-  height: 20px;
-  box-shadow: 0 3px 4px -2px rgba(0, 0, 0, 0.2);
-}
-#post-854 .menu-image-wrapper:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  right: -5%;
-  transform: rotate(-45deg);
-  background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/06/background-texture9.jpg');
-  z-index: 2;
-  width: 10%;
-  height: 20px;
-  box-shadow: 0 -3px 4px -2px rgba(0, 0, 0, 0.2);
-}
-#post-854 .inner:before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: -5%;
-  transform: rotate(45deg);
-  background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/06/background-texture9.jpg');
-  z-index: 2;
-  width: 10%;
-  height: 20px;
-  box-shadow: 0 3px 4px -2px rgba(0, 0, 0, 0.2);
-}
-#post-854 .inner:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: -5%;
-  transform: rotate(45deg);
-  background: url('http://rumandsugar.dev.chand.co/wp-content/uploads//2015/06/background-texture9.jpg');
-  z-index: 2;
-  width: 10%;
-  height: 20px;
-  box-shadow: 0 -3px 4px -2px rgba(0, 0, 0, 0.2);
 }
 #post-854 ul {
   font-family: 'Oswald', sans-serif;
