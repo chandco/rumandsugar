@@ -41,7 +41,7 @@ $('a.popup-box-link').each(function(index, element) {
 
 
 
-$('.main img').wrap('<div class="menu-image-wrapper"><div class="inner"></div></div>');
+$('.main img:not(.attachment-gallery-thumb)').wrap('<div class="menu-image-wrapper"><div class="inner"></div></div>');
 
 
 $(".menu-toggle").click(function(){
