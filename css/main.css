@@ -989,6 +989,11 @@ body {
   border: 2px solid #271902;
   position: relative;
 }
+@media only screen and (max-width: 767px) {
+  .clipboard-outer {
+    top: 70px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .clipboard-outer {
     box-sizing: border-box;
@@ -1269,6 +1274,17 @@ body {
 }
 .cro_headerspace {
   overflow: initial;
+}
+@media only screen and (max-width: 767px) {
+  .cro_headerspace .cro_title {
+    border-top: none;
+    top: 40px;
+  }
+  .cro_headerspace .cro_title h1 {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 20px;
+  }
 }
 #post-854 {
   color: #999;
