@@ -3,6 +3,8 @@
 	background-image: url('@{theme-path}/lib/images/brown-paper.jpg');
 }
 
+
+
 .clipboard-inner {
 
 	.brown-paper;
@@ -16,13 +18,30 @@
 	}
 
 	#post-854 {
-		display:flex;
 
-		> .food-menu {
-			width:50%;
+		.menu-container {
+			overflow:hidden;
+			
+			.food-menu {
+				width:47%;
+				float:left;
+			
+				&:after {
+					content: "";
+					display:block;
+					clear:both;
+					width:100%;
+				}
 
-			&:first-child {
-				margin-right: 50px;
+				&:last-child {
+					margin-left:3%;
+				}
+
+				@media only screen and (max-width : @tablets) { 
+					flot:none;
+					width:100%;
+					margin-right:0;
+				}
 			}
 		}
 	}

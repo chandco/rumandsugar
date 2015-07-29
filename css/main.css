@@ -980,14 +980,28 @@ body {
 .clipboard-inner .quickiemenu {
   color: #000000;
 }
-.clipboard-inner #post-854 {
-  display: flex;
+.clipboard-inner #post-854 .menu-container {
+  overflow: hidden;
 }
-.clipboard-inner #post-854 > .food-menu {
-  width: 50%;
+.clipboard-inner #post-854 .menu-container .food-menu {
+  width: 47%;
+  float: left;
 }
-.clipboard-inner #post-854 > .food-menu:first-child {
-  margin-right: 50px;
+.clipboard-inner #post-854 .menu-container .food-menu:after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 100%;
+}
+.clipboard-inner #post-854 .menu-container .food-menu:last-child {
+  margin-left: 3%;
+}
+@media only screen and (max-width: 767px) {
+  .clipboard-inner #post-854 .menu-container .food-menu {
+    flot: none;
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .clipboard-outer {
   background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/dark-repeating-texture.jpg');
