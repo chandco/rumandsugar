@@ -4,7 +4,6 @@
 }
 
 .clipboard-inner {
-	display:flex;
 
 	.brown-paper;
 	padding-top: 2em;
@@ -12,13 +11,23 @@
 	position: relative;
 	z-index: 0;
 
-	.food-menu {
-		width:50%;
+	.quickiemenu {
+		color:#000000;
 	}
 
+	#post-854 {
+		display:flex;
 
-	
+		> .food-menu {
+			width:50%;
+
+			&:first-child {
+				margin-right: 50px;
+			}
+		}
+	}
 }
+
 
 
 

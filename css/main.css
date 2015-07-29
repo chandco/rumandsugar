@@ -971,15 +971,23 @@ body {
   background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
 }
 .clipboard-inner {
-  display: flex;
   background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
   padding-top: 2em;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 0;
 }
-.clipboard-inner .food-menu {
+.clipboard-inner .quickiemenu {
+  color: #000000;
+}
+.clipboard-inner #post-854 {
+  display: flex;
+}
+.clipboard-inner #post-854 > .food-menu {
   width: 50%;
+}
+.clipboard-inner #post-854 > .food-menu:first-child {
+  margin-right: 50px;
 }
 .clipboard-outer {
   background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/dark-repeating-texture.jpg');
