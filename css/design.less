@@ -4,7 +4,6 @@
 }
 
 
-
 .clipboard-inner {
 
 	.brown-paper;
@@ -19,7 +18,7 @@
 
 	#post-854 {
 
-		/* SIDES CONTAINER */
+		/* SIDES MENU CONTAINER */
 
 		.sides-container {
 			.two-cols {
@@ -97,8 +96,6 @@
 					}
 				}
 
-				
-
 
 				@media only screen and (max-width : @tablets) { 
 					flot:none;
@@ -108,11 +105,13 @@
 			}
 
 
-			.four-cols {
-				width: 23%;
-				margin-right: 2%;
+			.three-cols {
 				float:left;
-				background:green;
+				width:25%;
+
+				&:nth-of-type(2n) {
+					width:50%;
+				}
 			}
 		}
 	}

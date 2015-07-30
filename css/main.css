@@ -981,7 +981,7 @@ body {
   color: #000000;
 }
 .clipboard-inner #post-854 {
-  /* SIDES CONTAINER */
+  /* SIDES MENU CONTAINER */
   /* END SIDES CONTAINER */
 }
 .clipboard-inner #post-854 .sides-container .two-cols {
@@ -1046,11 +1046,12 @@ body {
     margin-right: 0;
   }
 }
-.clipboard-inner #post-854 .menu-container .four-cols {
-  width: 23%;
-  margin-right: 2%;
+.clipboard-inner #post-854 .menu-container .three-cols {
   float: left;
-  background: green;
+  width: 25%;
+}
+.clipboard-inner #post-854 .menu-container .three-cols:nth-of-type(2n) {
+  width: 50%;
 }
 .clipboard-outer {
   background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/dark-repeating-texture.jpg');
