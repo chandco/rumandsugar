@@ -21,8 +21,12 @@
 
 		.menu-container {
 			overflow:hidden;
+
+			h3 {
+				margin-top:0;
+			}
 			
-			.food-menu {
+			.two-cols {
 				width:47%;
 				float:left;
 			
@@ -37,17 +41,45 @@
 					margin-left:3%;
 				}
 
+				.two-cols-left {
+					float:left;
+					width:40%;
+
+					h3 {
+					margin-bottom:0;
+				}
+
+					ul {
+						margin-top:0;
+					}
+				}
+
+				.two-cols-right {
+					float:right;
+					width:60%;
+
+					ul {
+						margin-top:0;
+					}
+				}
+
 				@media only screen and (max-width : @tablets) { 
 					flot:none;
 					width:100%;
 					margin-right:0;
 				}
 			}
+
+
+			.four-cols {
+				width: 23%;
+				margin-right: 2%;
+				float:left;
+				background:green;
+			}
 		}
 	}
 }
-
-
 
 
 .clipboard-outer {
@@ -56,9 +88,6 @@
 	@media only screen and (max-width : @tablets) { 
 		top:70px; 
 	} 
-
-
-
 
 
 	.max-central;
