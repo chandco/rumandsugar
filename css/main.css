@@ -1040,7 +1040,7 @@ body {
   font-size: 45px;
 }
 .clipboard-inner #post-854 .menu-container .two-cols .right-column li:nth-of-type(2n) {
-  width: 90px;
+  width: 175px;
   margin: 35px auto;
 }
 @media only screen and (max-width: 767px) {
@@ -1445,8 +1445,8 @@ p {
   height: 100px;
 }
 #post-854 .star {
-  background: url(/wp-content/uploads//2015/06/star.svg) repeat-x;
-  height: 20px;
+  background: url(/wp-content/uploads//2015/07/star.svg) repeat-x;
+  height: 30px;
   border: 0;
 }
 #post-854 .slash {
