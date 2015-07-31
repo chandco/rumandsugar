@@ -1434,7 +1434,15 @@ p {
 }
 #post-854 .dessert {
   background: url(/wp-content/uploads//2015/07/dessert.svg) no-repeat;
-  height: 200px;
+  height: 250px;
+}
+#post-854 .fork-left {
+  background: url(/wp-content/uploads//2015/07/fork.svg) no-repeat;
+  height: 100px;
+}
+#post-854 .fork-right {
+  background: url(/wp-content/uploads//2015/07/fork-right.svg) no-repeat;
+  height: 100px;
 }
 #post-854 .star {
   background: url(/wp-content/uploads//2015/06/star.svg) repeat-x;
