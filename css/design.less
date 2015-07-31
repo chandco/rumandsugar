@@ -31,6 +31,12 @@
 				.banner-wrapper {
 					max-width:100%;
 					margin:0;
+
+					.banner {
+						&:before, &:after {
+							display:none;
+						}
+					}
 				}
 
 				.two-cols-left {
@@ -50,7 +56,7 @@
 			overflow:hidden;
 			
 			.two-cols {
-				width:47%;
+				width:46%;
 				float:left;
 
 			
@@ -62,7 +68,11 @@
 				}
 
 				&:last-child {
-					margin-left:3%;
+					margin-left:4%;
+				}
+
+				&:first-child {
+					margin-right:4%;
 				}
 
 				.two-cols-left {
@@ -99,7 +109,7 @@
 
 						&:nth-of-type(2n) {
 							width:175px;
-							margin:35px auto;
+							margin:29px auto;
 						}
 
 					}
