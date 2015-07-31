@@ -994,6 +994,10 @@ body {
   max-width: 100%;
   margin: 0;
 }
+.clipboard-inner #post-854 .sides-container .two-cols .two-cols-left li:nth-of-type(3n) {
+  font-size: 40px;
+  font-family: 'Monotype Bernard W01';
+}
 .clipboard-inner #post-854 .menu-container {
   overflow: hidden;
 }
@@ -1374,7 +1378,7 @@ p {
   color: #000;
   font-weight: normal !important;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 4.5em;
   font-family: 'Oswald', sans-serif;
 }
 #post-854 p {
