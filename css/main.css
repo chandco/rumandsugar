@@ -1049,9 +1049,6 @@ body {
 .clipboard-inner #post-854 .menu-container .two-cols .two-cols-right ul {
   margin-top: 0;
 }
-.clipboard-inner #post-854 .menu-container .two-cols .two-cols-right ul li ul li {
-  width: 0;
-}
 .clipboard-inner #post-854 .menu-container .two-cols .right-column {
   width: 88%;
 }
@@ -1402,6 +1399,8 @@ p {
 #post-854 {
   /* SIDES MENU CONTAINER */
   /* END SIDES CONTAINER */
+  /* DESSERTS MENU CONTAINER */
+  /* END DESSERTS CONTAINER */
   color: #999;
   padding-top: 60px;
   margin-top: -60px;
@@ -1428,6 +1427,33 @@ p {
 #post-854 .sides-container .two-cols .two-cols-left li:nth-of-type(3n) {
   font-size: 40px;
   font-family: 'Monotype Bernard W01';
+}
+#post-854 .desserts-container .two-cols:first-child {
+  width: 70%;
+  margin-right: 0 !important;
+}
+@media only screen and (max-width: 767px) {
+  #post-854 .desserts-container .two-cols:first-child {
+    width: 100%;
+  }
+}
+#post-854 .desserts-container .two-cols:last-child {
+  width: 27%;
+  margin-left: 3% !important;
+}
+@media only screen and (max-width: 767px) {
+  #post-854 .desserts-container .two-cols:last-child {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+}
+#post-854 .desserts-container .two-cols ul li ul li {
+  width: 0;
+}
+@media only screen and (max-width: 767px) {
+  #post-854 .desserts-container .two-cols ul li ul li {
+    width: auto;
+  }
 }
 #post-854 h3,
 #post-854 p {
@@ -1487,7 +1513,7 @@ p {
   margin-top: 0;
 }
 #post-854 .dessert {
-  background: url(/wp-content/uploads//2015/07/dessert.svg) no-repeat;
+  background: url(/wp-content/uploads//2015/08/dessert.svg) no-repeat;
   height: 250px;
   margin-left: 65px;
 }

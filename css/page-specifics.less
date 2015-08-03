@@ -73,6 +73,45 @@ color: #333;
 
 		/* END SIDES CONTAINER */
 
+
+		/* DESSERTS MENU CONTAINER */
+
+		.desserts-container {
+			.two-cols {
+				&:first-child {
+					width:70%;
+					//background:red;
+					margin-right:0 !important;
+
+					@media only screen and (max-width : @tablets) { 
+						width: 100%;
+					}
+				}
+
+				&:last-child {
+					width:27%;
+					margin-left:3% !important;
+					//background:green;
+
+					@media only screen and (max-width : @tablets) { 
+						width: 100%;
+						margin-left:0 !important;
+					}
+				}
+
+				ul li ul li {
+					width:0;
+
+					@media only screen and (max-width : @tablets) { 
+						width: auto;
+					}
+				}
+			}
+		}
+
+		/* END DESSERTS CONTAINER */ 
+
+
 		h3, p {
 			color: #000;
 			font-weight: normal !important;
@@ -160,7 +199,7 @@ color: #333;
 
 
 		.dessert {
-			background: url(/wp-content/uploads//2015/07/dessert.svg) no-repeat;
+			background: url(/wp-content/uploads//2015/08/dessert.svg) no-repeat;
 			height:250px;
 			margin-left:65px;
 		}
