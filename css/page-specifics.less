@@ -35,6 +35,44 @@ color: #333;
 	
 	#post-854 {
 
+		/* SIDES MENU CONTAINER */
+
+		.sides-container {
+			.two-cols {
+				margin-left:0 !important;
+
+				&:last-child {
+					border-left:solid 1px #000000;
+
+					@media only screen and (max-width : @tablets) { 
+						border:none;
+					}
+				}
+
+				.banner-wrapper {
+					max-width:100%;
+					margin:0;
+
+					.banner {
+						&:before, &:after {
+							display:none;
+						}
+					}
+				}
+
+				.two-cols-left {
+					li {
+						&:nth-of-type(3n) {
+							font-size:40px;
+							font-family: 'Monotype Bernard W01';
+						}	
+					}			
+				}
+			}
+		}
+
+		/* END SIDES CONTAINER */
+
 		h3, p {
 			color: #000;
 			font-weight: normal !important;

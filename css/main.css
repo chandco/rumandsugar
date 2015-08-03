@@ -980,33 +980,6 @@ body {
 .clipboard-inner .quickiemenu {
   color: #000000;
 }
-.clipboard-inner #post-854 {
-  /* SIDES MENU CONTAINER */
-  /* END SIDES CONTAINER */
-}
-.clipboard-inner #post-854 .sides-container .two-cols {
-  margin-left: 0 !important;
-}
-.clipboard-inner #post-854 .sides-container .two-cols:last-child {
-  border-left: solid 1px #000000;
-}
-@media only screen and (max-width: 767px) {
-  .clipboard-inner #post-854 .sides-container .two-cols:last-child {
-    border: none;
-  }
-}
-.clipboard-inner #post-854 .sides-container .two-cols .banner-wrapper {
-  max-width: 100%;
-  margin: 0;
-}
-.clipboard-inner #post-854 .sides-container .two-cols .banner-wrapper .banner:before,
-.clipboard-inner #post-854 .sides-container .two-cols .banner-wrapper .banner:after {
-  display: none;
-}
-.clipboard-inner #post-854 .sides-container .two-cols .two-cols-left li:nth-of-type(3n) {
-  font-size: 40px;
-  font-family: 'Monotype Bernard W01';
-}
 .clipboard-inner #post-854 .menu-container {
   overflow: hidden;
 }
@@ -1075,6 +1048,9 @@ body {
 }
 .clipboard-inner #post-854 .menu-container .two-cols .two-cols-right ul {
   margin-top: 0;
+}
+.clipboard-inner #post-854 .menu-container .two-cols .two-cols-right ul li ul li {
+  width: 0;
 }
 .clipboard-inner #post-854 .menu-container .two-cols .right-column {
   width: 88%;
@@ -1424,9 +1400,34 @@ p {
   }
 }
 #post-854 {
+  /* SIDES MENU CONTAINER */
+  /* END SIDES CONTAINER */
   color: #999;
   padding-top: 60px;
   margin-top: -60px;
+}
+#post-854 .sides-container .two-cols {
+  margin-left: 0 !important;
+}
+#post-854 .sides-container .two-cols:last-child {
+  border-left: solid 1px #000000;
+}
+@media only screen and (max-width: 767px) {
+  #post-854 .sides-container .two-cols:last-child {
+    border: none;
+  }
+}
+#post-854 .sides-container .two-cols .banner-wrapper {
+  max-width: 100%;
+  margin: 0;
+}
+#post-854 .sides-container .two-cols .banner-wrapper .banner:before,
+#post-854 .sides-container .two-cols .banner-wrapper .banner:after {
+  display: none;
+}
+#post-854 .sides-container .two-cols .two-cols-left li:nth-of-type(3n) {
+  font-size: 40px;
+  font-family: 'Monotype Bernard W01';
 }
 #post-854 h3,
 #post-854 p {
