@@ -990,6 +990,11 @@ body {
 .clipboard-inner #post-854 .sides-container .two-cols:last-child {
   border-left: solid 1px #000000;
 }
+@media only screen and (max-width: 767px) {
+  .clipboard-inner #post-854 .sides-container .two-cols:last-child {
+    border: none;
+  }
+}
 .clipboard-inner #post-854 .sides-container .two-cols .banner-wrapper {
   max-width: 100%;
   margin: 0;
@@ -1005,6 +1010,19 @@ body {
 .clipboard-inner #post-854 .menu-container {
   overflow: hidden;
 }
+@media only screen and (max-width: 767px) {
+  .clipboard-inner #post-854 .menu-container {
+    overflow: initial;
+  }
+}
+.clipboard-inner #post-854 .menu-container h3 {
+  font-size: 4em;
+}
+@media only screen and (max-width: 1200px) {
+  .clipboard-inner #post-854 .menu-container h3 {
+    font-size: 2.9em;
+  }
+}
 .clipboard-inner #post-854 .menu-container .two-cols {
   width: 46%;
   float: left;
@@ -1018,12 +1036,24 @@ body {
 .clipboard-inner #post-854 .menu-container .two-cols:last-child {
   margin-left: 4%;
 }
+@media only screen and (max-width: 767px) {
+  .clipboard-inner #post-854 .menu-container .two-cols:last-child {
+    margin-left: 0;
+  }
+}
 .clipboard-inner #post-854 .menu-container .two-cols:first-child {
   margin-right: 4%;
 }
 .clipboard-inner #post-854 .menu-container .two-cols .two-cols-left {
   float: left;
   width: 40%;
+}
+@media only screen and (max-width: 767px) {
+  .clipboard-inner #post-854 .menu-container .two-cols .two-cols-left {
+    float: none;
+    width: 100%;
+    margin-bottom: 60px;
+  }
 }
 .clipboard-inner #post-854 .menu-container .two-cols .two-cols-left h3 {
   margin-bottom: 0;
@@ -1036,11 +1066,23 @@ body {
   float: right;
   width: 60%;
 }
+@media only screen and (max-width: 767px) {
+  .clipboard-inner #post-854 .menu-container .two-cols .two-cols-right {
+    float: none;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
 .clipboard-inner #post-854 .menu-container .two-cols .two-cols-right ul {
   margin-top: 0;
 }
 .clipboard-inner #post-854 .menu-container .two-cols .right-column {
   width: 88%;
+}
+@media only screen and (max-width: 767px) {
+  .clipboard-inner #post-854 .menu-container .two-cols .right-column {
+    width: 100%;
+  }
 }
 .clipboard-inner #post-854 .menu-container .two-cols .right-column li:nth-of-type(2n+1) {
   text-align: center;
@@ -1060,6 +1102,12 @@ body {
 .clipboard-inner #post-854 .menu-container .three-cols {
   float: left;
   width: 25%;
+}
+@media only screen and (max-width: 767px) {
+  .clipboard-inner #post-854 .menu-container .three-cols {
+    width: 100%;
+    float: none;
+  }
 }
 .clipboard-inner #post-854 .menu-container .three-cols:nth-of-type(2n) {
   width: 50%;
@@ -1385,7 +1433,7 @@ p {
   color: #000;
   font-weight: normal !important;
   text-transform: uppercase;
-  font-size: 4.5em;
+  font-size: 3.5em;
   font-family: 'Oswald', sans-serif;
 }
 #post-854 p {
@@ -1411,7 +1459,6 @@ p {
   margin-top: 0;
 }
 #post-854 ul li ul li {
-  width: 0;
   position: absolute;
   top: 0;
   right: 0;
