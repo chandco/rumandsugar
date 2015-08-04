@@ -1375,6 +1375,8 @@ p {
   color: #999;
   padding-top: 60px;
   margin-top: -60px;
+  /* ICONS FOR MENU */
+  /* END ICONS */
 }
 #post-854 .sides-container .two-cols {
   margin-left: 0 !important;
@@ -1418,7 +1420,7 @@ p {
   margin: 29px auto;
 }
 #post-854 .desserts-container .two-cols:first-child {
-  width: 70%;
+  width: 75%;
   margin-right: 0 !important;
 }
 @media only screen and (max-width: 767px) {
@@ -1427,8 +1429,8 @@ p {
   }
 }
 #post-854 .desserts-container .two-cols:last-child {
-  width: 27%;
-  margin-left: 3% !important;
+  width: 14%;
+  margin-left: 11% !important;
 }
 @media only screen and (max-width: 767px) {
   #post-854 .desserts-container .two-cols:last-child {
@@ -1446,6 +1448,10 @@ p {
 }
 #post-854 .desserts-container .two-cols .dessert {
   width: 100%;
+}
+#post-854 .desserts-container .two-cols .two-cols-left li h3:first-of-type {
+  font-family: 'Monotype Bernard W01';
+  font-size: 120px;
 }
 #post-854 h3,
 #post-854 p {
@@ -1496,13 +1502,23 @@ p {
 #post-854 .double {
   border-bottom: solid 5px black;
   border-top: solid 1px black;
-  padding-bottom: 1px;
+  padding-bottom: 3px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 #post-854 .dotted {
   border-style: dotted repeat-y;
   margin-top: 0;
+}
+#post-854 .star {
+  background: url(/wp-content/uploads//2015/07/star.svg) repeat-x;
+  height: 30px;
+  border: 0;
+}
+#post-854 .slash {
+  background: url(/wp-content/uploads//2015/06/slash.svg) repeat-x;
+  height: 30px;
+  border: 0;
 }
 #post-854 .dessert {
   background: url(/wp-content/uploads//2015/08/dessert.svg) no-repeat;
@@ -1516,15 +1532,9 @@ p {
   background: url(/wp-content/uploads//2015/07/fork-right.svg) no-repeat;
   height: 100px;
 }
-#post-854 .star {
-  background: url(/wp-content/uploads//2015/07/star.svg) repeat-x;
-  height: 30px;
-  border: 0;
-}
-#post-854 .slash {
-  background: url(/wp-content/uploads//2015/06/slash.svg) repeat-x;
-  height: 30px;
-  border: 0;
+#post-854 .spoon {
+  background: url(/wp-content/uploads//2015/08/spoon.svg) no-repeat;
+  height: 65px;
 }
 #post-854 .banner-wrapper {
   position: relative;
