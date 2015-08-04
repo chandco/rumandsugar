@@ -57,6 +57,9 @@ color: #333;
 						&:before, &:after {
 							display:none;
 						}
+
+						padding: 13px 6px;
+						font-size:3em;
 					}
 				}
 
@@ -66,7 +69,7 @@ color: #333;
 						&:nth-of-type(1n) {
 							font-size:7.5em;
 							text-transform: uppercase;
-							line-height:1em;
+							line-height:0.9em;
 						}
 
 						&:nth-of-type(3n) {
@@ -146,10 +149,17 @@ color: #333;
 				.two-cols-left {
 					width:35% !important;
 
-					li h3 {
+					ul li {
 						&:first-of-type {
 							font-family: 'Monotype Bernard W01';
-							font-size:120px;
+							font-size:8.4em;
+							line-height:0.8em;
+						}
+
+						&:nth-child(3n) {
+							font-size:6.7em;
+							line-height:1em;
+							margin-top:2px;
 						}
 					}
 				}
@@ -240,6 +250,8 @@ color: #333;
 			border-bottom: solid 5px black;
 	  		border-top: solid 1px black;
 	  		padding-bottom: 3px;
+	  		margin-bottom:40px;
+	  		margin-top: 40px;
 		}
 		.dotted {
 		  	border-style:dotted repeat-y;
@@ -278,7 +290,8 @@ color: #333;
 
 		.spoon {
 			background: url(/wp-content/uploads//2015/08/spoon.svg) no-repeat;
-			height:65px;
+			height:60px;
+			margin-top:10px;
 		}
 
 		.arrow {

@@ -1393,6 +1393,10 @@ p {
   max-width: 100%;
   margin: 0;
 }
+#post-854 .sides-container .two-cols .banner-wrapper .banner {
+  padding: 13px 6px;
+  font-size: 3em;
+}
 #post-854 .sides-container .two-cols .banner-wrapper .banner:before,
 #post-854 .sides-container .two-cols .banner-wrapper .banner:after {
   display: none;
@@ -1400,7 +1404,7 @@ p {
 #post-854 .sides-container .two-cols .two-cols-left li:nth-of-type(1n) {
   font-size: 7.5em;
   text-transform: uppercase;
-  line-height: 1em;
+  line-height: 0.9em;
 }
 #post-854 .sides-container .two-cols .two-cols-left li:nth-of-type(3n) {
   font-size: 3.5em;
@@ -1457,9 +1461,15 @@ p {
 #post-854 .desserts-container .two-cols .two-cols-left {
   width: 35% !important;
 }
-#post-854 .desserts-container .two-cols .two-cols-left li h3:first-of-type {
+#post-854 .desserts-container .two-cols .two-cols-left ul li:first-of-type {
   font-family: 'Monotype Bernard W01';
-  font-size: 120px;
+  font-size: 8.4em;
+  line-height: 0.8em;
+}
+#post-854 .desserts-container .two-cols .two-cols-left ul li:nth-child(3n) {
+  font-size: 6.7em;
+  line-height: 1em;
+  margin-top: 2px;
 }
 #post-854 .desserts-container .two-cols .two-cols-right {
   width: 65% !important;
@@ -1514,6 +1524,8 @@ p {
   border-bottom: solid 5px black;
   border-top: solid 1px black;
   padding-bottom: 3px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 #post-854 .dotted {
   border-style: dotted repeat-y;
@@ -1543,7 +1555,8 @@ p {
 }
 #post-854 .spoon {
   background: url(/wp-content/uploads//2015/08/spoon.svg) no-repeat;
-  height: 65px;
+  height: 60px;
+  margin-top: 10px;
 }
 #post-854 .arrow {
   background: url(/wp-content/uploads//2015/08/arrow.svg) no-repeat;
