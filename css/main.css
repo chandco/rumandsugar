@@ -1383,6 +1383,8 @@ p {
 }
 #post-854 .sides-container .two-cols:last-child {
   border-left: solid 1px #000000;
+  border-width: 0px 0px 0px 16px;
+  border-image: url("/wp-content/uploads//2015/08/dotted-border.svg") 0 0 0 100% repeat;
 }
 @media only screen and (max-width: 767px) {
   #post-854 .sides-container .two-cols:last-child {
@@ -1473,6 +1475,11 @@ p {
 }
 #post-854 .desserts-container .two-cols .two-cols-right {
   width: 65% !important;
+}
+@media only screen and (max-width: 767px) {
+  #post-854 .desserts-container .two-cols .two-cols-right {
+    width: 100% !important;
+  }
 }
 #post-854 h3,
 #post-854 p {
