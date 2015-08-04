@@ -72,27 +72,28 @@ color: #333;
 				.two-cols-right.right-column {
 
 					&:last-child {
-						width:100% !important;
-					float:none!important;
-					margin-left:10%;
+						width:100%;
+						float:none;
+						margin-left:10%;
 					}
-					
 
+				// 	@media only screen and (max-width : @tablets) { 
+				// }
+
+					ul li {
+						&:nth-of-type(2n+1) {
+							text-align:center;
+							font-size:45px;
+						}
+
+						&:nth-of-type(2n) {
+							width:175px;
+							margin:29px auto;
+						}
+					}
 				}
-
-		
-
-
 			}
 		}
-
-
-
-
-
-
-
-
 
 		/* END SIDES CONTAINER */
 
