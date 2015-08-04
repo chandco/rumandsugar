@@ -1049,41 +1049,12 @@ body {
 .clipboard-inner #post-854 .menu-container .two-cols .two-cols-right ul {
   margin-top: 0;
 }
-.clipboard-inner #post-854 .menu-container .two-cols .right-column {
-  width: 88%;
-}
-@media only screen and (max-width: 767px) {
-  .clipboard-inner #post-854 .menu-container .two-cols .right-column {
-    width: 100%;
-  }
-}
-.clipboard-inner #post-854 .menu-container .two-cols .right-column li:nth-of-type(2n+1) {
-  text-align: center;
-  font-size: 45px;
-}
-.clipboard-inner #post-854 .menu-container .two-cols .right-column li:nth-of-type(2n) {
-  width: 175px;
-  margin: 29px auto;
-}
 @media only screen and (max-width: 767px) {
   .clipboard-inner #post-854 .menu-container .two-cols {
     flot: none;
     width: 100%;
     margin-right: 0;
   }
-}
-.clipboard-inner #post-854 .menu-container .three-cols {
-  float: left;
-  width: 25%;
-}
-@media only screen and (max-width: 767px) {
-  .clipboard-inner #post-854 .menu-container .three-cols {
-    width: 100%;
-    float: none;
-  }
-}
-.clipboard-inner #post-854 .menu-container .three-cols:nth-of-type(2n) {
-  width: 50%;
 }
 .clipboard-outer {
   background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/dark-repeating-texture.jpg');
@@ -1428,6 +1399,11 @@ p {
   font-size: 40px;
   font-family: 'Monotype Bernard W01';
 }
+#post-854 .sides-container .two-cols .two-cols-right.right-column:last-child {
+  width: 100% !important;
+  float: none!important;
+  margin-left: 10%;
+}
 #post-854 .desserts-container .two-cols:first-child {
   width: 70%;
   margin-right: 0 !important;
@@ -1454,6 +1430,9 @@ p {
   #post-854 .desserts-container .two-cols ul li ul li {
     width: auto;
   }
+}
+#post-854 .desserts-container .two-cols .dessert {
+  width: 100%;
 }
 #post-854 h3,
 #post-854 p {
@@ -1515,7 +1494,6 @@ p {
 #post-854 .dessert {
   background: url(/wp-content/uploads//2015/08/dessert.svg) no-repeat;
   height: 250px;
-  margin-left: 65px;
 }
 #post-854 .fork-left {
   background: url(/wp-content/uploads//2015/07/fork.svg) no-repeat;
