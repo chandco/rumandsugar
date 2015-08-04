@@ -1019,7 +1019,7 @@ body {
 }
 .clipboard-inner #post-854 .menu-container .two-cols .two-cols-left {
   float: left;
-  width: 40%;
+  width: 50%;
 }
 @media only screen and (max-width: 767px) {
   .clipboard-inner #post-854 .menu-container .two-cols .two-cols-left {
@@ -1037,7 +1037,7 @@ body {
 }
 .clipboard-inner #post-854 .menu-container .two-cols .two-cols-right {
   float: right;
-  width: 60%;
+  width: 50%;
 }
 @media only screen and (max-width: 767px) {
   .clipboard-inner #post-854 .menu-container .two-cols .two-cols-right {
@@ -1449,9 +1449,15 @@ p {
 #post-854 .desserts-container .two-cols .dessert {
   width: 100%;
 }
+#post-854 .desserts-container .two-cols .two-cols-left {
+  width: 35% !important;
+}
 #post-854 .desserts-container .two-cols .two-cols-left li h3:first-of-type {
   font-family: 'Monotype Bernard W01';
   font-size: 120px;
+}
+#post-854 .desserts-container .two-cols .two-cols-right {
+  width: 65% !important;
 }
 #post-854 h3,
 #post-854 p {
@@ -1534,6 +1540,10 @@ p {
 }
 #post-854 .spoon {
   background: url(/wp-content/uploads//2015/08/spoon.svg) no-repeat;
+  height: 65px;
+}
+#post-854 .arrow {
+  background: url(/wp-content/uploads//2015/08/arrow.svg) no-repeat;
   height: 65px;
 }
 #post-854 .banner-wrapper {
