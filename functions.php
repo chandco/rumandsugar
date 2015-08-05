@@ -57,7 +57,7 @@ function cro_setup() {
 	require( get_template_directory() . '/inc/shortcodes/shortcode-callout.php' );
 	require( get_template_directory() . '/inc/shortcodes/shortcode-button.php' );
 	require( get_template_directory() . '/inc/shortcodes/shortcode-accordion.php' );
-	require( get_template_directory() . '/inc/shortcodes/shortcode-border.php' );
+	require( get_template_directory() . '/inc/shortcodes/shortcode-icons.php' );
 	require( get_template_directory() . '/inc/admin/page-controller.php');
 	require( get_template_directory() . '/inc/admin/page-parts.php');
 	require( get_template_directory() . '/inc/admin/admin-helpers.php');
