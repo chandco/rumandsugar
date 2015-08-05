@@ -1000,6 +1000,9 @@ body {
   width: 46%;
   float: left;
 }
+.clipboard-inner #post-854 .menu-container .two-cols h3 {
+  font-size: 6.7em;
+}
 .clipboard-inner #post-854 .menu-container .two-cols:after {
   content: "";
   display: block;
@@ -1544,7 +1547,7 @@ p {
   border: 0;
 }
 #post-854 .slash {
-  background: url(/wp-content/uploads//2015/06/slash.svg) repeat-x;
+  background: url(/wp-content/uploads//2015/08/slash.svg) repeat-x;
   height: 30px;
   border: 0;
 }
