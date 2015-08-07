@@ -41,27 +41,45 @@ color: #333;
 			background:red;
 			display:flex;
 			flex-direction:row;
-			//justify-content: space-between;
 
 
-			 div {
-				width:50%;
+			div {
 				font-size:5em;
 				text-transform: uppercase;
+				width:50%;
+				flex:6 0 1;
+			
 
-				&:nth-child(1) {
+
+				
+
+				&:nth-child(1n) {
 					text-align:left;
+					font-family: 'Monotype Bernard W01';
+					color:#000000;
+					
+					
+
+				
 				}
 
-				&:nth-child(2) {
+				&:nth-child(2n) {
 					background:green;
-					flex-shrink:7;
+					flex:5 0 1;
+					//flex-grow:2;
 					display:flex;
 					justify-content:center;
+
+
 				}
 
-				&:nth-child(3) {
+				&:nth-child(3n) {
 					text-align:right;
+					font-family: 'Oswald', sans-serif;
+					color:#000000;
+					background:pink;
+				
+
 				}
 			}
 		}
@@ -306,7 +324,6 @@ color: #333;
 
 		.single-star {
 			background: url(/wp-content/uploads//2015/08/single-star.svg) no-repeat;
-			height:30px;
 			border:0;
 		}
 
