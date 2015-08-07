@@ -35,11 +35,42 @@ color: #333;
 	
 	#post-854 {
 
+		/* HEADER WRAPPER CONTAINER */
 
+		.header-container {
+			background:red;
+			display:flex;
+			flex-direction:row;
+			//justify-content: space-between;
+
+
+			 div {
+				width:50%;
+				font-size:5em;
+				text-transform: uppercase;
+
+				&:nth-child(1) {
+					text-align:left;
+				}
+
+				&:nth-child(2) {
+					background:green;
+					flex-shrink:7;
+					display:flex;
+					justify-content:center;
+				}
+
+				&:nth-child(3) {
+					text-align:right;
+				}
+			}
+		}
 
 		/* SIDES MENU CONTAINER */
 
 		.sides-container {
+		
+
 			.two-cols {
 				margin-left:0 !important;
 
@@ -115,6 +146,7 @@ color: #333;
 		/* DESSERTS MENU CONTAINER */
 
 		.desserts-container {
+
 			.two-cols {
 				&:first-child {
 					width:75%;
@@ -272,10 +304,23 @@ color: #333;
 			border:0;
 		}
 
+		.single-star {
+			background: url(/wp-content/uploads//2015/08/single-star.svg) no-repeat;
+			height:30px;
+			border:0;
+		}
+
+
 		.slash {
 			background: url(/wp-content/uploads//2015/08/slash1.svg) repeat-x;
 			height:27px;
 			border:0;
+		}
+
+		.dash {
+					border-width: 20px 20px 0px 20px;
+  					border-image: url("/wp-content/uploads//2015/08/dotted-border.svg") 90 20 space;
+
 		}
 
 		/* ICONS FOR MENU */

@@ -1375,6 +1375,7 @@ p {
   }
 }
 #post-854 {
+  /* HEADER WRAPPER CONTAINER */
   /* SIDES MENU CONTAINER */
   /* END SIDES CONTAINER */
   /* DESSERTS MENU CONTAINER */
@@ -1384,6 +1385,28 @@ p {
   margin-top: -60px;
   /* ICONS FOR MENU */
   /* END ICONS */
+}
+#post-854 .header-container {
+  background: red;
+  display: flex;
+  flex-direction: row;
+}
+#post-854 .header-container div {
+  width: 50%;
+  font-size: 5em;
+  text-transform: uppercase;
+}
+#post-854 .header-container div:nth-child(1) {
+  text-align: left;
+}
+#post-854 .header-container div:nth-child(2) {
+  background: green;
+  flex-shrink: 7;
+  display: flex;
+  justify-content: center;
+}
+#post-854 .header-container div:nth-child(3) {
+  text-align: right;
 }
 #post-854 .sides-container .two-cols {
   margin-left: 0 !important;
@@ -1545,10 +1568,19 @@ p {
   height: 30px;
   border: 0;
 }
+#post-854 .single-star {
+  background: url(/wp-content/uploads//2015/08/single-star.svg) no-repeat;
+  height: 30px;
+  border: 0;
+}
 #post-854 .slash {
   background: url(/wp-content/uploads//2015/08/slash1.svg) repeat-x;
   height: 27px;
   border: 0;
+}
+#post-854 .dash {
+  border-width: 20px 20px 0px 20px;
+  border-image: url("/wp-content/uploads//2015/08/dotted-border.svg") 90 20 space;
 }
 #post-854 .dessert {
   background: url(/wp-content/uploads//2015/08/dessert.svg) no-repeat;
