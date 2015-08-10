@@ -1194,6 +1194,67 @@ body {
   box-shadow: 0px -5px 3px -1px rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid #C0A077;
 }
+.border {
+  border-width: 1px;
+  border-color: black;
+  margin-top: 0;
+}
+.dashed {
+  border-style: dashed;
+  margin-top: 0;
+}
+.double {
+  border-bottom: solid 5px black;
+  border-top: solid 1px black;
+  padding-bottom: 3px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.dotted {
+  border-style: dotted repeat-y;
+  margin-top: 0;
+}
+.star {
+  background: url(/wp-content/uploads//2015/07/star.svg) repeat-x;
+  height: 30px;
+  border: 0;
+}
+.single-star {
+  background: url(/wp-content/uploads//2015/08/single-star.svg) no-repeat;
+  border: 0;
+}
+.slash {
+  background: url(/wp-content/uploads//2015/08/slash1.svg) repeat-x;
+  height: 27px;
+  border: 0;
+}
+.dash {
+  border-width: 20px 20px 0px 20px;
+  border-image: url("/wp-content/uploads//2015/08/dotted-border.svg") 90 20 space;
+}
+/* ICONS FOR MENU */
+.dessert {
+  background: url(/wp-content/uploads//2015/08/dessert.svg) no-repeat;
+  height: 250px;
+}
+.fork-left {
+  background: url(/wp-content/uploads//2015/07/fork.svg) no-repeat;
+  height: 100px;
+}
+.fork-right {
+  background: url(/wp-content/uploads//2015/07/fork-right.svg) no-repeat;
+  height: 100px;
+}
+.spoon {
+  background: url(/wp-content/uploads//2015/08/spoon.svg) no-repeat;
+  height: 60px;
+  margin-top: 10px;
+}
+.arrow {
+  background: url(/wp-content/uploads//2015/08/arrow.svg) no-repeat;
+  height: 25px;
+}
+/* END ICONS */
 .cro_fpc {
   margin-bottom: 30px;
   position: relative;
@@ -1383,8 +1444,6 @@ p {
   color: #999;
   padding-top: 60px;
   margin-top: -60px;
-  /* ICONS FOR MENU */
-  /* END ICONS */
 }
 #post-854 .header-container {
   display: flex;
@@ -1455,7 +1514,7 @@ p {
 }
 #post-854 .sides-container .two-cols .two-cols-right.right-column ul li:nth-of-type(2n+1) {
   text-align: center;
-  font-size: 45px;
+  font-size: 55px;
 }
 #post-854 .sides-container .two-cols .two-cols-right.right-column ul li:nth-of-type(2n) {
   width: 175px;
@@ -1548,65 +1607,6 @@ p {
   right: 0;
   text-align: right;
   font-size: 1.5em;
-}
-#post-854 .border {
-  border-width: 1px;
-  border-color: black;
-  margin-top: 0;
-}
-#post-854 .dashed {
-  border-style: dashed;
-  margin-top: 0;
-}
-#post-854 .double {
-  border-bottom: solid 5px black;
-  border-top: solid 1px black;
-  padding-bottom: 3px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-#post-854 .dotted {
-  border-style: dotted repeat-y;
-  margin-top: 0;
-}
-#post-854 .star {
-  background: url(/wp-content/uploads//2015/07/star.svg) repeat-x;
-  height: 30px;
-  border: 0;
-}
-#post-854 .single-star {
-  background: url(/wp-content/uploads//2015/08/single-star.svg) no-repeat;
-  border: 0;
-}
-#post-854 .slash {
-  background: url(/wp-content/uploads//2015/08/slash1.svg) repeat-x;
-  height: 27px;
-  border: 0;
-}
-#post-854 .dash {
-  border-width: 20px 20px 0px 20px;
-  border-image: url("/wp-content/uploads//2015/08/dotted-border.svg") 90 20 space;
-}
-#post-854 .dessert {
-  background: url(/wp-content/uploads//2015/08/dessert.svg) no-repeat;
-  height: 250px;
-}
-#post-854 .fork-left {
-  background: url(/wp-content/uploads//2015/07/fork.svg) no-repeat;
-  height: 100px;
-}
-#post-854 .fork-right {
-  background: url(/wp-content/uploads//2015/07/fork-right.svg) no-repeat;
-  height: 100px;
-}
-#post-854 .spoon {
-  background: url(/wp-content/uploads//2015/08/spoon.svg) no-repeat;
-  height: 60px;
-  margin-top: 10px;
-}
-#post-854 .arrow {
-  background: url(/wp-content/uploads//2015/08/arrow.svg) no-repeat;
-  height: 25px;
 }
 #post-854 .banner-wrapper {
   position: relative;
