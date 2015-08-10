@@ -1616,12 +1616,7 @@ p {
   text-align: right;
   font-size: 1.5em;
 }
-#post-854 .banner-wrapper {
-  position: relative;
-  margin: 0 auto 65px auto;
-  max-width: 50%;
-}
-#post-854 .banner-wrapper .banner {
+#post-854 .banner {
   height: 65px;
   background: #000;
   color: #BF9E72;
@@ -1631,15 +1626,18 @@ p {
   font-family: 'Monotype Bernard W01';
   text-align: center;
   text-transform: uppercase;
+  width: 50%;
+  margin: 0 auto 70px auto;
+  position: relative;
 }
-#post-854 .banner-wrapper .banner:after {
+#post-854 .banner:after {
   content: url('/wp-content/uploads//2015/06/right-ribbon.svg');
   position: absolute;
   right: -47px;
   top: 25px;
   width: 80px;
 }
-#post-854 .banner-wrapper .banner:before {
+#post-854 .banner:before {
   content: url('/wp-content/uploads//2015/06/left-ribbon.svg');
   position: absolute;
   left: -47px;
