@@ -1474,6 +1474,13 @@ p {
   color: #000000;
   flex: 46 0 0;
 }
+#post-854 .header-container span {
+  line-height: 93px;
+  padding: 0 5px;
+  background: #000000;
+  color: #EF2121;
+  display: inline-block;
+}
 #post-854 .sides-container .two-cols {
   margin-left: 0 !important;
 }
@@ -1572,8 +1579,7 @@ p {
     width: 100% !important;
   }
 }
-#post-854 h3,
-#post-854 p {
+#post-854 h3 {
   color: #000;
   font-weight: normal !important;
   text-transform: uppercase;
@@ -1583,6 +1589,7 @@ p {
 #post-854 p {
   font-size: 1.5em;
   padding-top: 10px;
+  font-family: 'Oswald', sans-serif;
 }
 #post-854 ul {
   font-family: 'Oswald', sans-serif;
