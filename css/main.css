@@ -1004,8 +1004,10 @@ body {
 .clipboard-inner #post-854 .menu-container .two-cols h3 {
   font-size: 6.7em;
 }
-.clipboard-inner #post-854 .menu-container .two-cols h3:nth-child(2n) {
-  margin: 0;
+@media only screen and (max-width: 1200px) {
+  .clipboard-inner #post-854 .menu-container .two-cols h3 {
+    font-size: 5.5em;
+  }
 }
 .clipboard-inner #post-854 .menu-container .two-cols:after {
   content: "";
@@ -1037,7 +1039,6 @@ body {
 }
 .clipboard-inner #post-854 .menu-container .two-cols .two-cols-left h3 {
   margin-bottom: 0;
-  margin-top: 0;
 }
 .clipboard-inner #post-854 .menu-container .two-cols .two-cols-left ul {
   margin-top: 0;
@@ -1484,22 +1485,40 @@ p {
 #post-854 .sides-container .two-cols {
   margin-left: 0 !important;
 }
+@media only screen and (max-width: 1200px) {
+  #post-854 .sides-container .two-cols {
+    width: 100% !important;
+    float: none !important;
+    margin-bottom: 30px;
+  }
+  #post-854 .sides-container .two-cols:last-child {
+    margin-bottom: 0;
+  }
+}
 #post-854 .sides-container .two-cols:last-child {
   border-width: 0px 0px 0px 16px;
   border-image: url("/wp-content/uploads//2015/08/dotted-border.svg") 0 0 0 100% repeat;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1200px) {
   #post-854 .sides-container .two-cols:last-child {
     border: none;
   }
 }
-#post-854 .sides-container .two-cols .banner-wrapper {
-  max-width: 100%;
-  margin: 0;
+#post-854 .sides-container .two-cols .banner {
+  width: 95%;
+  font-size: 0.8em;
+  margin-bottom: 0;
+  padding-top: 12px;
 }
-#post-854 .sides-container .two-cols .banner-wrapper .banner:before,
-#post-854 .sides-container .two-cols .banner-wrapper .banner:after {
+#post-854 .sides-container .two-cols .banner:before,
+#post-854 .sides-container .two-cols .banner:after {
   display: none;
+}
+@media only screen and (max-width: 1200px) {
+  #post-854 .sides-container .two-cols .two-cols-left {
+    width: 46% !important;
+    margin-left: 4%;
+  }
 }
 #post-854 .sides-container .two-cols .two-cols-left li:nth-of-type(1n) {
   font-size: 7.5em;
@@ -1510,10 +1529,21 @@ p {
   font-size: 3.5em;
   font-family: 'Monotype Bernard W01';
 }
+@media only screen and (max-width: 1200px) {
+  #post-854 .sides-container .two-cols .two-cols-right {
+    width: 46% !important;
+    margin-right: 4%;
+  }
+}
 #post-854 .sides-container .two-cols .two-cols-right.right-column:last-child {
-  width: 100%;
+  width: 100% !important;
   float: none;
   margin-left: 10%;
+}
+@media only screen and (max-width: 1200px) {
+  #post-854 .sides-container .two-cols .two-cols-right.right-column:last-child {
+    margin-left: 0;
+  }
 }
 @media only screen and (max-width: 767px) {
   #post-854 .sides-container .two-cols .two-cols-right.right-column {
@@ -1620,8 +1650,8 @@ p {
   height: 65px;
   background: #000;
   color: #BF9E72;
-  padding: 13px 6px;
-  font-size: 3em;
+  padding: 12px 6px;
+  font-size: 3.3em;
   line-height: 1em;
   font-family: 'Monotype Bernard W01';
   text-align: center;

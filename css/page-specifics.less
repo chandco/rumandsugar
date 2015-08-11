@@ -43,6 +43,7 @@ color: #333;
 			flex-direction:row;
 
 
+
 			div {
 				text-transform: uppercase;
 				//flex:1 0 0;
@@ -53,9 +54,9 @@ color: #333;
 					text-align:left;
 					font-family: 'Monotype Bernard W01';
 					color:#000000;
-					flex:50 0 0;
-					
+					flex:50 0 0;	
 				}
+
 
 				&:nth-child(2n) {
 					background:green;
@@ -66,6 +67,7 @@ color: #333;
    					background-size: 93% 78%;
     				background-position: center center;
     				font-size:5em;
+
 				}
 
 
@@ -75,6 +77,8 @@ color: #333;
 					color:#000000;
 					//background:pink;
 					flex: 46 0 0;
+
+					
 				
 
 				}
@@ -95,6 +99,18 @@ color: #333;
 		
 
 			.two-cols {
+
+				@media only screen and (max-width : @large-desktop) {
+					width:100% !important;
+					float:none !important;
+					//background:green;
+					margin-bottom:30px;
+
+					&:last-child {
+						margin-bottom:0;
+					}
+				} 
+
 				margin-left:0 !important;
 
 				&:last-child {
@@ -104,23 +120,29 @@ color: #333;
   					border-image: url("/wp-content/uploads//2015/08/dotted-border.svg") 0 0 0 100% repeat;
   					
 
-					@media only screen and (max-width : @tablets) { 
+					@media only screen and (max-width : @large-desktop) { 
 						border:none;
 					}
 				}
 
-				.banner-wrapper {
-					max-width:100%;
-					margin:0;
-
 					.banner {
+						width:95%;
+						font-size:0.8em;
+						margin-bottom:0;
+						padding-top:12px;
+
 						&:before, &:after {
 							display:none;
 						}
 					}
-				}
 
 				.two-cols-left {
+
+					@media only screen and (max-width : @large-desktop) {
+						width:46% !important;
+						margin-left:4%;
+					} 
+
 					li {
 
 						&:nth-of-type(1n) {
@@ -136,12 +158,24 @@ color: #333;
 					}			
 				}
 
+				.two-cols-right {
+					@media only screen and (max-width : @large-desktop) {
+						width:46% !important;
+						margin-right:4%;
+					} 
+				}
+
 				.two-cols-right.right-column {
 
 					&:last-child {
-						width:100%;
+						width:100% !important;
 						float:none;
 						margin-left:10%;
+
+
+						@media only screen and (max-width : @large-desktop) {
+							margin-left:0;
+						} 
 					}
 
 					@media only screen and (max-width : @tablets) {
@@ -311,8 +345,8 @@ color: #333;
 				height:65px;
 				background:#000;
 				color:#BF9E72;
-				padding: 13px 6px;
-    			font-size: 3em;
+				padding: 12px 6px;
+    			font-size: 3.3em;
 				line-height:1em;
 				font-family:'Monotype Bernard W01';
 				text-align:center;
