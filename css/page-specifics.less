@@ -42,6 +42,10 @@ color: #333;
 			display:flex;
 			flex-direction:row;
 
+			@media only screen and (max-width : @large-desktop) {
+				flex-direction:column;
+			}
+
 
 
 			div {
@@ -63,6 +67,11 @@ color: #333;
 					font-family: 'Monotype Bernard W01';
 					color:#000000;
 					flex:50 0 0;
+
+					@media only screen and (max-width : @tablets) {
+						flex:1;
+						text-align:center;
+					}
 				}
 
 
@@ -76,6 +85,14 @@ color: #333;
     				background-position: center center;
     				font-size:5em;
 
+    				@media only screen and (max-width : @tablets) {
+						height:70px;
+					}
+
+					@media only screen and (max-width : @large-desktop) {
+						flex:1;
+					}
+
 				}
 
 
@@ -86,6 +103,11 @@ color: #333;
 					//background:pink;
 					flex: 46 0 0;
 
+					@media only screen and (max-width : @tablets) {
+						flex:1;
+						text-align:center;
+					}
+
 				}
 			}
 
@@ -95,6 +117,10 @@ color: #333;
 				background:#000000;
 				color: #EF2121;
 				display:inline-block;
+
+				@media only screen and (max-width : @large-desktop) {
+					line-height: 54px;
+				}
 
 				@media only screen and (max-width : @large-desktop) {
 					line-height: 73px;
