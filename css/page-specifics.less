@@ -97,6 +97,9 @@ color: #333;
 
 		.sides-container {
 		
+			.menu-container {
+				overflow:visible;
+			}
 
 			.two-cols {
 
@@ -204,13 +207,32 @@ color: #333;
 
 		.desserts-container {
 
+			
+			.menu-container {
+				
+				@media only screen and (max-width : @large-desktop) {
+				
+					background:red;
+				}
+			}
+
 			.two-cols {
+
+				@media only screen and (max-width : @large-desktop) {
+					float:none !important;
+					//background:red;
+					width:100%;
+				} 
+
 				&:first-child {
 					width:75%;
-					//background:red;
 					margin-right:0 !important;
 
 					@media only screen and (max-width : @tablets) { 
+						width: 100%;
+					}
+
+					@media only screen and (max-width : @large-desktop) { 
 						width: 100%;
 					}
 				}
@@ -224,6 +246,12 @@ color: #333;
 						width: 100%;
 						margin-left:0 !important;
 					}
+
+					@media only screen and (max-width : @large-desktop) {
+						width:100%;
+						margin-left:0 !important;
+						margin-top:30px;
+					} 
 				}
 
 				ul li ul li {
@@ -236,10 +264,19 @@ color: #333;
 
 				.dessert {
 					width:100%;
+
+					@media only screen and (max-width : @large-desktop) {
+						width:171px;
+						margin:0 auto;
+					} 
 				}
 
 				.two-cols-left {
 					width:35% !important;
+
+					@media only screen and (max-width : @large-desktop) {
+						margin-right:5%;
+					} 
 
 					ul li {
 						&:first-of-type {
@@ -261,6 +298,11 @@ color: #333;
 
 					@media only screen and (max-width : @tablets) {
 						width:100% !important;
+					}
+
+					@media only screen and (max-width : @large-desktop) {
+						width:55% !important;
+						float:left !important;
 					}
 				}
 			}
