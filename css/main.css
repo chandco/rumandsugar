@@ -1565,11 +1565,6 @@ p {
   margin: 29px auto;
 }
 @media only screen and (max-width: 1200px) {
-  #post-854 .desserts-container .menu-container {
-    background: red;
-  }
-}
-@media only screen and (max-width: 1200px) {
   #post-854 .desserts-container .two-cols {
     float: none !important;
     width: 100%;
@@ -1614,6 +1609,11 @@ p {
     width: auto;
   }
 }
+@media only screen and (max-width: 1200px) {
+  #post-854 .desserts-container .two-cols ul li ul li {
+    width: auto;
+  }
+}
 #post-854 .desserts-container .two-cols .dessert {
   width: 100%;
 }
@@ -1651,7 +1651,7 @@ p {
 }
 @media only screen and (max-width: 1200px) {
   #post-854 .desserts-container .two-cols .two-cols-right {
-    width: 55% !important;
+    width: 60% !important;
     float: left !important;
   }
 }
