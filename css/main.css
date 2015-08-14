@@ -1458,6 +1458,16 @@ p {
   text-transform: uppercase;
   font-size: 8em;
 }
+@media only screen and (max-width: 1200px) {
+  #post-854 .header-container div {
+    font-size: 6em;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  #post-854 .header-container div {
+    font-size: 5em;
+  }
+}
 #post-854 .header-container div:nth-child(1n) {
   text-align: left;
   font-family: 'Monotype Bernard W01';
@@ -1484,6 +1494,16 @@ p {
   background: #000000;
   color: #EF2121;
   display: inline-block;
+}
+@media only screen and (max-width: 1200px) {
+  #post-854 .header-container span {
+    line-height: 73px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  #post-854 .header-container span {
+    line-height: 63px;
+  }
 }
 #post-854 .sides-container .menu-container {
   overflow: visible;
