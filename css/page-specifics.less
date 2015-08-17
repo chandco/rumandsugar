@@ -204,6 +204,8 @@ color: #333;
 						margin-left:0;
 					}  
 
+					
+
 					li {
 
 						&:nth-of-type(1n) {
@@ -351,21 +353,35 @@ color: #333;
 				.two-cols-left {
 					width:35% !important;
 
+
+					@media only screen and (max-width : @tablets) {
+						width:100% !important;
+					} 
+
 					@media only screen and (max-width : @large-desktop) {
 						margin-right:5%;
 					} 
+
 
 					ul li {
 						&:first-of-type {
 							font-family: 'Monotype Bernard W01';
 							font-size:8.4em;
 							line-height:0.8em;
+
+							@media only screen and (max-width : @wide-phones) {
+								font-size:6.5em;
+							}
 						}
 
 						&:nth-child(3n) {
 							font-size:6.7em;
 							line-height:1em;
 							margin-top:2px;
+
+							@media only screen and (max-width : @wide-phones) {
+								font-size:5.2em;
+							}
 						}
 					}
 				}
@@ -373,14 +389,16 @@ color: #333;
 				.two-cols-right {
 					width:65% !important;
 
-					@media only screen and (max-width : @tablets) {
-						width:100% !important;
-					}
-
 					@media only screen and (max-width : @large-desktop) {
 						width:60% !important;
 						float:left !important;
 					}
+
+
+					@media only screen and (max-width : @tablets) {
+						width:100% !important;
+						float:none;
+					}	
 				}
 			}
 		}
