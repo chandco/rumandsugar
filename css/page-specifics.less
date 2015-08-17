@@ -174,7 +174,7 @@ color: #333;
 				}
 
 					.banner {
-						width:95%;
+						width:100%;
 						font-size:1em;
 						margin-bottom:0;
 						padding-top:12px;
@@ -190,6 +190,11 @@ color: #333;
 						@media only screen and (max-width : @wide-phones) {
 							padding-top:20px;
 						} 
+
+
+						@media only screen and (min-width : 622px) {
+							padding-top:6px;
+						} 
 					}
 
 				.two-cols-left {
@@ -204,7 +209,7 @@ color: #333;
 						margin-left:0;
 					}  
 
-					
+
 
 					li {
 
@@ -267,7 +272,12 @@ color: #333;
 							}  
 
 							@media only screen and (max-width : @wide-phones) {
-								font-size:26px;
+								font-size:27px;
+							} 
+
+
+							@media only screen and (min-width : 481px) and (max-width: 621px) {
+								font-size:39px;
 							} 
 
 							@media only screen and (max-width : 346px) {
@@ -277,7 +287,7 @@ color: #333;
 
 						&:nth-of-type(2n) {
 							width:175px;
-							margin:29px auto;
+							margin:50px auto;
 						}
 					}
 				}
@@ -418,6 +428,11 @@ color: #333;
 			font-size:1.5em;
 			padding-top:10px;
 			.oswald;
+
+
+			@media only screen and (max-width : @wide-phones) {
+				font-size:1.2em;
+			} 
 		}
 
 
@@ -490,7 +505,7 @@ color: #333;
 				height:65px;
 				background:#000;
 				color:#BF9E72;
-				padding: 12px 6px;
+				padding: 8px 6px;
     			font-size: 3.3em;
 				line-height:1em;
 				font-family:'Monotype Bernard W01';

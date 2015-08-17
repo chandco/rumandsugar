@@ -1004,13 +1004,18 @@ body {
 .clipboard-inner #post-854 .menu-container .two-cols ul li.food {
   padding-right: 65px;
 }
+@media only screen and (max-width: 480px) {
+  .clipboard-inner #post-854 .menu-container .two-cols ul li.food {
+    font-size: 1.3em;
+  }
+}
 .clipboard-inner #post-854 .menu-container .two-cols h3 {
   font-size: 6.7em;
   margin: 13px 0;
 }
 @media only screen and (max-width: 1200px) {
   .clipboard-inner #post-854 .menu-container .two-cols h3 {
-    font-size: 5.2em;
+    font-size: 4.6em;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1592,7 +1597,7 @@ p {
   }
 }
 #post-854 .sides-container .two-cols .banner {
-  width: 95%;
+  width: 100%;
   font-size: 1em;
   margin-bottom: 0;
   padding-top: 12px;
@@ -1609,6 +1614,11 @@ p {
 @media only screen and (max-width: 480px) {
   #post-854 .sides-container .two-cols .banner {
     padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 622px) {
+  #post-854 .sides-container .two-cols .banner {
+    padding-top: 6px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1679,7 +1689,12 @@ p {
 }
 @media only screen and (max-width: 480px) {
   #post-854 .sides-container .two-cols .two-cols-right.right-column ul li:nth-of-type(2n+1) {
-    font-size: 26px;
+    font-size: 27px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 621px) {
+  #post-854 .sides-container .two-cols .two-cols-right.right-column ul li:nth-of-type(2n+1) {
+    font-size: 39px;
   }
 }
 @media only screen and (max-width: 346px) {
@@ -1689,7 +1704,7 @@ p {
 }
 #post-854 .sides-container .two-cols .two-cols-right.right-column ul li:nth-of-type(2n) {
   width: 175px;
-  margin: 29px auto;
+  margin: 50px auto;
 }
 @media only screen and (max-width: 1200px) {
   #post-854 .desserts-container .two-cols {
@@ -1810,6 +1825,11 @@ p {
   padding-top: 10px;
   font-family: 'Oswald', sans-serif;
 }
+@media only screen and (max-width: 480px) {
+  #post-854 p {
+    font-size: 1.2em;
+  }
+}
 #post-854 ul {
   font-family: 'Oswald', sans-serif;
   color: #000;
@@ -1844,7 +1864,7 @@ p {
   height: 65px;
   background: #000;
   color: #BF9E72;
-  padding: 12px 6px;
+  padding: 8px 6px;
   font-size: 3.3em;
   line-height: 1em;
   font-family: 'Monotype Bernard W01';
