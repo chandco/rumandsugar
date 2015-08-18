@@ -1779,6 +1779,12 @@ p {
     margin-right: 5%;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #post-854 .desserts-container .two-cols .two-cols-left {
+    width: 200px !important;
+    margin: 0 auto;
+  }
+}
 #post-854 .desserts-container .two-cols .two-cols-left ul li:first-of-type {
   font-family: 'Monotype Bernard W01';
   font-size: 8.4em;
