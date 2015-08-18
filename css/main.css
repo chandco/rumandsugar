@@ -1257,7 +1257,7 @@ body {
   background: url(/wp-content/uploads//2015/07/fork.svg) no-repeat;
   height: 100px;
 }
-@media only screen and (max-width: 545px) {
+@media only screen and (max-width: 580px) {
   .fork-left {
     height: 70px;
   }
@@ -1273,7 +1273,8 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .spoon {
-    height: 46px;
+    height: 44px;
+    margin-bottom: 10px;
   }
 }
 .arrow {
@@ -1785,7 +1786,7 @@ p {
 }
 @media only screen and (max-width: 480px) {
   #post-854 .desserts-container .two-cols .two-cols-left ul li:first-of-type {
-    font-size: 6.5em;
+    font-size: 6em;
   }
 }
 #post-854 .desserts-container .two-cols .two-cols-left ul li:nth-child(3n) {
@@ -1795,7 +1796,7 @@ p {
 }
 @media only screen and (max-width: 480px) {
   #post-854 .desserts-container .two-cols .two-cols-left ul li:nth-child(3n) {
-    font-size: 5.2em;
+    font-size: 4.8em;
   }
 }
 #post-854 .desserts-container .two-cols .two-cols-right {
