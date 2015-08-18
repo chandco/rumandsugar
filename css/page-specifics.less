@@ -205,10 +205,14 @@ color: #333;
 					}
 
 					@media only screen and (max-width : @tablets) {
-						width:100% !important;
-						margin-left:0;
-					}  
+						width:230px !important;
+						margin: 0 auto 50px auto;
+					} 
 
+					@media only screen and (min-width : @small-phones) and (max-width: @wide-phones) {
+						width:200px !important;
+						margin:0 auto 50px auto;
+					}  
 
 
 					li {
@@ -364,9 +368,6 @@ color: #333;
 					width:35% !important;
 
 
-					@media only screen and (max-width : @tablets) {
-						width:100% !important;
-					} 
 
 					@media only screen and (max-width : @large-desktop) {
 						margin-right:5%;
@@ -377,6 +378,11 @@ color: #333;
 						//background:red;
 						margin:0 auto;
 					} 
+
+					@media only screen and (max-width : @tablets) {
+						width:260px !important;
+						margin:0 auto 50px auto;
+					}  
 
 
 					ul li {

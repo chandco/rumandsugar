@@ -1630,8 +1630,14 @@ p {
 }
 @media only screen and (max-width: 767px) {
   #post-854 .sides-container .two-cols .two-cols-left {
-    width: 100% !important;
-    margin-left: 0;
+    width: 230px !important;
+    margin: 0 auto 50px auto;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #post-854 .sides-container .two-cols .two-cols-left {
+    width: 200px !important;
+    margin: 0 auto 50px auto;
   }
 }
 #post-854 .sides-container .two-cols .two-cols-left li:nth-of-type(1n) {
@@ -1769,11 +1775,6 @@ p {
 #post-854 .desserts-container .two-cols .two-cols-left {
   width: 35% !important;
 }
-@media only screen and (max-width: 767px) {
-  #post-854 .desserts-container .two-cols .two-cols-left {
-    width: 100% !important;
-  }
-}
 @media only screen and (max-width: 1200px) {
   #post-854 .desserts-container .two-cols .two-cols-left {
     margin-right: 5%;
@@ -1783,6 +1784,12 @@ p {
   #post-854 .desserts-container .two-cols .two-cols-left {
     width: 200px !important;
     margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #post-854 .desserts-container .two-cols .two-cols-left {
+    width: 260px !important;
+    margin: 0 auto 50px auto;
   }
 }
 #post-854 .desserts-container .two-cols .two-cols-left ul li:first-of-type {
