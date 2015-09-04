@@ -22,73 +22,83 @@
 <!--
  * -01- FETCH SLIDESHOW
 -->
-<?php echo cro_fetch_slider(); ?>
+<?php
+
+// get attachments from database
+	$imageArgs = array(
+			'post_type' => 'attachment',
+			'post_mime_type' => 'image',
+			'numberposts' => null,
+			'post_status' => null,
+			'orderby' => 'menu_order',
+			'posts_per_page'=>-1
+		);
+
+		global $post; 
+		$imageArgs['post_parent'] = ($atts["page"]) ? $atts["page"] : get_the_ID();
+
+		$images = get_posts($imageArgs);
+
+  
+  if ($images) { 
+
+
+
+
+?>
+    <div class="slider cro_sldr">
+        <div class="flexslider fullscreenslider content">  
+            
+                <?php    
+                foreach($images as $image) {
+
+                	$big_output = wp_get_attachment_image_src( $image->ID, 'sshow' );
+									$big_output = current($big_output);
+
+                    ?>
+                    <div>
+                    	<div class="imgdiv"  style="background-image: url(<?= $big_output ?>);  no-repeat center top">&nbsp;</div>
+                    	<div class="content">
+                    		<div class="row slidecontents">
+                    			<div class="slidecontentcontents slidecontentcontentsr cro_animatethis">
+                    				<div class="cro_slidesinners">
+                    					<h1 class="cro_accent"><?= $image->post_title ?></h1>
+                    					<p class="cro_accent"><?= $image->post_excerpt ?></p>
+                    				</div>
+                    			</div>
+                    		</div>
+                    	</div>
+                    </div>
+                    <?php
+                }
+                ?>
+            
+        </div>
+    </div><!-- end slider -->
+
+
+<?php } ?>
+
 
 
 
 <!--
  * -02- MAIN PART
 -->
-<div class="main">
-	<div class="row">				
-		<div class="carouselspaceholder">&nbsp;</div>
-		<?php echo get_frontcontent(); ?>
-		<div class="clearfix"></div>
-	</div>
+<div class="main clipboard-outer" >
+	<div class="row clipboard-inner">				
+		
+	<?php the_content(); ?>
 
-
-
-<?php if (isset($tlset['cro_welcomepage']) && $tlset['cro_welcomepage'] >= 1){							
-	echo tl_fetch_welcomenote($tlset['cro_welcomepage']);				
-} ?>
-
-
-
-<?php if (is_active_sidebar( 'trifronttop' ) || is_active_sidebar( 'tcifronttop' ) || is_active_sidebar( 'tlifronttop'))	 {  ?>
-
-
-	<?php if (isset($tlset['cro_welcomepage']) && $tlset['cro_welcomepage'] >= 1){		?>
-		<div class="fpwidget clearfix">
-	<?php } else { ?>
-		<div class="fpwidget cro_fpbgset clearfix">
-	<?php } ?>
-
-		<div class="row">
-			
-		<div class="four columns fpwidg">
-			<?php if ( is_active_sidebar( 'trifronttop' ) ) { 
-				echo '<ul class="mainwidget">';
-				dynamic_sidebar( 'trifronttop' );
-				echo '</ul>';
-			} ?>		
-			
-		</div> <!-- .c-4 -->	
-
-		<div class="four columns fpwidg">
-			<?php if ( is_active_sidebar( 'tcifronttop' ) ) { 
-				echo '<ul class="mainwidget">';
-				dynamic_sidebar( 'tcifronttop' );
-				echo '</ul>';
-			} ?>			
-		</div> <!-- .c-4 -->	
-
-		<div class="four columns fpwidg">
-
-			<?php if ( is_active_sidebar( 'tlifronttop' ) ) { 
-				echo '<ul class="mainwidget">';
-				dynamic_sidebar( 'tlifronttop' );
-				echo '</ul>';
-			} ?>		
-			
-		</div> <!-- .c-4 -->
 
 	</div>
+</div>
 
-<?php } else { ?>
 
-<div style="height: 50px;"></div>
 
-<?php } ?>
+
+
+
 
 			
 <?php get_footer(); ?>

@@ -381,7 +381,7 @@ function get_frontcontent() {
 		}
 
 		$substring = '';
-		$img = get_the_post_thumbnail( $unit, 'fc1' );
+		$img = '<a href="' . get_permalink($sllink)  . '">' . get_the_post_thumbnail( $unit, 'fc1' ) . '</a>';
 		$tttl 	= get_post_meta($unit, 'cro_imgtitle', true);
 		$tttcnt = get_post_meta($unit, 'cro_imgcontent', true);
 

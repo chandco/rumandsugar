@@ -110,5 +110,15 @@ s.parentNode.insertBefore(ga, s);
   })();
 
 </script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+<script>
+jQuery('.flexslider').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+	</script>
 </body>
 </html>

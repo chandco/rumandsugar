@@ -19,16 +19,6 @@ $mlabel =  $tlset["menulabel"];
 <div id="modalholder">&nbsp;</div>
 <div class="galholder">&nbsp;</div>
 
-	<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		swvf = '<?php echo get_template_directory_uri(); ?>/inc/scripts/';
-		selectnav('cro-menu', {
- 			label: '<?php echo $mlabel; ?>',
-  			nested: true,
-  			indent: '--'
-		});	
-	});	
-    </script>
 
 <?php  
 }

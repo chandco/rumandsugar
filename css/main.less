@@ -1,5 +1,5 @@
 
-
+@import "font-awesome/less/font-awesome";
 @theme-path: '/wp-content/themes/nathan/rumandsugar'; // this is only necessary so the critical path thing can do its thing.  Normally we'd just use relative paths.
 
 
@@ -11,6 +11,10 @@
 @import "magnific-popup.less";
 @import "magnific-custom.less";
 
+@import "slick";
+.slick-list, .slick-track {
+      height: 100%;
+}
 
 @import "svg";
 
@@ -27,15 +31,11 @@
 
 @import "events";
 
-
 @import "page-specifics"; // things like individual page styles that don't exist globally
-
 
 
 @import "responsive";
 
 @import "gallery"; //Layout and structure of gallery 
-
-
 
 
