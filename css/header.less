@@ -42,7 +42,7 @@ div.cro_sldr {
 	width: 100%;
 
 	position: relative;
-	z-index: 80;
+	z-index: 110080;
 
 
 	> .max-central {
@@ -79,7 +79,7 @@ div.cro_sldr {
 
 
 	#logo {
-		flex: 1 0 0;
+		flex: 1 0 10%;
 		width: 100%;
 		
 
@@ -108,7 +108,7 @@ div.cro_sldr {
 		height: 100%;
 
 
-		flex: 6 0 0;
+		flex: 6 0 60%;
 		
 
 		
@@ -148,6 +148,17 @@ div.cro_sldr {
 					// No need to do flex on this, it's just squares of the same size so keep it simple.
 					// 
 					font-size: 1em;
+					height: 40px;
+					line-height: 40px;
+
+					font-size: 20px;
+
+					a {
+						line-height: 40px;
+						.fa {
+							line-height: 40px;
+						}
+					}
 
 					&:first-child {
 						margin-left: 0;
@@ -245,39 +256,51 @@ div.cro_sldr {
 	
 	@media screen and (max-width: 800px) {
 
-
+		display: block;
 		border-bottom: 2px solid #111;
 		.nav-menus {
 			transition: transform .5s ease;
 			will-change: transform;
 			transform: translateY(-100%);
+			-webkit-transform: -webkit-translateY(-100%);
+			opacity: 0;
+			display: none;
+
+
 		}
 		&.open {
 			.nav-menus {
 				transform:translateY(0);
+				-webkit-transform: -webkit-translateY(0%);
+				opacity: 1;
+				display: block;
 			}
 		}
 
 		.menu-toggle {
-			flex: 1 0 0;
+			flex: 1 0 30%;
 			font-size: @header-height - (@header-padding*2);
 			position: relative;
 			z-index: 90;
-			width: auto;
+			width: 30%;
+			background: none;
 			display: inline-block;
+			padding: 0;
 			border:none;
-			background:none;
 			text-align: left;
 			color: @red;
 		}
 
 
 		#logo {
-			width: auto;
+			width: 30%;
 			max-width: 30%;
-			flex: 3 0 0;
+			flex: 3 0 30%;
 			
 			z-index: 90;
+			display: inline-block;
+			vertical-align: middle;
+			float: right;
 
 			position: relative;
 			img {
@@ -321,9 +344,17 @@ div.cro_sldr {
 				ul.nav {
 					justify-content: flex-start;
 
+
 					li {
 						text-align: left;
 						padding-left: 2px; // fa icon weirdness;
+					}
+
+					@media screen and (max-width: 700px) {
+						display: block;
+						li {
+							display: inline-block;
+						}
 					}
 				}
 			}
@@ -425,4 +456,21 @@ body {
 
 	font-size: 1.4em;
 	
+}
+
+@media screen and (max-width: 700px) {
+	.topper .nav-menus .social-menu ul.nav {
+
+		display: block;
+		text-align: left;
+		li {
+			display: inline-block;
+		}
+	}
+
+	.topper .nav-menus .secondnav-menu #menu-main-submenu li {
+		margin-bottom: 10px;
+		margin-top: 5px;
+		font-size: 1.4em;
+	}
 }

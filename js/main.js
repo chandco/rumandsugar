@@ -1,5 +1,9 @@
 
 (function( $ ){
+
+  $('.nav-menus').height( $(window).height() ).css('min-height', $(window).height() );
+
+
 $.fn.exists = function(callback) {
   var args = [].slice.call(arguments, 1);
 
@@ -45,8 +49,15 @@ $('.main img:not(.attachment-gallery-thumb)').wrap('<div class="menu-image-wrapp
 
 
 $(".menu-toggle").click(function(){
+
+ 
+
+  $('.nav-menus').height( $(window).height() ).css('min-height', $(window).height() );
+
   $('.topper').toggleClass('open');
 });
+
+
 
 
 
