@@ -50,6 +50,11 @@ h2, h3, h4, h5, h6 {
 }
 
 
+.carouselspaceholder {
+	display: none;
+}
+
+
 .content, .row.slidecontents {
 	height: 100%;
 }
@@ -63,8 +68,8 @@ h2, h3, h4, h5, h6 {
 
 	float: none;
 	position: absolute;
-	margin:auto;
-	left: 0;
+	margin:auto auto auto 10%;
+	left: 10%;
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
@@ -87,25 +92,22 @@ h2.banner {
 }
 
 a.cta {
-	height: 65px;
-    
-    color: #BF9E72;
-    padding: 6px 10%;
+	color: #BF9E72;
+    padding: 6px 28px;
+    display: block;
     font-size: 1.8em;
     line-height: 1em;
     font-family: 'Monotype Bernard W01';
     text-align: center;
     text-transform: uppercase;
-    width: 50%;
+    width: 60%;
     margin: 0 auto 70px auto;
     position: relative;
-    border-bottom: 2px solid darken(@red, 10%);
-
-    background: 
-    	url('brown-star.svg') 5% center no-repeat, 
-    	url('brown-star.svg') 95% center no-repeat;
-    background-size: 10% 65%;
+    border-bottom: 2px solid #b5132b;
+    background: url('brown-star.svg') 4% center no-repeat, url('brown-star.svg') 96% center no-repeat;
+    background-size: 20px 65%;
     background-color: @red;
+    min-width: 170px;
     
     &:hover {
     	background-color: lighten(@red, 10%);
@@ -288,6 +290,9 @@ a.cta {
 	position: relative;
 
 	body.food-menu & {
+
+		margin-top: 70px;
+		
 		&:before {
 			content: "";
 			background-image: url('@{theme-path}/lib/images/clip.png');
@@ -525,7 +530,10 @@ body {
 
 
 
-.promoimg .menu-image-wrapper {
+.cro_agendatwister .menu-image-wrapper {
+
+	margin: auto !important;
+
 	&:before, &:after {
 		display:none;
 	}

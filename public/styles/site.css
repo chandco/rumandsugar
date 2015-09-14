@@ -1120,7 +1120,7 @@ a.morebut span{
 
 
 .post p{
-	line-height: 1.9em;
+	line-height: 1.4;
 	font-size: 15px;
 }
 
@@ -1242,13 +1242,6 @@ img.alignright{
 	padding: 5px 0;
 }
 
-.summarydate{
-	float: left;
-	padding: 10px 20px;
-	border-right: 1px solid #ccc;
-	text-transform: uppercase;
-	color: #808789;
-}
 
 
 .entry-meta{
@@ -3487,81 +3480,6 @@ span.displaytopimgspan{
 
 /* ========================= THE TWISTER ======================== */
 
-
-
-ul.cro_twister{
-	list-style-type: none;
-	margin: 0;
-	text-align: center;
-}
-
-ul.cro_twister li{
-	display: inline-block;
-	vertical-align: top;
-	width: 31%;
-	margin: 0 1%;
-	min-width: 240px;
-	zoom: 1;
-	*display: inline;
-}
-
-ul.cro_twister li.promoshow{
-	display: inline-block;
-	vertical-align: top;
-	width: 48%;
-	margin: 0 1%;
-	min-width: 240px;
-	zoom: 1;
-	*display: inline;
-	background: #FBFCFC;
-	border: 1px solid #eee;
-	padding: 20px;
-	margin-bottom: 30px;
-}
-
-ul.cro_twister li.promoshow .twistercontent{
-	float: left;
-	width: 50%;
-}
-
-ul.cro_twister li.promoshow .twisterimage{
-	float: left;
-	width: 50%;
-}
-
-
-ul.cro_agendatwister li{
-	margin-bottom: 40px;
-	background: #FBFCFC;
-	padding-top: 35px;
-	border: 1px solid #eee;
-}
-
-
-ul.cro_twister li img{
-	width: 100%;
-	height: auto;
-}
-
-ul.cro_twister li .promoimg{
-	position: relative;
-}
-
-ul.cro_twister li .promoimg img{
-	margin-bottom: 0px !important;
-	width: 90%; 
-	margin: 0 5%;
-}
-
-ul.cro_twister p{
-	text-align: left;
-	padding: 0 5%;
-}
-
-ul.cro_twister h5{
-	font-weight: normal;
-	margin-bottom: 5px;
-}
 
 .fpdiv{
 	padding: 5px 0;

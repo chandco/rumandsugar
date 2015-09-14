@@ -181,6 +181,8 @@ function cro_headerimg($id, $type, $ban){
 
 	if ($type =='page' ) {
 
+
+
 		$args = array(
 				'post_parent' 		=> $id,
 				'post_type' 		=> 'attachment',
@@ -210,6 +212,8 @@ function cro_headerimg($id, $type, $ban){
 
 
 		}
+
+
 
 		$minetitle = '<h1 class="cro_accent">' . get_the_title($id) . '</h1>';
 
@@ -285,7 +289,13 @@ function cro_headerimg($id, $type, $ban){
 		}
 
 		$minetitle = '<h2 class="cro_accent">' . get_the_title($id) . '</h2>';
-	} 
+	} elseif ( $type == 'blog' ) {
+		
+		
+		$blog_page_id = get_option('page_for_posts');
+		
+		$minetitle =  '<h1 class="cro_accent">' .get_page($blog_page_id)->post_title . '</h1>';
+	}
 
 
 	if (!empty($minetitle)){
@@ -293,7 +303,7 @@ function cro_headerimg($id, $type, $ban){
 	}
 
 	return '<div class="cro_headerspace ' .  $cclass . '">
-				<div class="imgdiv" style="background: url( ' . $defimg . ') no-repeat 50% 0;">
+				<div class="imgdiv" style="background: url(' . get_stylesheet_directory_uri() . '/lib/images/50tran.png) 0 0 repeat, url( ' . $defimg . ') 50% 0 no-repeat;">
 					<div class="row">
 						' . $minetitle . '
 					</div>

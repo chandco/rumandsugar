@@ -110,7 +110,7 @@ function cro_setup() {
 	add_image_size( 'banner', 400, 270, true);
 	add_image_size( 'fc1', 465, 340, true);
 	add_image_size( 'fc2', 465, 170, true);
-	add_image_size( 'sshow', 1680, 550, true);
+	add_image_size( 'sshow', 1680, 550, array( 'center', 'top' ) ); // Hard crop left top
 }
 endif; 
 

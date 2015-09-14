@@ -2573,6 +2573,25 @@ ul.cro_gallerylist li .imgouter.galholderski h5.cro_accent.cro_galtitle {
   font-size: 6em;
   color: #fff;
 }
+.cro_title h2 {
+  text-shadow: 2px 0px 17px #000000, 0px -3px 42px #000000;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
+  color: #fff;
+  max-width: 70%;
+}
+.entry-content p {
+  color: #000 !important;
+  line-height: 1.4;
+}
+.summarydate {
+  float: left;
+  padding: 10px 20px;
+  border-right: 1px solid #ccc;
+  text-transform: uppercase;
+  color: #000;
+}
 svg,
 #mold-logo {
   width: 50%;
@@ -2929,6 +2948,9 @@ h6.oswald {
   line-height: 1.2;
   font-size: 1.1em;
 }
+.carouselspaceholder {
+  display: none;
+}
 .content,
 .row.slidecontents {
   height: 100%;
@@ -2940,8 +2962,8 @@ h6.oswald {
 .slidecontentcontentsr {
   float: none;
   position: absolute;
-  margin: auto;
-  left: 0;
+  margin: auto auto auto 10%;
+  left: 10%;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -2961,21 +2983,22 @@ h2.banner {
   position: relative;
 }
 a.cta {
-  height: 65px;
   color: #BF9E72;
-  padding: 6px 10%;
+  padding: 6px 28px;
+  display: block;
   font-size: 1.8em;
   line-height: 1em;
   font-family: 'Monotype Bernard W01';
   text-align: center;
   text-transform: uppercase;
-  width: 50%;
+  width: 60%;
   margin: 0 auto 70px auto;
   position: relative;
   border-bottom: 2px solid #b5132b;
-  background: url('brown-star.svg') 5% center no-repeat, url('brown-star.svg') 95% center no-repeat;
-  background-size: 10% 65%;
+  background: url('brown-star.svg') 4% center no-repeat, url('brown-star.svg') 96% center no-repeat;
+  background-size: 20px 65%;
   background-color: #e31836;
+  min-width: 170px;
 }
 a.cta:hover {
   background-color: #eb435c;
@@ -3132,6 +3155,9 @@ body.food-menu .clipboard-outer {
     padding-left: 2%;
     padding-right: 2%;
   }
+}
+body.food-menu .clipboard-outer {
+  margin-top: 70px;
 }
 body.food-menu .clipboard-outer:before {
   content: "";
@@ -3319,12 +3345,15 @@ body {
   }
 }
 /* END ICONS */
-.promoimg .menu-image-wrapper:before,
-.promoimg .menu-image-wrapper:after {
+.cro_agendatwister .menu-image-wrapper {
+  margin: auto !important;
+}
+.cro_agendatwister .menu-image-wrapper:before,
+.cro_agendatwister .menu-image-wrapper:after {
   display: none;
 }
-.promoimg .menu-image-wrapper .inner:before,
-.promoimg .menu-image-wrapper .inner:after {
+.cro_agendatwister .menu-image-wrapper .inner:before,
+.cro_agendatwister .menu-image-wrapper .inner:after {
   display: none;
 }
 .twistercontent h5 {
@@ -4082,6 +4111,80 @@ ul.cro_masthead li.mastheadli .cro_foodprice {
   .gallery-item:nth-of-type(2n) {
     margin-right: 0;
   }
+}
+ul.cro_twister {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.cro_twister .clearfix {
+  display: none;
+}
+ul.cro_twister li {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin: 0 1%;
+  min-width: 240px;
+  zoom: 1;
+  display: inline;
+  border: 2px dotted rgba(0, 0, 0, 0.5);
+}
+ul.cro_twister li h5.weekpromo {
+  font-size: 2.3em;
+  text-align: left;
+  color: #000;
+}
+ul.cro_twister li h5.weekpromo a {
+  color: #000;
+}
+ul.cro_twister li .menu-image-wrapper {
+  margin-top: 0;
+  margin-right: 10px;
+}
+ul.cro_twister li img {
+  width: 100%;
+  height: auto;
+}
+ul.cro_twister li .promoimg {
+  position: relative;
+}
+ul.cro_twister li .promoimg img {
+  margin-bottom: 0px !important;
+  width: 90%;
+  margin: 0 5%;
+}
+ul.cro_twister li.promoshow {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin: 0 1%;
+  min-width: 240px;
+  zoom: 1;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+ul.cro_twister li.promoshow .twistercontent {
+  float: left;
+  width: 50%;
+}
+ul.cro_twister li.promoshow .twisterimage {
+  float: left;
+  width: 50%;
+}
+ul.cro_twister p {
+  text-align: left;
+  padding: 0 5%;
+}
+ul.cro_twister h5 {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+ul.cro_agendatwister li {
+  margin-bottom: 40px;
+  padding-top: 35px;
 }
 
 /*# sourceMappingURL=maps/main.css.map */

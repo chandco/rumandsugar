@@ -93,19 +93,19 @@ function fetch_front_promos($reqtype){
 					$cnt1 .= '</div>';
 
 					//$cnt2 = '<h6 class="cro_promodate">' . $timename . ' ' . $timeline . '</h6>';
-					$cnt2 = '<h4 class="valueline cro_accent"><a href="' .  get_permalink( $apost['id']) . '">' . $valueline  . '</a></h4>';
+					$cnt2 = '<h4 class="valueline cro_accent">' . $valueline  . '</h4>';
 					
 
 
 					$op .= '<li class="promoshow">';
-					$op .= '<h5 class="weekpromo cro_accent"><a href="' .  get_permalink( $apost['id']) . '">' . get_the_title( $apost['id'] ) . '</a></h5>';
+					$op .= '<h5 class="weekpromo cro_accent">' . get_the_title( $apost['id'] ) . '</h5>';
 					$op .= '<div class="twisterimage imgpromo timgleft">';
 					$op .= $cnt1;
 					$op .= '</div><div class="twistercontent">';
 					$op .= $cnt2;
 					$op .= '</div><div class="clearfix"></div>';
 					$op .= '<h4 class="byline cro_accent">' . $byline . '</h4>';					
-					$op .= '<div class="clarlabel"><a href="' .  get_permalink( $apost['id']) . '" class="cro_accent">' .  __('more info','localize') . '</a></div>';
+			//		$op .= '<div class="clarlabel"><a href="' .  get_permalink( $apost['id']) . '" class="cro_accent">' .  __('more info','localize') . '</a></div>';
 					$op .= '</li>';
 
         		} elseif ($reqtype == 'banner' && $cntr <= 5) {
@@ -117,12 +117,12 @@ function fetch_front_promos($reqtype){
         						<div class="cro_baninner">
         							<div class="banleft">&nbsp;</div>
         							<div class="banright">
-        								<h4 class="cro_accent"><a href="' .  get_permalink( $apost['id']) . '">' . get_the_title( $apost['id'] ) . '</a></h4>
-        								<a href="' .  get_permalink( $apost['id']) . '" class="bannervalueline cro_accent">' .  $valueline   . '</a>
+        								<h4 class="cro_accent">' . get_the_title( $apost['id'] ) . '</h4>
+        								' .  $valueline   . '
         								<div class="clearfix"></div>
         							</div>
         						</div>
-        						<a href="' .   get_permalink( $apost['id'])   . '" class="cro_bannermoreinfo cro_accent">' . __('More info','localize') . '</a>
+        						
         					</div>';
         			}
     				$cntr++;
@@ -204,7 +204,7 @@ function promo_header($id){
 	
 	$cnt2 = '';//<h3 class="cro_maindate cro_datebylines">' . $timename . ' ' . $timeline . '</h6>';
 	$cnt2 .= '<h5 class="cro_bynone  cro_accent">' . $byline . '</h5>';
-	$cnt2 .= '<div class="clearfix"></div><h4 class="valueline cro_accent"><a href="' .  get_permalink( $id) . '">' . $valueline  . '</a></h4>';
+	$cnt2 .= '<div class="clearfix"></div><h4 class="valueline cro_accent">' . $valueline  . '</h4>';
 
 	$op .= $cnt1;
 	$op .= $cnt2;

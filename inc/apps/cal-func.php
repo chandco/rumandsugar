@@ -402,7 +402,7 @@ function fetch_front_agenda($type, $day , $month, $year, $default) {
         $op .= '<h5 class="cro_accent;">' . get_the_title($cro_v['id']) . '</h5>';
         $op .= '<div class="fpdiv"><span class="cro_foodprice">' .  date_i18n( get_option('time_format') , $cro_v['date'], false ) . '</span></div>';
         $op .= '<p>' . $text . '</p>';
-         $op .= '<div class="clarlabel"><a href="' . get_permalink($cro_v['id']) . '" class="cro_accent">' .  __('More Info','localize')  .'</a></div>';
+       //  $op .= '<div class="clarlabel"><a href="' . get_permalink($cro_v['id']) . '" class="cro_accent">' .  __('More Info','localize')  .'</a></div>';
                
         $op .= '</li>';
 

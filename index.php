@@ -21,7 +21,7 @@ $tlset = get_option( 'tlset' );
 <!--
  * 02- GET HEADERIMAGE
 -->					
-<?php echo cro_headerimg('', 'category', $ps);?>
+<?php echo cro_headerimg('', 'blog', $ps);?>
 
 <div class="carouselspaceholder">&nbsp;</div>
 

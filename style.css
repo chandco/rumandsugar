@@ -4817,12 +4817,9 @@ a{
 }
 
 .entry-summary p{
-  color:#fff!important;
+  color:#000!important;
 }
 
-.entry-content p{
-  color:#fff!important;
-}
 
 .entry-title h2{
   color: #e31836!important;
