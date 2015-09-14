@@ -45,6 +45,22 @@ h2, h3, h4, h5, h6 {
 	padding: 0.5em;
 	line-height: 1.2;
 	font-size: 1.1em;
+
+	@media screen and (max-width: 600px) {
+		position: relative;
+		left: 0;
+		right: 0;
+		margin: -1em auto 1em auto;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.menu-image-wrapper img {
+		height: auto !important;
+	}
+
+
 }
 
 }
@@ -283,7 +299,14 @@ a.cta {
 	padding: 70px;
 	
 
-   
+  @media screen and (max-width: 600px) {
+   	padding: 1em 0;
+   	top: 0;
+
+   	.clipboard-inner {
+   		width: 100%;
+   	}
+   } 
 	
 	
 

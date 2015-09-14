@@ -1702,8 +1702,14 @@ body {
 @media screen and (max-width: 1200px) {
   .max-central {
     box-sizing: border-box;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .max-central .column,
+  .max-central .columns {
+    padding: 0 !important;
   }
 }
 /* Magnific Popup CSS */
@@ -2562,8 +2568,14 @@ ul.cro_gallerylist li .imgouter.galholderski h5.cro_accent.cro_galtitle {
 @media screen and (max-width: 1200px) {
   .cro_title {
     box-sizing: border-box;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cro_title .column,
+  .cro_title .columns {
+    padding: 0 !important;
   }
 }
 .cro_title h1 {
@@ -2623,8 +2635,14 @@ svg,
 @media screen and (max-width: 1200px) {
   .footer .row {
     box-sizing: border-box;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer .row .column,
+  .footer .row .columns {
+    padding: 0 !important;
   }
 }
 .footer .footinner {
@@ -2636,8 +2654,14 @@ svg,
 @media screen and (max-width: 1200px) {
   .footer .footinner {
     box-sizing: border-box;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer .footinner .column,
+  .footer .footinner .columns {
+    padding: 0 !important;
   }
 }
 .footer .footinner .row {
@@ -2729,6 +2753,7 @@ div.cro_sldr {
 .topper .nav-menus .social-menu .nav > li {
   width: 40px;
   margin-left: 10px;
+  font-size: 1em;
 }
 .topper .nav-menus .social-menu .nav > li:first-child {
   margin-left: 0;
@@ -2894,7 +2919,7 @@ body {
   opacity: 1;
 }
 #menu-main-menu li a {
-  font-size: 21px;
+  font-size: 16px;
   padding: 0 5px;
   display: block;
   width: 100%;
@@ -2903,6 +2928,9 @@ body {
   #menu-main-menu li a {
     font-size: 1.2em;
   }
+}
+.social-menu.menu-container ul li a .fa {
+  font-size: 1.4em;
 }
 .brown-paper {
   background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
@@ -2947,6 +2975,19 @@ h6.oswald {
   padding: 0.5em;
   line-height: 1.2;
   font-size: 1.1em;
+}
+@media screen and (max-width: 600px) {
+  .wp-caption .wp-caption-text {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: -1em auto 1em auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wp-caption .menu-image-wrapper img {
+    height: auto !important;
+  }
 }
 .carouselspaceholder {
   display: none;
@@ -3139,8 +3180,14 @@ body.food-menu .clipboard-outer {
 @media screen and (max-width: 1200px) {
   body.food-menu .clipboard-outer {
     box-sizing: border-box;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  body.food-menu .clipboard-outer .column,
+  body.food-menu .clipboard-outer .columns {
+    padding: 0 !important;
   }
 }
 .clipboard-outer .clipboard-inner {
@@ -3152,8 +3199,23 @@ body.food-menu .clipboard-outer {
 @media screen and (max-width: 1200px) {
   .clipboard-outer .clipboard-inner {
     box-sizing: border-box;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .clipboard-outer .clipboard-inner .column,
+  .clipboard-outer .clipboard-inner .columns {
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .clipboard-outer {
+    padding: 1em 0;
+    top: 0;
+  }
+  .clipboard-outer .clipboard-inner {
+    width: 100%;
   }
 }
 body.food-menu .clipboard-outer {
@@ -4185,6 +4247,49 @@ ul.cro_twister h5 {
 ul.cro_agendatwister li {
   margin-bottom: 40px;
   padding-top: 35px;
+}
+@media screen and (max-width: 600px) {
+  .slidecontentcontentsr {
+    top: 20px;
+    transform: none;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .cro_headerspace {
+    height: 200px !important;
+  }
+  .cro_headerspace .cro_title {
+    background: none;
+    border: none;
+    top: 70px;
+  }
+  body.food-menu .clipboard-outer {
+    padding-top: 20px;
+  }
+  body.food-menu .clipboard-outer:before {
+    width: 200px;
+    top: -70px;
+  }
+  ul.cro_twister li.promoshow {
+    width: 100%;
+  }
+  ul.cro_twister li {
+    width: 100%;
+  }
+  .cro_title h2 {
+    font-size: 2em;
+    max-width: 95%;
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+    text-align: left;
+  }
+  ul.mainwidget {
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=maps/main.css.map */

@@ -146,6 +146,8 @@ div.cro_sldr {
 					width: 40px; // because the FA icons are font size 
 					margin-left: 10px;
 					// No need to do flex on this, it's just squares of the same size so keep it simple.
+					// 
+					font-size: 1em;
 
 					&:first-child {
 						margin-left: 0;
@@ -403,10 +405,12 @@ body {
 		}
 
 		a {
-			font-size:21px;
+			font-size:16px;
 			padding:0 5px;
 			display: block;
 			width: 100%;
+
+
 			@media screen and (max-width: 800px) {
 			
 				font-size: 1.2em; 
@@ -414,4 +418,11 @@ body {
 			}
 		}
 	}					
+}
+
+
+.social-menu.menu-container ul li a .fa {
+
+	font-size: 1.4em;
+	
 }
