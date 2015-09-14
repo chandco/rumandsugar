@@ -7,8 +7,13 @@
   
 
 get_header(); 
-
 $tlset = get_option( 'tlset' );
+
+	if (isset($tlset['cro_showbanindex']) && $tlset['cro_showbanindex'] == 1 ){
+		$ps =  '';//cro_fetch_banner('inner'); 
+	} else {
+		$ps =  ''; 
+	}
 
 ?>
 
@@ -16,13 +21,15 @@ $tlset = get_option( 'tlset' );
 <!--
  * 02- GET HEADERIMAGE
 -->					
-<?php echo cro_fetch_slider(); ?>
+<?php echo cro_headerimg('', 'category', $ps);?>
 
 <div class="carouselspaceholder">&nbsp;</div>
 
 <!--
  * 03- MAIN PART
 -->	
+	<div class="main clipboard-outer">				
+		<div class="row clipboard-inner">
 	<div class="main singleitem">				
 		<div class="row singlepage" style="padding-top: 50px;">
 			<div class="eight column">
@@ -41,7 +48,7 @@ $tlset = get_option( 'tlset' );
 			</div>			
 		</div>
 	</div>
-
+	</div></div>
 
 <!--
  * 03- FOOTER

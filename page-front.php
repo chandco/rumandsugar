@@ -58,16 +58,19 @@
                     ?>
                     <div>
                     	<div class="imgdiv"  style="background-image: url(<?= $big_output ?>);  no-repeat center top">&nbsp;</div>
-                    	<div class="content">
-                    		<div class="row slidecontents">
-                    			<div class="slidecontentcontents slidecontentcontentsr cro_animatethis">
-                    				<div class="cro_slidesinners">
-                    					<h1 class="cro_accent"><?= $image->post_title ?></h1>
-                    					<p class="cro_accent"><?= $image->post_excerpt ?></p>
-                    				</div>
-                    			</div>
-                    		</div>
-                    	</div>
+                    	
+                        <?php if ($image->post_title): ?>
+                            <div class="content">
+                        		<div class="row slidecontents">
+                        			<div class="slidecontentcontents slidecontentcontentsr cro_animatethis">
+                        				<div class="cro_slidesinners">
+                        					<h1 class="cro_accent"><?= $image->post_title ?></h1>
+                        					<p class="cro_accent"><?= $image->post_excerpt ?></p>
+                        				</div>
+                        			</div>
+                        		</div>
+                        	</div>
+                        <?php endif; ?>
                     </div>
                     <?php
                 }

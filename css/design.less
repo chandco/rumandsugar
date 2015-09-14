@@ -4,11 +4,121 @@
 }
 
 
+.oswald {
+	font-family: 'Oswald', sans-serif;
+}
+
+
+h2, h3, h4, h5, h6 {
+	color: #000;
+	&.oswald {
+		  font-family: 'Oswald', sans-serif;
+		  text-transform: uppercase;
+	}
+}
+
+.star {
+	    background: url(/wp-content/uploads//2015/08/single-star.svg) no-repeat;
+}
+
+
+.wp-caption {
+
+	position: relative;
+
+	&.aligncenter {
+		margin: auto;
+		width: 90% !important;
+
+	}
+
+.wp-caption-text {
+	position: absolute;
+	left: 5%;
+	right: 6%;
+	margin-left: 4px;
+	bottom: 2%;
+	z-index: 4;
+	background: #000;
+	color: #fff;
+
+	padding: 0.5em;
+	line-height: 1.2;
+	font-size: 1.1em;
+}
+
+}
+
+
+.content, .row.slidecontents {
+	height: 100%;
+}
+
+.cro_slidesinners,.slidecontentcontents {
+	border: none !important;
+}
+
+
+.slidecontentcontentsr {
+
+	float: none;
+	position: absolute;
+	margin:auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+h2.banner {
+		height: auto;
+    background: #000;
+    color: #BF9E72;
+    padding: 8px 6px;
+    font-size: 3.3em;
+    line-height: 1em;
+    font-family: 'Monotype Bernard W01';
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+    margin: auto;
+    position: relative;
+}
+
+a.cta {
+	height: 65px;
+    
+    color: #BF9E72;
+    padding: 6px 10%;
+    font-size: 1.8em;
+    line-height: 1em;
+    font-family: 'Monotype Bernard W01';
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+    margin: 0 auto 70px auto;
+    position: relative;
+    border-bottom: 2px solid darken(@red, 10%);
+
+    background: 
+    	url('brown-star.svg') 5% center no-repeat, 
+    	url('brown-star.svg') 95% center no-repeat;
+    background-size: 10% 65%;
+    background-color: @red;
+    
+    &:hover {
+    	background-color: lighten(@red, 10%);
+    }
+
+}
+
 .clipboard-inner {
 
 
+
 	.brown-paper;
-	padding-top: 2em;
+	padding: 2em;
 	box-shadow: 0 0 5px 2px rgba(0,0,0,0.5);
 	position: relative;
 	z-index: 0;
@@ -17,121 +127,126 @@
 		color:#000000;
 	}
 
-	#post-854 {
+	body.food-menu & {
+		div.page {
 
 
-		.menu-container {
-			overflow:hidden;
-			@media only screen and (max-width : @tablets) { 
-				overflow: initial;
-			}
-
-			h3 {
-
-				@media only screen and (max-width : @large-desktop) { 
-					font-size:2.9em;
-				}
-			}
-			
-			.two-cols {
-				width:46%;
-				float:left;
-
-				ul {
-					padding:0;
-					margin:0;
-
-					li.food {
-						padding-right:65px;
-
-
-						@media only screen and (max-width : @wide-phones) {
-							font-size:1.3em;
-						} 
-					}
+			.menu-container {
+				overflow:hidden;
+				@media only screen and (max-width : @tablets) { 
+					overflow: initial;
 				}
 
 				h3 {
-					font-size:6.7em;
-					margin:13px 0;
 
-					@media only screen and (max-width : @large-desktop) {
-						font-size:4.6em;
-					}
-
-					@media only screen and (max-width : @wide-phones) {
-						font-size:3.2em;
-					}
-
-				}
-
-			
-				&:after {
-					content: "";
-					display:block;
-					clear:both;
-					width:100%;
-				}
-
-				&:last-child {
-					margin-left:4%;
-
-					@media only screen and (max-width : @tablets) { 
-						margin-left:0;
+					@media only screen and (max-width : @large-desktop) { 
+						font-size:2.9em;
 					}
 				}
-
-				&:first-child {
-					margin-right:4%;
-				}
-
-				.two-cols-left {
+				
+				.two-cols {
+					width:46%;
 					float:left;
-					width:50%;
 
-				@media only screen and (max-width : @tablets) { 
-					float:none;
-					width:100%;
-					margin-bottom:60px;
-				}
+					ul {
+						padding:0;
+						margin:0;
+
+						li.food {
+							padding-right:65px;
+
+
+							@media only screen and (max-width : @wide-phones) {
+								font-size:1.3em;
+							} 
+						}
+					}
 
 					h3 {
-					margin-bottom:0;
-				}
+						font-size:6.7em;
+						margin:13px 0;
 
-					ul {
-						margin-top:0;
+						@media only screen and (max-width : @large-desktop) {
+							font-size:4.6em;
+						}
+
+						@media only screen and (max-width : @wide-phones) {
+							font-size:3.2em;
+						}
+
+					}
+
+				
+					&:after {
+						content: "";
+						display:block;
+						clear:both;
+						width:100%;
+					}
+
+					&:last-child {
+						margin-left:4%;
+
+						@media only screen and (max-width : @tablets) { 
+							margin-left:0;
+						}
+					}
+
+					&:first-child {
+						margin-right:4%;
+					}
+
+					.two-cols-left {
+						float:left;
+						width:50%;
+
+					@media only screen and (max-width : @tablets) { 
+						float:none;
+						width:100%;
+						margin-bottom:60px;
+					}
+
+						h3 {
+						margin-bottom:0;
+					}
+
+						ul {
+							margin-top:0;
+						}
+					}
+
+					.two-cols-right {
+						float:right;
+						width:50%;
+						//margin-left:10%;
+
+					@media only screen and (max-width : @tablets) { 
+						float:none;
+						width:100%;
+						margin-bottom:60px;
+					}
+
+						ul {
+							margin-top:0;
+						}
+					}
+
+
+					@media only screen and (max-width : @tablets) { 
+						flot:none;
+						width:100%;
+						margin-right:0;
 					}
 				}
 
-				.two-cols-right {
-					float:right;
-					width:50%;
-					//margin-left:10%;
-
-				@media only screen and (max-width : @tablets) { 
-					float:none;
-					width:100%;
-					margin-bottom:60px;
-				}
-
-					ul {
-						margin-top:0;
-					}
-				}
-
-
-				@media only screen and (max-width : @tablets) { 
-					flot:none;
-					width:100%;
-					margin-right:0;
-				}
 			}
-
 		}
 	}
 }
 
+.cro_headerspace {
+	margin-bottom: 0;
+}
 
 .clipboard-outer {
 	background-image: url('@{theme-path}/lib/images/dark-repeating-texture.jpg');
@@ -140,39 +255,58 @@
 		top:70px; 
 	} 
 
+	max-width: 100%;
 
-	.max-central;
+	// margin-top: -70px;
+
+	body.food-menu & {
+		.max-central;	
+		margin-top: 0;
+		border-radius: 20px;
+
+		box-shadow: 
+				inset 	0px 0px 4px 5px rgba(49, 32, 4, 0.87), 
+    						0 0 47px 2px rgba(0, 0, 0, 0.68);
+
+    border: 2px solid rgba(39, 25, 2, 1);
+
+	}
+
+	.clipboard-inner {
+		.max-central;
+	}
+	
 
 	box-sizing: content-box;
 	padding: 70px;
-	border-radius: 20px;
-
-    box-shadow: 
-    	inset 	0px 0px 4px 5px rgba(49, 32, 4, 0.87), 
-    			0 0 47px 2px rgba(0, 0, 0, 0.68);
 	
-	border: 2px solid rgba(39, 25, 2, 1);
+
+   
+	
+	
 
 	position: relative;
 
-	&:before {
-		content: "";
-		background-image: url('@{theme-path}/lib/images/clip.png');
-		background-size: 100% auto;
-		background-position: center center;
-		background-repeat: no-repeat;
-		width: 353px;
-		height: 126px;
+	body.food-menu & {
+		&:before {
+			content: "";
+			background-image: url('@{theme-path}/lib/images/clip.png');
+			background-size: 100% auto;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 353px;
+			height: 126px;
 
-		position: absolute;
-		top: -35px;
-		left: 0;
-		right: 0;
-		z-index: 20;
-		margin:auto;
+			position: absolute;
+			top: -35px;
+			left: 0;
+			right: 0;
+			z-index: 20;
+			margin:auto;
 
 
-		
+			
+		}
 	}
 
 	@media screen and (max-width: 768px) {
@@ -198,8 +332,8 @@
 
 body {
 	background: #333;
+	background-image: url('http://rumandsugar.co.uk.gridhosted.co.uk/wp-content/uploads/2014/08/background-texture.jpg');
 }
-
 
 
 
@@ -388,3 +522,28 @@ body {
 		}
 
 		/* END ICONS */
+
+
+
+.promoimg .menu-image-wrapper {
+	&:before, &:after {
+		display:none;
+	}
+
+	.inner {
+		&:before, &:after {
+			display: none;
+		}
+	}
+
+
+}
+
+
+.twistercontent h5 {
+	.oswald;
+}
+
+ul.cro_twister li .promoimg img {
+    width: 97% !important;
+  }

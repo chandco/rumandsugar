@@ -15,7 +15,7 @@ $tlset = get_option( 'tlset' );
 <?php 
 
 	if (isset($tlset['cro_showbanindex']) && $tlset['cro_showbanindex'] == 1 ){
-		$ps =  cro_fetch_banner('inner'); 
+		$ps =  '';//cro_fetch_banner('inner'); 
 	} else {
 		$ps =  ''; 
 	}
@@ -31,6 +31,8 @@ $tlset = get_option( 'tlset' );
 		echo cro_headerimg($post->ID, 'post', $ps);			
 	?>
 
+	<div class="main clipboard-outer">				
+		<div class="row clipboard-inner">
 	<div class="main singleitem">				
 		<div class="row singlepage singlepost">
 
@@ -62,6 +64,7 @@ $tlset = get_option( 'tlset' );
 			
 		</div>
 	</div>
+	</div></div>
 
 	<?php endwhile; // end of the loop. ?>
 

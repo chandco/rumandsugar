@@ -11,8 +11,20 @@ function tli_sidebars() {
  
 	$sidebarsarray = array(
 						array(
-						'class' => 'sidebar-widget-area',
+						'class' => 'cro_sidebarmain',
 						'name' => __('Widget Area','localize')
+						),
+						array(
+							'class' => 'cro_footleft',
+							'name' => __('Footer left','localize')
+						),
+						array(
+							'class' => 'cro_footcent',
+							'name' => __('Footer center','localize')
+						),
+						array(
+							'class' => 'cro_footright',
+							'name' => __('Footer right','localize')
 						)
 						
 					);

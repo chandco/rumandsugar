@@ -36,6 +36,13 @@ $ap = get_mapstack();
 if ($ap != '') {echo $ap;}
 
 wp_head();
+
+if (get_post_meta(get_the_id(), 'food-menu', true)) {
+  $bodyClass = 'food-menu';
+} else {
+  $bodyClass = '';
+}
+
 ?>
 
 
@@ -46,9 +53,9 @@ wp_head();
 </head>
 <?php 
 	if ($ap != '') { ?>
-		<body <?php body_class(); ?> onload="initialize()">
+		<body <?php body_class($bodyClass); ?> onload="initialize()">
 	<?php } else { ?>
-		<body <?php body_class();?> >
+		<body <?php body_class($bodyClass);?> >
 	<?php } 
 ?>
 

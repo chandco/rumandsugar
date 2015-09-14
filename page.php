@@ -20,6 +20,9 @@ get_header();
 				
 	<?php while ( have_posts() ) : the_post();
 		$sbar = get_post_meta($post->ID, 'cro_sidebar', true);
+
+
+
 		echo cro_headerimg($post->ID, 'page', $ps);			
 	?>
 
