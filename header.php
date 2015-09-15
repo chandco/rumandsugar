@@ -70,7 +70,7 @@ if (get_post_meta(get_the_id(), 'food-menu', true)) {
 		
 			<button class="menu-toggle"><i class="fa fa-bars"></i></button>	
 			
-			<div id="logo"><img src="http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/SMALL-LOGO2.png" alt="Rum And Sugar" /></div>
+			<a href='/'><div id="logo"><img src="http://rumandsugar.dev.chand.co/wp-content/uploads//2015/07/SMALL-LOGO2.png" alt="Rum And Sugar" /></div></a>
 
 			<ul class='nav-menus'>
 				<li class='primary-menu menu-container'>
