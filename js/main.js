@@ -1,7 +1,48 @@
+( function( $ )
+{
+  $.style={
+          insertRule:function(selector,rules,contxt)
+          {
+            var context=contxt||document,stylesheet;
+
+            if(typeof context.styleSheets=='object')
+            {
+              if(context.styleSheets.length)
+              {
+                stylesheet=context.styleSheets[context.styleSheets.length-1];
+              }
+              if(context.styleSheets.length)
+              {
+                if(context.createStyleSheet)
+                {
+                  stylesheet=context.createStyleSheet();
+                }
+                else
+                {
+                  context.getElementsByTagName('head')[0].appendChild(context.createElement('style'));
+                  stylesheet=context.styleSheets[context.styleSheets.length-1];
+                }
+              }
+              if(stylesheet.addRule)
+              {
+                for(var i=0;i<selector.length;++i)
+                {
+                  stylesheet.addRule(selector[i],rules);
+                }
+              }
+              else
+              {
+                stylesheet.insertRule(selector.join(',') + '{' + rules + '}', stylesheet.cssRules.length);  
+              }
+            }
+          }
+        };
+  }
+)( jQuery );
+
 
 (function( $ ){
 
-  $('.nav-menus').height( $(window).height() ).css('min-height', $(window).height() );
 
 
 $.fn.exists = function(callback) {
@@ -48,13 +89,17 @@ $('a.popup-box-link').each(function(index, element) {
 $('.main img:not(.attachment-gallery-thumb)').wrap('<div class="menu-image-wrapper"><div class="inner"></div></div>');
 
 
+
+$( "<style>.open .nav-menus  { height: " + $(window).height() + "px; }</style>" ).appendTo( "head" );
+
 $(".menu-toggle").click(function(){
 
  
 
-  $('.nav-menus').height( $(window).height() ).css('min-height', $(window).height() );
 
   $('.topper').toggleClass('open');
+
+
 });
 
 
