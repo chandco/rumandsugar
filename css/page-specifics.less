@@ -140,28 +140,45 @@ color: #333;
 		/* RUM LIST */
 
 		
-			.rum-list {
+			.menu-container {
+				.two-cols {
+					.menu-wrapper {
 
-				ul li ul li {
-					background:red;
-					width:10%;
+						.rum-font {
+							font-family: 'Monotype Bernard W01';
+							font-size:30px;
+							margin-bottom:10px;
+							text-transform:uppercase;
+						}
 
-					&:nth-child(2){
-						background:green;
-						right:100px;
-						margin-top:0;
+						ul li ul li {
 						
+						width:auto;
+						margin-top:0;
+
+					&:nth-child(1){
+						
+						right:70px;
 						margin-right:3%;
 					}
-				}
-			
 
+					&:nth-child(3){
+						
+						right:145px;
+						margin-right:3%;
+					}
+
+					
+				}
+					}
+				}
+				
+			
 				&:after {
 					clear:both;
 					display:table;
 					content: '';
-				}
-					
+				}				
 			}
 
 			

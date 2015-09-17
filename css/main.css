@@ -3708,17 +3708,25 @@ body.food-menu div.page .header-container span {
     line-height: 63px;
   }
 }
-body.food-menu div.page .rum-list ul li ul li {
-  background: red;
-  width: 10%;
+body.food-menu div.page .menu-container .two-cols .menu-wrapper .rum-font {
+  font-family: 'Monotype Bernard W01';
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
-body.food-menu div.page .rum-list ul li ul li:nth-child(2) {
-  background: green;
-  right: 100px;
+body.food-menu div.page .menu-container .two-cols .menu-wrapper ul li ul li {
+  width: auto;
   margin-top: 0;
+}
+body.food-menu div.page .menu-container .two-cols .menu-wrapper ul li ul li:nth-child(1) {
+  right: 70px;
   margin-right: 3%;
 }
-body.food-menu div.page .rum-list:after {
+body.food-menu div.page .menu-container .two-cols .menu-wrapper ul li ul li:nth-child(3) {
+  right: 145px;
+  margin-right: 3%;
+}
+body.food-menu div.page .menu-container:after {
   clear: both;
   display: table;
   content: '';
