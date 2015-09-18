@@ -3723,8 +3723,18 @@ body.food-menu div.page .menu-container .two-cols .menu-wrapper ul li ul li:nth-
   margin-right: 3%;
 }
 body.food-menu div.page .menu-container .two-cols .menu-wrapper ul li ul li:nth-child(3) {
-  right: 145px;
+  right: 170px;
   margin-right: 3%;
+}
+body.food-menu div.page .menu-container .cocktails ul li.food {
+  padding-right: 0 !important;
+}
+body.food-menu div.page .menu-container .cocktails ul li ul li:nth-child(1) {
+  margin: 0;
+  right: 0 !important;
+}
+body.food-menu div.page .menu-container .shareandshoot ul li ul li:nth-child(1) {
+  margin-right: 0 !important;
 }
 body.food-menu div.page .menu-container:after {
   clear: both;
