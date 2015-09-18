@@ -3096,8 +3096,10 @@ a.cta:hover {
 .clipboard-inner .quickiemenu {
   color: #000000;
 }
-body.food-menu .clipboard-inner div.page .menu-container {
-  overflow: hidden;
+body.food-menu .clipboard-inner div.page .menu-container:after {
+  display: table;
+  clear: both;
+  content: '';
 }
 @media only screen and (max-width: 767px) {
   body.food-menu .clipboard-inner div.page .menu-container {
@@ -3708,35 +3710,52 @@ body.food-menu div.page .header-container span {
     line-height: 63px;
   }
 }
-body.food-menu div.page .menu-container .two-cols .menu-wrapper .rum-font {
+body.food-menu div.page .bar-menu .banner {
+  margin-top: 50px;
+}
+body.food-menu div.page .bar-menu .menu-container .two-cols ul li.food {
+  padding-right: 0 !important;
+}
+body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper .rum-font {
   font-family: 'Monotype Bernard W01';
   font-size: 30px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-body.food-menu div.page .menu-container .two-cols .menu-wrapper ul li ul li {
+body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper .rum-font div {
+  font-family: 'Oswald', sans-serif;
+  font-size: 19.5px;
+  text-transform: lowercase;
+}
+body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper .large-rum-font {
+  font-size: 40px;
+  font-family: 'Monotype Bernard W01';
+  text-transform: uppercase;
+}
+body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper .oswald-font {
+  font-size: 42px;
+  text-align: left;
+  text-transform: uppercase;
+}
+body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper ul li ul li {
   width: auto;
   margin-top: 0;
 }
-body.food-menu div.page .menu-container .two-cols .menu-wrapper ul li ul li:nth-child(1) {
+body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper ul li ul li:nth-child(1) {
   right: 70px;
-  margin-right: 3%;
 }
-body.food-menu div.page .menu-container .two-cols .menu-wrapper ul li ul li:nth-child(3) {
+body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper ul li ul li:nth-child(3) {
   right: 170px;
   margin-right: 3%;
 }
-body.food-menu div.page .menu-container .cocktails ul li.food {
-  padding-right: 0 !important;
-}
-body.food-menu div.page .menu-container .cocktails ul li ul li:nth-child(1) {
+body.food-menu div.page .bar-menu .menu-container .cocktails ul li ul li:nth-child(1) {
   margin: 0;
   right: 0 !important;
 }
-body.food-menu div.page .menu-container .shareandshoot ul li ul li:nth-child(1) {
+body.food-menu div.page .bar-menu .menu-container .shareandshoot ul li ul li:nth-child(1) {
   margin-right: 0 !important;
 }
-body.food-menu div.page .menu-container:after {
+body.food-menu div.page .bar-menu .menu-container:after {
   clear: both;
   display: table;
   content: '';
@@ -4027,7 +4046,7 @@ body.food-menu div.page ul {
 }
 body.food-menu div.page ul li {
   position: relative;
-  font-size: 1.5em;
+  font-size: 19.5px;
   margin-top: 20px;
 }
 body.food-menu div.page ul li:first-child {

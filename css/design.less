@@ -150,7 +150,13 @@ a.cta {
 
 
 			.menu-container {
-				overflow:hidden;
+
+				&:after {
+					display:table;
+					clear:both;
+					content: '';
+				}
+				
 				@media only screen and (max-width : @tablets) { 
 					overflow: initial;
 				}
