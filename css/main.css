@@ -2975,11 +2975,7 @@ body {
   }
 }
 .brown-paper {
-<<<<<<< HEAD
   background-image: url('/wp-content/themes/rumandsugar/lib/images/brown-paper.jpg');
-=======
-  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
->>>>>>> develop
 }
 .oswald {
   font-family: 'Oswald', sans-serif;
@@ -3091,11 +3087,7 @@ a.cta:hover {
   background-color: #eb435c;
 }
 .clipboard-inner {
-<<<<<<< HEAD
   background-image: url('/wp-content/themes/rumandsugar/lib/images/brown-paper.jpg');
-=======
-  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
->>>>>>> develop
   padding: 2em;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -3208,11 +3200,7 @@ body.food-menu .clipboard-inner div.page .menu-container .two-cols .two-cols-rig
   margin-bottom: 0;
 }
 .clipboard-outer {
-<<<<<<< HEAD
   background-image: url('/wp-content/themes/rumandsugar/lib/images/dark-repeating-texture.jpg');
-=======
-  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/dark-repeating-texture.jpg');
->>>>>>> develop
   max-width: 100%;
   box-sizing: content-box;
   padding: 70px;
@@ -3279,11 +3267,7 @@ body.food-menu .clipboard-outer {
 }
 body.food-menu .clipboard-outer:before {
   content: "";
-<<<<<<< HEAD
   background-image: url('/wp-content/themes/rumandsugar/lib/images/clip.png');
-=======
-  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/clip.png');
->>>>>>> develop
   background-size: 100% auto;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3337,11 +3321,7 @@ body {
   top: 0;
   left: 0;
   transform: skewY(-45deg) translate(0, -50%);
-<<<<<<< HEAD
   background-image: url('/wp-content/themes/rumandsugar/lib/images/brown-paper.jpg');
-=======
-  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
->>>>>>> develop
   z-index: 2;
   width: 30px;
   height: 30px;
@@ -3354,11 +3334,7 @@ body {
   bottom: 0;
   left: 0;
   transform: skewY(45deg) translate(0, 50%);
-<<<<<<< HEAD
   background-image: url('/wp-content/themes/rumandsugar/lib/images/brown-paper.jpg');
-=======
-  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
->>>>>>> develop
   z-index: 2;
   width: 30px;
   height: 30px;
@@ -3377,11 +3353,7 @@ body {
   top: 0;
   right: 0;
   transform: skewY(45deg) translate(0, -50%);
-<<<<<<< HEAD
   background-image: url('/wp-content/themes/rumandsugar/lib/images/brown-paper.jpg');
-=======
-  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
->>>>>>> develop
   z-index: 2;
   width: 30px;
   height: 30px;
@@ -3394,11 +3366,7 @@ body {
   bottom: 0;
   right: 0;
   transform: skewY(-45deg) translate(0, 50%);
-<<<<<<< HEAD
   background-image: url('/wp-content/themes/rumandsugar/lib/images/brown-paper.jpg');
-=======
-  background-image: url('/wp-content/themes/nathan/rumandsugar/lib/images/brown-paper.jpg');
->>>>>>> develop
   z-index: 2;
   width: 30px;
   height: 30px;
