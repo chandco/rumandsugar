@@ -3713,7 +3713,7 @@ body.food-menu div.page .header-container span {
 body.food-menu div.page .bar-menu .margin-top {
   margin-top: 50px;
 }
-body.food-menu div.page .bar-menu div.oswald-centre-text {
+body.food-menu div.page .bar-menu .oswald-centre-text {
   font-size: 65px;
   text-align: center;
   text-transform: uppercase;
