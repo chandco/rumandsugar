@@ -3734,14 +3734,20 @@ body.food-menu div.page .bar-menu .oswald-font {
 body.food-menu div.page .bar-menu .banner {
   margin-top: 50px;
 }
+body.food-menu div.page .bar-menu .menu-container .two-cols .four-cols ul li ul li:nth-child(1) {
+  right: 227px !important;
+}
+body.food-menu div.page .bar-menu .menu-container .two-cols .four-cols ul li ul li:nth-child(2) {
+  right: 127px !important;
+}
+body.food-menu div.page .bar-menu .menu-container .two-cols .four-cols ul li ul li:nth-child(3) {
+  right: 0 !important;
+}
 body.food-menu div.page .bar-menu .menu-container .two-cols ul li.food {
   padding-right: 0 !important;
 }
 body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper .no-position {
   right: 0 !important;
-}
-body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper .left-pos-100 {
-  right: 100px !important;
 }
 body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper .rum-font {
   font-family: 'Monotype Bernard W01';
@@ -3768,8 +3774,11 @@ body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper ul li 
   right: 70px;
 }
 body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper ul li ul li:nth-child(3) {
-  right: 170px;
+  right: 200px;
   margin-right: 3%;
+}
+body.food-menu div.page .bar-menu .menu-container .wine-list ul li ul li:nth-child(1) {
+  right: 100px !important;
 }
 body.food-menu div.page .bar-menu .menu-container .cocktails ul li ul li:nth-child(1) {
   margin: 0;
