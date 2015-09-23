@@ -3710,6 +3710,13 @@ body.food-menu div.page .header-container span {
     line-height: 63px;
   }
 }
+body.food-menu div.page .oswald-font {
+  font-size: 42px;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+}
 body.food-menu div.page .bar-menu .margin-top {
   margin-top: 50px;
 }
@@ -3726,13 +3733,11 @@ body.food-menu div.page .bar-menu .large-rum-font {
   text-transform: uppercase;
   color: #000000;
 }
-body.food-menu div.page .bar-menu .oswald-font {
-  font-size: 42px;
-  text-align: left;
-  text-transform: uppercase;
-}
 body.food-menu div.page .bar-menu .banner {
   margin-top: 50px;
+}
+body.food-menu div.page .bar-menu .menu-container .two-cols .four-cols ul li.food {
+  text-indent: -9999px;
 }
 body.food-menu div.page .bar-menu .menu-container .two-cols .four-cols ul li ul li:nth-child(1) {
   right: 227px !important;
@@ -3741,6 +3746,9 @@ body.food-menu div.page .bar-menu .menu-container .two-cols .four-cols ul li ul 
   right: 127px !important;
 }
 body.food-menu div.page .bar-menu .menu-container .two-cols .four-cols ul li ul li:nth-child(3) {
+  right: 0 !important;
+}
+body.food-menu div.page .bar-menu .menu-container .two-cols .four-cols .menu-2 ul li ul li {
   right: 0 !important;
 }
 body.food-menu div.page .bar-menu .menu-container .two-cols ul li.food {
@@ -3771,13 +3779,12 @@ body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper ul li 
   margin-top: 0;
 }
 body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper ul li ul li:nth-child(1) {
-  right: 70px;
+  right: 100px;
 }
 body.food-menu div.page .bar-menu .menu-container .two-cols .menu-wrapper ul li ul li:nth-child(3) {
   right: 200px;
-  margin-right: 3%;
 }
-body.food-menu div.page .bar-menu .menu-container .wine-list ul li ul li:nth-child(1) {
+body.food-menu div.page .bar-menu .menu-container .three-cols ul li ul li:nth-child(1) {
   right: 100px !important;
 }
 body.food-menu div.page .bar-menu .menu-container .cocktails ul li ul li:nth-child(1) {
