@@ -3717,6 +3717,12 @@ body.food-menu div.page .oswald-font {
   font-family: 'Oswald', sans-serif;
   color: #000000;
 }
+body.food-menu div.page .large-rum-font {
+  font-size: 40px;
+  font-family: 'Monotype Bernard W01';
+  text-transform: uppercase;
+  color: #000000;
+}
 body.food-menu div.page .bar-menu .margin-top {
   margin-top: 50px;
 }
@@ -3726,12 +3732,6 @@ body.food-menu div.page .bar-menu .oswald-centre-text {
   text-transform: uppercase;
   color: #000000;
   font-family: 'Oswald', sans-serif;
-}
-body.food-menu div.page .bar-menu .large-rum-font {
-  font-size: 40px;
-  font-family: 'Monotype Bernard W01';
-  text-transform: uppercase;
-  color: #000000;
 }
 body.food-menu div.page .bar-menu .banner {
   margin-top: 50px;
