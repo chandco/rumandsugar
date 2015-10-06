@@ -3720,19 +3720,6 @@ body.food-menu div.page .bar-menu .oswald-centre-text {
   color: #000000;
   font-family: 'Oswald', sans-serif;
 }
-body.food-menu div.page .bar-menu .large-rum-font {
-  font-size: 40px;
-  font-family: 'Monotype Bernard W01';
-  text-transform: uppercase;
-  color: #000000;
-}
-body.food-menu div.page .bar-menu .oswald-font {
-  font-size: 42px;
-  text-align: left;
-  text-transform: uppercase;
-  color: #000000;
-  font-family: 'Oswald', sans-serif;
-}
 body.food-menu div.page .bar-menu .banner {
   margin-top: 50px;
 }
@@ -3784,6 +3771,19 @@ body.food-menu div.page .bar-menu .menu-container:after {
   clear: both;
   display: table;
   content: '';
+}
+body.food-menu div.page .large-rum-font {
+  font-size: 40px;
+  font-family: 'Monotype Bernard W01';
+  text-transform: uppercase;
+  color: #000000;
+}
+body.food-menu div.page .oswald-font {
+  font-size: 42px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: 'Oswald', sans-serif;
 }
 @media only screen and (max-width: 1200px) {
   body.food-menu div.page .sides-container .menu-container {
